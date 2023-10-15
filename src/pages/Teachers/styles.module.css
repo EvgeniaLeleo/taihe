@@ -1,1 +1,8 @@
+.teachers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 76px 44px;
 
+  padding: 85px 0 0 50px;
+  box-sizing: border-box;
+}

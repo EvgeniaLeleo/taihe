@@ -1,12 +1,13 @@
-import cn from 'classnames/bind'
+import cn from 'classnames/bind';
 
-import styles from './style.module.css'
+import styles from './style.module.css';
 
-const cx = cn.bind(styles)
+const cx = cn.bind(styles);
 
-export const Button = ({ theme, children = '', size = 's' }) => {
+export const Button = ({ theme, children = '', size = 's', mt = 0 }) => {
   return (
     <button
+      style={{ marginTop: `${mt}px` }}
       className={cx(
         'button',
         { button_primary: theme === 'primary' },
@@ -18,5 +19,5 @@ export const Button = ({ theme, children = '', size = 's' }) => {
     >
       {children}
     </button>
-  )
-}
+  );
+};

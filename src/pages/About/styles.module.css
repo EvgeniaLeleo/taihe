@@ -11,5 +11,6 @@
 
 .description {
   font-size: 21px;
-  line-height: 1.2;
+
+  margin: 0;
 }

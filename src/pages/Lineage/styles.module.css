@@ -1,1 +1,16 @@
+.lineage__image {
+  display: block;
 
+  width: calc(100% + 1.5px);
+  margin-left: -1.5px;
+}
+
+.content-wrapper {
+  padding: 70px 0 0 50px;
+}
+
+.teachers-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px;
+}

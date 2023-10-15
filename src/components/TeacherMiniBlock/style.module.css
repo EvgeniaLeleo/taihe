@@ -1,0 +1,20 @@
+.image-wrapper {
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  margin: 30px 0 0;
+}
+
+.text {
+  font-size: 14px;
+  margin: 10px 0 0;
+}

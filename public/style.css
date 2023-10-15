@@ -1,6 +1,7 @@
 .body {
   font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 500;
+  line-height: 1.2;
   color: #161616;
 
   min-width: 450px;

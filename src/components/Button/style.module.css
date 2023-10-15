@@ -1,0 +1,74 @@
+.button {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+
+  border-radius: 50px;
+  border: 1.5px solid #161616;
+
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:focus-visible {
+  outline: 1.5px solid #161616;
+}
+
+/* PRIMARY */
+
+.button_primary {
+  color: #161616;
+
+  background-color: transparent;
+}
+
+.button_primary:hover {
+  color: #fff;
+
+  background-color: #161616;
+}
+
+.button_primary:active {
+  color: #161616;
+
+  background-color: transparent;
+}
+
+/* SECONDARY */
+
+.button_secondary {
+  color: #fff;
+
+  background-color: #161616;
+}
+
+.button_secondary:hover {
+  color: #161616;
+
+  background-color: transparent;
+}
+
+.button_secondary:active {
+  color: #fff;
+
+  background-color: #161616;
+}
+
+/* SIZE */
+
+.button_size_s {
+  padding: 12px 14px;
+}
+
+.button_size_m {
+  padding: 15px 63px;
+}

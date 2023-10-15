@@ -1,0 +1,36 @@
+.sidebar {
+  margin: 84px 0 0;
+
+  border-right: 1.5px solid #17171780;
+}
+
+.sidebar-list {
+  list-style: none;
+
+  width: 200px;
+
+  padding: 0 50px 84px 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #16161680;
+  text-decoration: none;
+}
+
+.sidebar-item {
+  margin-bottom: 11px;
+}
+
+.sidebar-item:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-item_active {
+  color: #161616;
+}

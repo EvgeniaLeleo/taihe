@@ -1,0 +1,15 @@
+.about__image {
+  display: block;
+
+  width: 100%;
+  margin-left: -1.5px;
+}
+
+.text-wrapper {
+  padding: 70px 0 0 50px;
+}
+
+.description {
+  font-size: 21px;
+  line-height: 1.2;
+}

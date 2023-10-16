@@ -8,7 +8,7 @@ import youtube from '../../images/icons/youtube-icon-light.svg';
 import telegram from '../../images/icons/telegram-icon-light.svg';
 
 import { URL } from '../../constants';
-import styles from './style.module.css';
+import styles from './styles.module.css';
 // import { useEffect, useState } from 'react';
 
 const cx = cn.bind(styles);

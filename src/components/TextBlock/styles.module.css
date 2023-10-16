@@ -1,0 +1,40 @@
+.isBorder {
+  padding-top: 72px;
+  margin-top: 120px;
+  box-sizing: border-box;
+
+  border-top: 1.5px solid #17171780;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  margin: 0 0 18px;
+}
+
+.text-content {
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.text-content_first,
+.text-content_second {
+  flex: 1 1 50%;
+}
+
+.text-content_first {
+  margin-right: 28px;
+}
+
+.text-content_paragraph {
+  font-size: 14px;
+
+  margin: 0 0 12px;
+}
+
+.text-content_paragraph:last-child {
+  margin-bottom: 0;
+}

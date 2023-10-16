@@ -1,6 +1,6 @@
 import cn from 'classnames/bind';
 
-import styles from './style.module.css';
+import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 

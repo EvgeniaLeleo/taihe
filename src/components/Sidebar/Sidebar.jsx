@@ -1,10 +1,10 @@
-import { NavLink } from 'react-router-dom'
-import cn from 'classnames/bind'
+import { NavLink } from 'react-router-dom';
+import cn from 'classnames/bind';
 
-import styles from './style.module.css'
-import { ROUTES } from '../../constants'
+import styles from './styles.module.css';
+import { ROUTES } from '../../constants';
 
-const cx = cn.bind(styles)
+const cx = cn.bind(styles);
 
 export const Sidebar = () => {
   return (
@@ -12,9 +12,7 @@ export const Sidebar = () => {
       <ul className={cx('sidebar-list')}>
         <li className={cx('sidebar-item')}>
           <NavLink
-            className={({ isActive }) =>
-              cx('sidebar-link', { 'sidebar-item_active': isActive })
-            }
+            className={({ isActive }) => cx('sidebar-link', { 'sidebar-item_active': isActive })}
             to={ROUTES.main}
           >
             О клубе Тай Хэ
@@ -22,9 +20,7 @@ export const Sidebar = () => {
         </li>
         <li className={cx('sidebar-item')}>
           <NavLink
-            className={({ isActive }) =>
-              cx('sidebar-link', { 'sidebar-item_active': isActive })
-            }
+            className={({ isActive }) => cx('sidebar-link', { 'sidebar-item_active': isActive })}
             to={ROUTES.lineage}
           >
             Линия передачи
@@ -32,9 +28,7 @@ export const Sidebar = () => {
         </li>
         <li className={cx('sidebar-item')}>
           <NavLink
-            className={({ isActive }) =>
-              cx('sidebar-link', { 'sidebar-item_active': isActive })
-            }
+            className={({ isActive }) => cx('sidebar-link', { 'sidebar-item_active': isActive })}
             to={ROUTES.teachers}
           >
             Преподаватели
@@ -42,9 +36,7 @@ export const Sidebar = () => {
         </li>
         <li className={cx('sidebar-item')}>
           <NavLink
-            className={({ isActive }) =>
-              cx('sidebar-link', { 'sidebar-item_active': isActive })
-            }
+            className={({ isActive }) => cx('sidebar-link', { 'sidebar-item_active': isActive })}
             to={ROUTES.library}
           >
             Библиотека
@@ -52,9 +44,7 @@ export const Sidebar = () => {
         </li>
         <li className={cx('sidebar-item')}>
           <NavLink
-            className={({ isActive }) =>
-              cx('sidebar-link', { 'sidebar-item_active': isActive })
-            }
+            className={({ isActive }) => cx('sidebar-link', { 'sidebar-item_active': isActive })}
             to={ROUTES.media}
           >
             Фото и видео
@@ -62,9 +52,7 @@ export const Sidebar = () => {
         </li>
         <li className={cx('sidebar-item')}>
           <NavLink
-            className={({ isActive }) =>
-              cx('sidebar-link', { 'sidebar-item_active': isActive })
-            }
+            className={({ isActive }) => cx('sidebar-link', { 'sidebar-item_active': isActive })}
             to={ROUTES.feedback}
           >
             Отзывы
@@ -72,9 +60,7 @@ export const Sidebar = () => {
         </li>
         <li className={cx('sidebar-item')}>
           <NavLink
-            className={({ isActive }) =>
-              cx('sidebar-link', { 'sidebar-item_active': isActive })
-            }
+            className={({ isActive }) => cx('sidebar-link', { 'sidebar-item_active': isActive })}
             to={ROUTES.online}
           >
             Онлайн школа (курсы в записи)
@@ -82,9 +68,7 @@ export const Sidebar = () => {
         </li>
         <li className={cx('sidebar-item')}>
           <NavLink
-            className={({ isActive }) =>
-              cx('sidebar-link', { 'sidebar-item_active': isActive })
-            }
+            className={({ isActive }) => cx('sidebar-link', { 'sidebar-item_active': isActive })}
             to={ROUTES.shop}
           >
             Магазин
@@ -92,9 +76,7 @@ export const Sidebar = () => {
         </li>
         <li className={cx('sidebar-item')}>
           <NavLink
-            className={({ isActive }) =>
-              cx('sidebar-link', { 'sidebar-item_active': isActive })
-            }
+            className={({ isActive }) => cx('sidebar-link', { 'sidebar-item_active': isActive })}
             to={ROUTES.contacts}
           >
             Контакты
@@ -102,5 +84,5 @@ export const Sidebar = () => {
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};

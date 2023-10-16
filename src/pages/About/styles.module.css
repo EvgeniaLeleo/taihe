@@ -14,3 +14,21 @@
 
   margin: 0;
 }
+
+.footer {
+  margin-top: 80px;
+}
+
+.footer__paragraph {
+  font-size: 14px;
+
+  margin: 0 0 14px;
+}
+
+.footer__paragraph:last-child {
+  margin: 0;
+}
+
+.footer-link {
+  color: #161616;
+}

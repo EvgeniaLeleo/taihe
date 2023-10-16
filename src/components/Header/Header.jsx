@@ -7,7 +7,7 @@ import youtube from '../../images/icons/youtube-icon.svg';
 import telegram from '../../images/icons/telegram-icon.svg';
 
 import { ROUTES, URL } from '../../constants';
-import styles from './style.module.css';
+import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 

@@ -1,6 +1,6 @@
 import cn from 'classnames/bind';
 
-import { TeacherMiniBlock } from '../../components/TeacherMiniBlock/TeacherMiniBlock';
+import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
 import { TeacherBlock } from '../../components/TeacherBlock/TeacherBlock';
 
 import mainImg from '../../images/lineage/main.jpg';
@@ -20,17 +20,17 @@ export const Lineage = () => {
       <img className={cx('lineage__image')} src={mainImg} alt="" />
       <div className={cx('content-wrapper')}>
         <div className={cx('teachers-block')}>
-          <TeacherMiniBlock
+          <InfoBlock
             imgUrl={fenPortrait}
             name="Грандмастер Фэн Чжицян"
             text="основатель направления Хуньюань Тайцзицюань"
           />
-          <TeacherMiniBlock
+          <InfoBlock
             imgUrl={natashaPortrait}
             name="Борисова Наташа"
             text="ученица мастера Чэнь Сяна, представитель 3-его поколения Хуньюань Тайцзицюань"
           />
-          <TeacherMiniBlock
+          <InfoBlock
             imgUrl={chenPortrait}
             name="Мастер Чэнь Сян"
             text="ученик грандмастера Фэна,  наследник традиции Хуньюань Тайцзицюань во 2-м поколении"

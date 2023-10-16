@@ -18,3 +18,12 @@
   font-size: 14px;
   margin: 10px 0 0;
 }
+
+.link {
+  display: inline-block;
+
+  color: #161616;
+  font-size: 14px;
+
+  margin-top: 10px;
+}

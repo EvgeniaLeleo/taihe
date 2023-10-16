@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Семинары в Китае, мастера",
+    "img": "./data/images/media/seminars-china.jpg",
+    "url": ""
+  },
+  {
+    "name": "Китайские парки и храмы",
+    "img": "./data/images/media/parks.jpg",
+    "url": ""
+  },
+  {
+    "name": "Семинары",
+    "img": "./data/images/media/seminars.jpg",
+    "url": ""
+  },
+  {
+    "name": "Регулярные занятия",
+    "img": "./data/images/media/regular.jpg",
+    "url": ""
+  }
+]

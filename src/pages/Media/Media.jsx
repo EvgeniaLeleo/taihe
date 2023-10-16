@@ -18,7 +18,13 @@ export const Media = () => {
   return (
     <div className={cx('media')}>
       {data.map((item) => (
-        <InfoBlock name={item.name} imgUrl={item.img} link={item.url} key={item.name + item.url} />
+        <InfoBlock
+          name={item.name}
+          imgUrl={item.imgUrl}
+          linkUrl={item.linkUrl}
+          linkText={item.linkText}
+          key={item.name + item.url}
+        />
       ))}
     </div>
   );

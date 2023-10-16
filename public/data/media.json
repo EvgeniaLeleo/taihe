@@ -1,22 +1,26 @@
 [
   {
     "name": "Семинары в Китае, мастера",
-    "img": "./data/images/media/seminars-china.jpg",
-    "url": ""
+    "imgUrl": "./data/images/media/seminars-china.jpg",
+    "linkText": "смотреть",
+    "linkUrl": "/"
   },
   {
     "name": "Китайские парки и храмы",
-    "img": "./data/images/media/parks.jpg",
-    "url": ""
+    "imgUrl": "./data/images/media/parks.jpg",
+    "linkText": "смотреть",
+    "linkUrl": "/"
   },
   {
     "name": "Семинары",
-    "img": "./data/images/media/seminars.jpg",
-    "url": ""
+    "imgUrl": "./data/images/media/seminars.jpg",
+    "linkText": "смотреть",
+    "linkUrl": "/"
   },
   {
     "name": "Регулярные занятия",
-    "img": "./data/images/media/regular.jpg",
-    "url": ""
+    "imgUrl": "./data/images/media/regular.jpg",
+    "linkText": "смотреть",
+    "linkUrl": "/"
   }
 ]

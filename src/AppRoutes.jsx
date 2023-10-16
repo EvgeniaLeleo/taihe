@@ -7,6 +7,7 @@ import { Teachers } from './pages/Teachers/Teachers';
 import { ROUTES } from './constants';
 import { Library } from './pages/Library/Library';
 import { Media } from './pages/Media/Media';
+import { Shop } from './pages/Shop/Shop';
 
 export const AppRoutes = () => {
   return (
@@ -19,7 +20,7 @@ export const AppRoutes = () => {
         <Route path={ROUTES.media} element={<Media />} />
         <Route path={ROUTES.feedback} element={<Lineage />} />
         <Route path={ROUTES.online} element={<Lineage />} />
-        <Route path={ROUTES.shop} element={<Lineage />} />
+        <Route path={ROUTES.shop} element={<Shop />} />
         <Route path={ROUTES.contacts} element={<Lineage />} />
         <Route path="*" element={<Navigate replace to={ROUTES.main} />} />
       </Route>

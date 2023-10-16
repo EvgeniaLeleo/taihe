@@ -1,0 +1,12 @@
+.shop {
+  padding: 85px 0 0 50px;
+  box-sizing: border-box;
+}
+
+.item {
+  margin-bottom: 44px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}

@@ -20,7 +20,13 @@ export const Teachers = () => {
     <div>
       <div className={cx('teachers-block')}>
         {data.map((item) => (
-          <InfoBlock name={item.name} imgUrl={item.img} text={item.text} isButton={true} key={item.name + item.url} />
+          <InfoBlock
+            name={item.name}
+            imgUrl={item.imgUrl}
+            text={item.text}
+            isButton={true}
+            key={item.name + item.url}
+          />
         ))}
       </div>
 

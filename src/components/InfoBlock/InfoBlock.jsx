@@ -6,7 +6,7 @@ import styles from './style.module.css';
 
 const cx = cn.bind(styles);
 
-export const InfoBlock = ({ imgUrl, name = '', text = '', isButton = false, link = '' }) => {
+export const InfoBlock = ({ imgUrl, name = '', text = '', isButton = false, linkUrl = '', linkText = '' }) => {
   return (
     <div>
       <div className={cx('image-wrapper')}>
@@ -19,9 +19,9 @@ export const InfoBlock = ({ imgUrl, name = '', text = '', isButton = false, link
           Записаться на занятие
         </Button>
       )}
-      {!!link && (
+      {!!linkUrl && !!linkText && (
         <a className={cx('link')} href="/" target="_blank" rel="noreferrer">
-          смотреть
+          {linkText}
         </a>
       )}
     </div>

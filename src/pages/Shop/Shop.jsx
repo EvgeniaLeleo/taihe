@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
 import { ShopItemBlock } from '../../components/ShopItemBlock/ShopItemBlock';
-import { getData } from '../../utils/getData';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -11,13 +10,14 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 export const Shop = () => {
-  const { setIsShopPage } = getStore;
+  const { getData, setIsShopPage } = getStore;
+
+  const [data, setData] = useState([]);
+
   useEffect(() => {
     setIsShopPage(true);
     scrollToTop();
   }, []);
-
-  const [data, setData] = useState([]);
 
   useEffect(() => {
     getData({ url: './data/shop.json', callback: setData });

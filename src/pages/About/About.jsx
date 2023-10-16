@@ -7,6 +7,7 @@ import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
 import img from '../../images/about/about.jpg';
+
 import { ROUTES } from '../../constants';
 import styles from './styles.module.css';
 
@@ -61,6 +62,7 @@ const HUNUAN = {
 
 export const About = () => {
   const { setIsShopPage } = getStore;
+
   useEffect(() => {
     setIsShopPage(false);
     scrollToTop();

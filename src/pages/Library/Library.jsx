@@ -75,6 +75,7 @@ const FRIENDS = {
 
 export const Library = () => {
   const { setIsShopPage } = getStore;
+
   useEffect(() => {
     setIsShopPage(false);
     scrollToTop();

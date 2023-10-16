@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
 import { FeedbackBlock } from '../../components/FeedbackBlock/FeedbackBlock';
-import { getData } from '../../utils/getData';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -12,11 +11,7 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 export const Feedback = () => {
-  const { setIsShopPage } = getStore;
-  useEffect(() => {
-    setIsShopPage(false);
-    scrollToTop();
-  }, []);
+  const { getData, setIsShopPage } = getStore;
 
   const [data, setData] = useState([]);
   const [visibleData, setVisibleData] = useState(data);
@@ -24,12 +19,17 @@ export const Feedback = () => {
   const [isRemainingFeedback, setIsRemainingFeedback] = useState();
 
   useEffect(() => {
+    setIsShopPage(false);
+    scrollToTop();
+  }, []);
+
+  useEffect(() => {
     getData({ url: './data/feedback.json', callback: setData });
     setVisibleData(data.slice(0, VISIBLE_FEEDBACK));
     setIsRemainingFeedback(data.length > VISIBLE_FEEDBACK);
   }, [data.length]);
 
-  const showMore = () => {
+  const handleShowMore = () => {
     if (isRemainingFeedback) {
       setVisibleData(data.slice(0, count * VISIBLE_FEEDBACK));
       setIsRemainingFeedback(data.length > count * VISIBLE_FEEDBACK);
@@ -47,7 +47,7 @@ export const Feedback = () => {
 
       <footer className={cx('footer')}>
         {isRemainingFeedback && (
-          <button className={cx('button-read-more')} onClick={showMore}>
+          <button className={cx('button-read-more')} onClick={handleShowMore}>
             Читать далее
           </button>
         )}

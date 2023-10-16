@@ -10,6 +10,7 @@ const cx = cn.bind(styles);
 
 export const Contacts = () => {
   const { setIsShopPage } = getStore;
+
   useEffect(() => {
     setIsShopPage(false);
     scrollToTop();

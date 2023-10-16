@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import cn from 'classnames/bind';
 
 import { ShopItemBlock } from '../../components/ShopItemBlock/ShopItemBlock';
-import { getData } from '../../utils/getData';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -16,13 +15,14 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 const TeaShop = () => {
-  const { setIsShopPage } = getStore;
+  const { getData, setIsShopPage } = getStore;
+
+  const [data, setData] = useState(null);
+
   useEffect(() => {
     setIsShopPage(true);
     scrollToTop();
   }, []);
-
-  const [data, setData] = useState(null);
 
   useEffect(() => {
     getData({ url: './data/tea-shop.json', callback: setData });

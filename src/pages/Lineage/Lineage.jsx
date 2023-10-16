@@ -40,6 +40,7 @@ const CHEN = {
 
 export const Lineage = () => {
   const { setIsShopPage } = getStore;
+
   useEffect(() => {
     setIsShopPage(false);
     scrollToTop();

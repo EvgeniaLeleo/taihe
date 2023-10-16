@@ -1,11 +1,33 @@
+.footer_shop {
+  display: flex;
+  justify-content: center;
+
+  padding: 72px 50px 0;
+  margin-top: 120px;
+
+  border-top: 1.5px solid #17171780;
+}
+
+.footer_shop__text {
+  text-align: center;
+
+  max-width: 700px;
+
+  margin: 0;
+}
+
 .button-wrapper {
   text-align: center;
 
-  padding: 92px 0;
+  padding: 72px 0;
   margin-top: 120px;
   box-sizing: border-box;
 
   border-top: 1.5px solid #17171780;
+}
+
+.button-wrapper.isShopPage {
+  margin-top: 72px;
 }
 
 .footer-bottom {

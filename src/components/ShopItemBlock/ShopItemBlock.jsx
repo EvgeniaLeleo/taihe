@@ -25,13 +25,13 @@ export const ShopItemBlock = ({
       <div>
         {!!name && <h2 className={cx('name')}>{name}</h2>}
         {!!text && (
-          <p className={cx('text')}>
+          <div className={cx('text')}>
             {text.split('\n').map((chunk) => (
               <p className={cx('text__paragraph')} key={chunk}>
                 {chunk}
               </p>
             ))}
-          </p>
+          </div>
         )}
         {!!linkUrl && !!linkText && (
           <a className={cx('link')} href="/" target="_blank" rel="noreferrer">

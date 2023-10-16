@@ -1,11 +1,20 @@
+import { observer } from 'mobx-react-lite';
 import cn from 'classnames/bind';
+
+import { getStore } from '../../utils/getStore';
 
 import img from '../../images/about/about.jpg';
 import styles from './styles.module.css';
+import { useEffect } from 'react';
 
 const cx = cn.bind(styles);
 
-export const About = () => {
+const About = () => {
+  const { setIsShopPage } = getStore;
+  useEffect(() => {
+    setIsShopPage(false);
+  }, []);
+
   return (
     <div className={cx('about')}>
       <img className={cx('about__image')} src={img} alt="" />
@@ -19,3 +28,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default observer(About);

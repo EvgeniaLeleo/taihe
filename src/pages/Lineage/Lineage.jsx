@@ -2,6 +2,7 @@ import cn from 'classnames/bind';
 
 import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
 import { TeacherBlock } from '../../components/TeacherBlock/TeacherBlock';
+import { getStore } from '../../utils/getStore';
 
 import mainImg from '../../images/lineage/main.jpg';
 import fenPortrait from '../../images/lineage/fen-portrait.jpg';
@@ -11,10 +12,16 @@ import fenBig from '../../images/lineage/fen-big.jpg';
 import chenBig from '../../images/lineage/chen-big.jpg';
 
 import styles from './styles.module.css';
+import { useEffect } from 'react';
 
 const cx = cn.bind(styles);
 
 export const Lineage = () => {
+  const { setIsShopPage } = getStore;
+  useEffect(() => {
+    setIsShopPage(false);
+  }, []);
+
   return (
     <div className={cx('lineage')}>
       <img className={cx('lineage__image')} src={mainImg} alt="" />

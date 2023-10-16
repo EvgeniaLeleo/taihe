@@ -1,4 +1,7 @@
 import cn from 'classnames/bind';
+import { observer } from 'mobx-react-lite';
+
+import { getStore } from '../../utils/getStore';
 
 import { Button } from '../Button/Button';
 import youtube from '../../images/icons/youtube-icon-light.svg';
@@ -6,13 +9,35 @@ import telegram from '../../images/icons/telegram-icon-light.svg';
 
 import { URL } from '../../constants';
 import styles from './style.module.css';
+// import { useEffect, useState } from 'react';
 
 const cx = cn.bind(styles);
 
-export const Footer = () => {
+const Footer = () => {
+  const { isShopPage } = getStore;
+
+  // const isShop = window.location.pathname.includes('shop');
+
+  // const [isShopPage, setIsShopPage] = useState(isShop);
+
+  // console.log(window.location.pathname);
+
+  // useEffect(() => {
+  //   setIsShopPage(isShop);
+  //   console.log(window.location.pathname);
+  // }, [window.location.pathname]);
+
   return (
     <footer className={cx('footer')}>
-      <div className={cx('button-wrapper')}>
+      {isShopPage && (
+        <div className={cx('footer_shop')}>
+          <p className={cx('footer_shop__text')}>
+            Заказы на чай, футболки и тайцзибан принимаются через почту taiheclub@yandex.ru и личные сообщения
+            +79652071339 (WhatsApp/Telegram). Книги доступны в розничных магазинах и под заказ.
+          </p>
+        </div>
+      )}
+      <div className={cx('button-wrapper', { isShopPage: isShopPage })}>
         <Button theme="secondary" size="m">
           Записаться на занятия
         </Button>
@@ -38,3 +63,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default observer(Footer);

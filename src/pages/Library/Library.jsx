@@ -1,11 +1,17 @@
 import cn from 'classnames/bind';
 
-// import { URL } from '../../constants';
 import styles from './styles.module.css';
+import { getStore } from '../../utils/getStore';
+import { useEffect } from 'react';
 
 const cx = cn.bind(styles);
 
 export const Library = () => {
+  const { setIsShopPage } = getStore;
+  useEffect(() => {
+    setIsShopPage(false);
+  }, []);
+
   return (
     <div className={cx('library')}>
       <section className={cx('library__section')}>

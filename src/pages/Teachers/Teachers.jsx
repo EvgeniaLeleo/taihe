@@ -6,10 +6,16 @@ import { URL } from '../../constants';
 import styles from './styles.module.css';
 import { useEffect, useState } from 'react';
 import { getData } from '../../utils/getData';
+import { getStore } from '../../utils/getStore';
 
 const cx = cn.bind(styles);
 
 export const Teachers = () => {
+  const { setIsShopPage } = getStore;
+  useEffect(() => {
+    setIsShopPage(false);
+  }, []);
+
   const [data, setData] = useState([]);
 
   useEffect(() => {

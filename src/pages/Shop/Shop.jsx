@@ -1,16 +1,19 @@
 import cn from 'classnames/bind';
 
-import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
-
-import { URL } from '../../constants';
 import styles from './styles.module.css';
 import { useEffect, useState } from 'react';
 import { getData } from '../../utils/getData';
 import { ShopItemBlock } from '../../components/ShopItemBlock/ShopItemBlock';
+import { getStore } from '../../utils/getStore';
 
 const cx = cn.bind(styles);
 
 export const Shop = () => {
+  const { setIsShopPage } = getStore;
+  useEffect(() => {
+    setIsShopPage(true);
+  }, []);
+
   const [data, setData] = useState([]);
 
   useEffect(() => {

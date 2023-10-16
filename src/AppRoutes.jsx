@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 import { PageWrapper } from './pages/PageWrapper/PageWrapper';
-import { About } from './pages/About/About';
+import About from './pages/About/About';
 import { Lineage } from './pages/Lineage/Lineage';
 import { Teachers } from './pages/Teachers/Teachers';
 import { ROUTES } from './constants';

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import cn from 'classnames/bind';
 
 import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
@@ -13,7 +14,6 @@ import fenBig from '../../images/lineage/fen-big.jpg';
 import chenBig from '../../images/lineage/chen-big.jpg';
 
 import styles from './styles.module.css';
-import { useEffect } from 'react';
 
 const cx = cn.bind(styles);
 

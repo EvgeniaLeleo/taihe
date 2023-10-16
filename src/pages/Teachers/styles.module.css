@@ -59,3 +59,10 @@
   color: #161616;
   line-height: normal;
 }
+
+.features-list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}

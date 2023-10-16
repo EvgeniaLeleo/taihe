@@ -1,12 +1,12 @@
+import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
+import { getData } from '../../utils/getData';
+import { getStore } from '../../utils/getStore';
 import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
 
 import { URL } from '../../constants';
 import styles from './styles.module.css';
-import { useEffect, useState } from 'react';
-import { getData } from '../../utils/getData';
-import { getStore } from '../../utils/getStore';
 
 const cx = cn.bind(styles);
 
@@ -51,23 +51,30 @@ export const Teachers = () => {
             <a className={cx('resources-link')} href={URL.telegram} target="_blank" rel="noreferrer">
               Телеграм канал.
             </a>
-            <p className={cx('resources-item__paragraph')}>
-              Там публикуются: Методы и принципы Хуньюань Тайцзицюань, теория и практика Цигун, заметки о здоровье,
-              движении и дыхании, записи общих занятий, анонсы курсов, свежие новости. Доступен чат.
-            </p>
+            <h3 className={cx('resources-item__title')}>Там публикуются:</h3>
+            <ul className={cx('features-list')}>
+              <li>- Методы и принципы Хуньюань Тайцзицюань</li>
+              <li>- Теория и практика Цигун</li>
+              <li>- Заметки о здоровье, движении и дыхании</li>
+              <li>- Записи общих занятий, анонсы курсов, свежие новости</li>
+              <li>- Доступен чат</li>
+            </ul>
           </li>
+
           <li className={cx('resources-item')}>
             <a className={cx('resources-link')} href={URL.youtube} target="_blank" rel="noreferrer">
               YouTube Канал Борисовой Наташи.
             </a>
+
             <h3 className={cx('resources-item__title')}>Там публикуются:</h3>
-            <ul>
+            <ul className={cx('features-list')}>
               <li>- Записи отдельных упражнений, практик и методов</li>
               <li>- Интервью, лекции, теория тайцзицюань и ушу</li>
               <li>- Подборки видео мастеров Хуньюань</li>
               <li>- Прочее видео по ушу и цигун (Плейлист «Ушу, цигун»)</li>
             </ul>
           </li>
+
           <li className={cx('resources-item')}>
             <a className={cx('resources-link')} href={URL.zenclass} target="_blank" rel="noreferrer">
               Курсы нашей онлайн школы

@@ -9,6 +9,7 @@ import { Library } from './pages/Library/Library';
 import { Media } from './pages/Media/Media';
 import { Shop } from './pages/Shop/Shop';
 import TeaShop from './pages/TeaShop/TeaShop';
+import { Contacts } from './pages/Contacts/Contacts';
 
 export const AppRoutes = () => {
   return (
@@ -23,7 +24,7 @@ export const AppRoutes = () => {
         <Route path={ROUTES.online} element={<Lineage />} />
         <Route path={ROUTES.shop} element={<Shop />} />
         <Route path={ROUTES.teaShop} element={<TeaShop />} />
-        <Route path={ROUTES.contacts} element={<Lineage />} />
+        <Route path={ROUTES.contacts} element={<Contacts />} />
         <Route path="*" element={<Navigate replace to={ROUTES.main} />} />
       </Route>
     </Routes>

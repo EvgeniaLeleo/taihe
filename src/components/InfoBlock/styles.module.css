@@ -1,3 +1,10 @@
+.info-block {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
 .image-wrapper {
   overflow: hidden;
 }

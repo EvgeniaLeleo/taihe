@@ -15,7 +15,6 @@
 }
 
 .text {
-  font-size: 14px;
   margin: 10px 0 0;
 }
 
@@ -23,7 +22,6 @@
   display: inline-block;
 
   color: #161616;
-  font-size: 14px;
 
   margin-top: 10px;
 }

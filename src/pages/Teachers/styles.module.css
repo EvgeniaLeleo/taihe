@@ -27,15 +27,11 @@
 }
 
 .format-list {
-  font-size: 14px;
-
   margin: 0;
   padding: 0 0 0 16px;
 }
 
 .resources-list {
-  font-size: 14px;
-
   margin: 0;
   padding: 0 0 0 16px;
 }
@@ -61,6 +57,5 @@
 
 .resources-link {
   color: #161616;
-  font-size: 14px;
   line-height: normal;
 }

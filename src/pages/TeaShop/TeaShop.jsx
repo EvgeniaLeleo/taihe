@@ -19,8 +19,6 @@ const TeaShop = () => {
     setIsShopPage(true);
   }, []);
 
-  console.log();
-
   const [data, setData] = useState(null);
 
   useEffect(() => {

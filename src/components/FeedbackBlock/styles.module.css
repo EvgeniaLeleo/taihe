@@ -1,0 +1,30 @@
+.feedback-block {
+  padding-bottom: 32px;
+  margin-bottom: 30px;
+
+  border-bottom: 1.5px solid #17171780;
+}
+
+.feedback-block:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  border-bottom: none;
+}
+
+.name {
+  color: #161616;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.course {
+  margin: 2px 0 0;
+}
+
+.text {
+  margin: 12px 0 0;
+}

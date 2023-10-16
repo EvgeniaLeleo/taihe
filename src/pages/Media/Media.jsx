@@ -19,7 +19,7 @@ export const Media = () => {
 
   useEffect(() => {
     getData({ url: './data/media.json', callback: setData });
-  }, []);
+  }, [data.length]);
 
   return (
     <div className={cx('media')}>

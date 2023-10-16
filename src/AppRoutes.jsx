@@ -10,6 +10,7 @@ import { Media } from './pages/Media/Media';
 import { Shop } from './pages/Shop/Shop';
 import TeaShop from './pages/TeaShop/TeaShop';
 import { Contacts } from './pages/Contacts/Contacts';
+import { Feedback } from './pages/Feedback/Feedback';
 
 export const AppRoutes = () => {
   return (
@@ -20,7 +21,7 @@ export const AppRoutes = () => {
         <Route path={ROUTES.teachers} element={<Teachers />} />
         <Route path={ROUTES.library} element={<Library />} />
         <Route path={ROUTES.media} element={<Media />} />
-        <Route path={ROUTES.feedback} element={<Lineage />} />
+        <Route path={ROUTES.feedback} element={<Feedback />} />
         <Route path={ROUTES.online} element={<Lineage />} />
         <Route path={ROUTES.shop} element={<Shop />} />
         <Route path={ROUTES.teaShop} element={<TeaShop />} />

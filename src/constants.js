@@ -16,3 +16,5 @@ export const URL = {
   telegram: 'https://t.me/taiheclub',
   zenclass: 'https://taihe.zenclass.ru/public/school',
 };
+
+export const VISIBLE_FEEDBACK = 5;

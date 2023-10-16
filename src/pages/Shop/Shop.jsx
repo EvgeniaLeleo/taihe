@@ -19,7 +19,7 @@ export const Shop = () => {
 
   useEffect(() => {
     getData({ url: './data/shop.json', callback: setData });
-  }, []);
+  }, [data.length]);
 
   return (
     <div className={cx('shop')}>

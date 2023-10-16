@@ -20,7 +20,7 @@ export const Teachers = () => {
 
   useEffect(() => {
     getData({ url: './data/teachers.json', callback: setData });
-  }, []);
+  }, [data.length]);
 
   return (
     <div>

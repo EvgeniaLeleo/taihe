@@ -1,0 +1,23 @@
+.feedback-wrapper {
+  padding: 84px 0 0 50px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.button-read-more {
+  color: #161616;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: underline;
+
+  margin-top: 62px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}

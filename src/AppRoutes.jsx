@@ -5,6 +5,7 @@ import { About } from './pages/About/About';
 import { Lineage } from './pages/Lineage/Lineage';
 import { Teachers } from './pages/Teachers/Teachers';
 import { ROUTES } from './constants';
+import { Library } from './pages/Library/Library';
 
 export const AppRoutes = () => {
   return (
@@ -13,7 +14,7 @@ export const AppRoutes = () => {
         <Route path={ROUTES.main} element={<About />} />
         <Route path={ROUTES.lineage} element={<Lineage />} />
         <Route path={ROUTES.teachers} element={<Teachers />} />
-        <Route path={ROUTES.library} element={<Lineage />} />
+        <Route path={ROUTES.library} element={<Library />} />
         <Route path={ROUTES.media} element={<Lineage />} />
         <Route path={ROUTES.feedback} element={<Lineage />} />
         <Route path={ROUTES.online} element={<Lineage />} />

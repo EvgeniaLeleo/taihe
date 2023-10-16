@@ -1,8 +1,66 @@
-.teachers {
+.teachers-block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 76px 44px;
 
-  padding: 85px 0 0 50px;
+  padding: 85px 0 120px 50px;
   box-sizing: border-box;
+}
+
+.info {
+  padding-top: 70px;
+  margin-left: 50px;
+
+  border-top: 1.5px solid #17171780;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  margin: 0 0 18px;
+}
+
+.resources {
+  margin-top: 72px;
+}
+
+.format-list {
+  font-size: 14px;
+
+  margin: 0;
+  padding: 0 0 0 16px;
+}
+
+.resources-list {
+  font-size: 14px;
+
+  margin: 0;
+  padding: 0 0 0 16px;
+}
+
+.resources-item {
+  margin-bottom: 18px;
+}
+
+.resources-item:last-child {
+  margin-bottom: 0;
+}
+
+.resources-item__paragraph {
+  margin: 0;
+}
+
+.resources-item__title {
+  font-size: 14px;
+  font-weight: 500;
+
+  margin: 12px 0 0;
+}
+
+.resources-link {
+  color: #161616;
+  font-size: 14px;
+  line-height: normal;
 }

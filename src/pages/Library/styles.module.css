@@ -1,0 +1,25 @@
+.library {
+  padding: 84px 0 0 50px;
+}
+
+.library__section {
+  margin-bottom: 110px;
+}
+
+.library__section:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.text {
+  font-size: 14px;
+
+  margin: 18px 0 0;
+}

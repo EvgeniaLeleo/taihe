@@ -3,7 +3,7 @@
     "name": "Чай",
     "text": "Зелёные\nУлуны\nКрасные\nПуэр",
     "linkText": "подробнее",
-    "linkUrl": "/",
+    "linkUrl": "inner",
     "imgUrl": "./data/images/shop/tea.jpg"
   },
   {

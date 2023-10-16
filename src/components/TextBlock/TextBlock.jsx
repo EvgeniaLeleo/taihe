@@ -11,12 +11,16 @@ export const TextBlock = ({ contentFirst, contentSecond, isBorder = false, title
       <div className={cx('text-content')}>
         <div className={cx('text-content_first')}>
           {contentFirst.map((textBlock) => (
-            <p className={cx('text-content_paragraph')}>{textBlock}</p>
+            <p className={cx('text-content_paragraph')} key={textBlock}>
+              {textBlock}
+            </p>
           ))}
         </div>
         <div className={cx('text-content_second')}>
           {contentSecond.map((textBlock) => (
-            <p className={cx('text-content_paragraph')}>{textBlock}</p>
+            <p className={cx('text-content_paragraph')} key={textBlock}>
+              {textBlock}
+            </p>
           ))}
         </div>
       </div>

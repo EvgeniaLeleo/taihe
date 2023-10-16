@@ -16,6 +16,11 @@
   margin: 0;
 }
 
+.footer_shop__link {
+  color: #161616;
+  text-decoration: none;
+}
+
 .button-wrapper {
   text-align: center;
 

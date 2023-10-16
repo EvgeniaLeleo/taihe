@@ -2,38 +2,33 @@ import cn from 'classnames/bind';
 import { observer } from 'mobx-react-lite';
 
 import { getStore } from '../../utils/getStore';
-
 import { Button } from '../Button/Button';
+
 import youtube from '../../images/icons/youtube-icon-light.svg';
 import telegram from '../../images/icons/telegram-icon-light.svg';
 
 import { URL } from '../../constants';
 import styles from './styles.module.css';
-// import { useEffect, useState } from 'react';
 
 const cx = cn.bind(styles);
 
 const Footer = () => {
   const { isShopPage } = getStore;
 
-  // const isShop = window.location.pathname.includes('shop');
-
-  // const [isShopPage, setIsShopPage] = useState(isShop);
-
-  // console.log(window.location.pathname);
-
-  // useEffect(() => {
-  //   setIsShopPage(isShop);
-  //   console.log(window.location.pathname);
-  // }, [window.location.pathname]);
-
   return (
     <footer className={cx('footer')}>
       {isShopPage && (
         <div className={cx('footer_shop')}>
           <p className={cx('footer_shop__text')}>
-            Заказы на чай, футболки и тайцзибан принимаются через почту taiheclub@yandex.ru и личные сообщения
-            +79652071339 (WhatsApp/Telegram). Книги доступны в розничных магазинах и под заказ.
+            Заказы на чай, футболки и тайцзибан принимаются через почту{' '}
+            <a className={cx('footer_shop__link')} href="mailto:taiheclub@yandex.ru">
+              taiheclub@yandex.ru
+            </a>{' '}
+            и личные сообщения{' '}
+            <a className={cx('footer_shop__link')} href="tel:+79652071339">
+              +79652071339
+            </a>{' '}
+            (WhatsApp/Telegram). Книги доступны в розничных магазинах и под заказ.
           </p>
         </div>
       )}

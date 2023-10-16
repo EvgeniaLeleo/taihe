@@ -1,13 +1,14 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 import { PageWrapper } from './pages/PageWrapper/PageWrapper';
-import About from './pages/About/About';
+import { About } from './pages/About/About';
 import { Lineage } from './pages/Lineage/Lineage';
 import { Teachers } from './pages/Teachers/Teachers';
 import { ROUTES } from './constants';
 import { Library } from './pages/Library/Library';
 import { Media } from './pages/Media/Media';
 import { Shop } from './pages/Shop/Shop';
+import TeaShop from './pages/TeaShop/TeaShop';
 
 export const AppRoutes = () => {
   return (
@@ -21,6 +22,7 @@ export const AppRoutes = () => {
         <Route path={ROUTES.feedback} element={<Lineage />} />
         <Route path={ROUTES.online} element={<Lineage />} />
         <Route path={ROUTES.shop} element={<Shop />} />
+        <Route path={ROUTES.teaShop} element={<TeaShop />} />
         <Route path={ROUTES.contacts} element={<Lineage />} />
         <Route path="*" element={<Navigate replace to={ROUTES.main} />} />
       </Route>

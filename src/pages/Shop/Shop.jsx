@@ -1,10 +1,11 @@
+import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
-import styles from './styles.module.css';
-import { useEffect, useState } from 'react';
 import { getData } from '../../utils/getData';
-import { ShopItemBlock } from '../../components/ShopItemBlock/ShopItemBlock';
 import { getStore } from '../../utils/getStore';
+import { ShopItemBlock } from '../../components/ShopItemBlock/ShopItemBlock';
+
+import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 

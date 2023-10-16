@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { observer } from 'mobx-react-lite';
 import { NavLink } from 'react-router-dom';
 import cn from 'classnames/bind';
 
@@ -59,7 +58,7 @@ const HUNUAN = {
   ],
 };
 
-const About = () => {
+export const About = () => {
   const { setIsShopPage } = getStore;
   useEffect(() => {
     setIsShopPage(false);
@@ -98,5 +97,3 @@ const About = () => {
     </div>
   );
 };
-
-export default observer(About);

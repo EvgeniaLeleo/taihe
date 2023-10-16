@@ -1,12 +1,17 @@
 import { NavLink } from 'react-router-dom';
+import { observer } from 'mobx-react';
 import cn from 'classnames/bind';
 
-import styles from './styles.module.css';
+import { getStore } from '../../utils/getStore';
+
 import { ROUTES } from '../../constants';
+import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
-export const Sidebar = () => {
+const Sidebar = () => {
+  const { isShopPage } = getStore;
+
   return (
     <nav className={cx('sidebar')}>
       <ul className={cx('sidebar-list')}>
@@ -68,7 +73,7 @@ export const Sidebar = () => {
         </li>
         <li className={cx('sidebar-item')}>
           <NavLink
-            className={({ isActive }) => cx('sidebar-link', { 'sidebar-item_active': isActive })}
+            className={({ isActive }) => cx('sidebar-link', { 'sidebar-item_active': isActive || isShopPage })}
             to={ROUTES.shop}
           >
             Магазин
@@ -86,3 +91,5 @@ export const Sidebar = () => {
     </nav>
   );
 };
+
+export default observer(Sidebar);

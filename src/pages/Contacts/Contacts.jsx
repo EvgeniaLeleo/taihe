@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import cn from 'classnames/bind';
 
 import { getStore } from '../../utils/getStore';
+import { scrollToTop } from '../../utils/scrollToTop';
 
 import styles from './styles.module.css';
 
@@ -11,6 +12,7 @@ export const Contacts = () => {
   const { setIsShopPage } = getStore;
   useEffect(() => {
     setIsShopPage(false);
+    scrollToTop();
   }, []);
 
   return (

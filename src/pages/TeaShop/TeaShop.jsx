@@ -3,11 +3,13 @@ import { observer } from 'mobx-react';
 import { NavLink } from 'react-router-dom';
 import cn from 'classnames/bind';
 
+import { ShopItemBlock } from '../../components/ShopItemBlock/ShopItemBlock';
 import { getData } from '../../utils/getData';
 import { getStore } from '../../utils/getStore';
-import { ShopItemBlock } from '../../components/ShopItemBlock/ShopItemBlock';
+import { scrollToTop } from '../../utils/scrollToTop';
 
 import arrow from '../../images/icons/arrow-small.svg';
+
 import { ROUTES } from '../../constants';
 import styles from './styles.module.css';
 
@@ -17,6 +19,7 @@ const TeaShop = () => {
   const { setIsShopPage } = getStore;
   useEffect(() => {
     setIsShopPage(true);
+    scrollToTop();
   }, []);
 
   const [data, setData] = useState(null);

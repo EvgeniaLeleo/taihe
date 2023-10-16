@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
 import cn from 'classnames/bind';
 
-import { getStore } from '../../utils/getStore';
 import { ListBlock } from '../../components/ListBlock/ListBlock';
+import { ListBlockSecondary } from '../../components/ListBlockSecondary/ListBlockSecondary';
+import { getStore } from '../../utils/getStore';
+import { scrollToTop } from '../../utils/scrollToTop';
 
 import styles from './styles.module.css';
-import { ListBlockSecondary } from '../../components/ListBlockSecondary/ListBlockSecondary';
 
 const cx = cn.bind(styles);
 
@@ -76,6 +77,7 @@ export const Library = () => {
   const { setIsShopPage } = getStore;
   useEffect(() => {
     setIsShopPage(false);
+    scrollToTop();
   }, []);
 
   return (

@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
+import { FeedbackBlock } from '../../components/FeedbackBlock/FeedbackBlock';
 import { getData } from '../../utils/getData';
 import { getStore } from '../../utils/getStore';
-import { FeedbackBlock } from '../../components/FeedbackBlock/FeedbackBlock';
+import { scrollToTop } from '../../utils/scrollToTop';
 
 import { VISIBLE_FEEDBACK } from '../../constants';
 import styles from './styles.module.css';
@@ -14,6 +15,7 @@ export const Feedback = () => {
   const { setIsShopPage } = getStore;
   useEffect(() => {
     setIsShopPage(false);
+    scrollToTop();
   }, []);
 
   const [data, setData] = useState([]);

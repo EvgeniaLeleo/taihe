@@ -5,6 +5,7 @@ import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
 import { TeacherBlock } from '../../components/TeacherBlock/TeacherBlock';
 import { TextBlock } from '../../components/TextBlock/TextBlock';
 import { getStore } from '../../utils/getStore';
+import { scrollToTop } from '../../utils/scrollToTop';
 
 import mainImg from '../../images/lineage/main.jpg';
 import fenPortrait from '../../images/lineage/fen-portrait.jpg';
@@ -41,6 +42,7 @@ export const Lineage = () => {
   const { setIsShopPage } = getStore;
   useEffect(() => {
     setIsShopPage(false);
+    scrollToTop();
   }, []);
 
   return (

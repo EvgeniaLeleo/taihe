@@ -11,7 +11,7 @@ const cx = cn.bind(styles);
 
 export const PageWrapper = () => {
   return (
-    <div className={cx('page')}>
+    <div className={cx('page-wrapper')}>
       <Header />
       <main className={cx('main')}>
         <Sidebar />

@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
+import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
 import { getData } from '../../utils/getData';
 import { getStore } from '../../utils/getStore';
-import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
+import { scrollToTop } from '../../utils/scrollToTop';
 
 import { URL } from '../../constants';
 import styles from './styles.module.css';
@@ -14,6 +15,7 @@ export const Teachers = () => {
   const { setIsShopPage } = getStore;
   useEffect(() => {
     setIsShopPage(false);
+    scrollToTop();
   }, []);
 
   const [data, setData] = useState([]);

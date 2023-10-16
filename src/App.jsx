@@ -1,7 +1,8 @@
 import cn from 'classnames/bind';
 
-import styles from './styles.module.css';
 import { AppRoutes } from './AppRoutes';
+
+import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 

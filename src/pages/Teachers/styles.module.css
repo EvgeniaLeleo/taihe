@@ -1,6 +1,6 @@
 .teachers-block {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 76px 44px;
 
   padding: 85px 0 120px 50px;

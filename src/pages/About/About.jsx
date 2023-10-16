@@ -4,6 +4,7 @@ import cn from 'classnames/bind';
 
 import { TextBlock } from '../../components/TextBlock/TextBlock';
 import { getStore } from '../../utils/getStore';
+import { scrollToTop } from '../../utils/scrollToTop';
 
 import img from '../../images/about/about.jpg';
 import { ROUTES } from '../../constants';
@@ -62,6 +63,7 @@ export const About = () => {
   const { setIsShopPage } = getStore;
   useEffect(() => {
     setIsShopPage(false);
+    scrollToTop();
   }, []);
 
   return (

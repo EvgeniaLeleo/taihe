@@ -25,21 +25,23 @@ export const Teachers = () => {
   }, [data.length]);
 
   return (
-    <div>
-      <div className={cx('teachers-block')}>
-        {data.map((item) => (
-          <InfoBlock
-            buttonText="Записаться на занятие"
-            buttonUrl={item.buttonUrl}
-            imgUrl={item.imgUrl}
-            linkText={item.linkText}
-            linkUrl={item.linkUrl}
-            name={item.name}
-            text={item.text}
-            key={item.name + item.url}
-          />
-        ))}
-      </div>
+    <div className={cx('teachers-page')}>
+      {!!data && !!data.length && (
+        <div className={cx('teachers-block')}>
+          {data.map((item) => (
+            <InfoBlock
+              buttonText="Записаться на занятие"
+              buttonUrl={item.buttonUrl}
+              imgUrl={item.imgUrl}
+              linkText={item.linkText}
+              linkUrl={item.linkUrl}
+              name={item.name}
+              text={item.text}
+              key={item.name + item.url}
+            />
+          ))}
+        </div>
+      )}
 
       <footer className={cx('info')}>
         <h2 className={cx('header')}>Формат занятий Клуба «Тай Хэ»</h2>

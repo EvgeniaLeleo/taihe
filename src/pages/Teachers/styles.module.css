@@ -1,17 +1,17 @@
+.teachers-page {
+  padding: 85px 0 0 50px;
+}
+
 .teachers-block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 76px 44px;
 
-  padding: 85px 0 120px 50px;
+  padding: 0 0 120px;
+  margin: 0 0 72px;
   box-sizing: border-box;
-}
 
-.info {
-  padding-top: 70px;
-  margin-left: 50px;
-
-  border-top: 1.5px solid #17171780;
+  border-bottom: 1.5px solid #17171780;
 }
 
 .header {

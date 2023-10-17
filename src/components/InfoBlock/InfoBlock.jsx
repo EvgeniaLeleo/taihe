@@ -25,7 +25,15 @@ const getStringWithLink = ({ string, url }) => {
   );
 };
 
-export const InfoBlock = ({ buttonText = '', imgUrl, linkText = '', linkUrl = '', name = '', text = '' }) => {
+export const InfoBlock = ({
+  buttonText = '',
+  buttonUrl = '',
+  imgUrl,
+  linkText = '',
+  linkUrl = '',
+  name = '',
+  text = '',
+}) => {
   return (
     <div className={cx('info-block')}>
       <div>
@@ -39,8 +47,8 @@ export const InfoBlock = ({ buttonText = '', imgUrl, linkText = '', linkUrl = ''
               {getStringWithLink({ string: chunk, url: linkUrl })}
             </p>
           ))}
-        {!!buttonText && (
-          <LinkButton theme="secondary" className={cx('link_secondary')}>
+        {!!buttonText && !!buttonUrl && (
+          <LinkButton theme="secondary" buttonUrl={buttonUrl} className={cx('link_secondary')}>
             {buttonText}
           </LinkButton>
         )}

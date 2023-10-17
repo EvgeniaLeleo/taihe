@@ -30,6 +30,7 @@ export const Teachers = () => {
         {data.map((item) => (
           <InfoBlock
             buttonText="Записаться на занятие"
+            buttonUrl={item.buttonUrl}
             imgUrl={item.imgUrl}
             linkText={item.linkText}
             linkUrl={item.linkUrl}

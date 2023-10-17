@@ -44,19 +44,30 @@
 }
 
 .footer-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+
+  padding: 22px 0;
+  box-sizing: border-box;
+
+  background-color: #161616;
+}
+
+.footer-bottom__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 62px;
 
-  color: #fff;
-
-  padding: 22px 140px;
-  margin: 0 -140px;
-  box-sizing: border-box;
-
-  background-color: #161616;
+  width: 1120px;
 }
 
 .contacts-wrapper {
@@ -104,6 +115,5 @@
 @media (max-width: 1240px) {
   .footer-bottom {
     padding: 22px 60px;
-    margin: 0 -60px;
   }
 }

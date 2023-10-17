@@ -1,4 +1,6 @@
 .body {
+  position: relative;
+
   font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 500;
   font-size: 14px;

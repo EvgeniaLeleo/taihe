@@ -4,13 +4,14 @@ import { PageWrapper } from './pages/PageWrapper/PageWrapper';
 import { About } from './pages/About/About';
 import { Lineage } from './pages/Lineage/Lineage';
 import { Teachers } from './pages/Teachers/Teachers';
-import { ROUTES } from './constants';
 import { Library } from './pages/Library/Library';
 import { Media } from './pages/Media/Media';
 import { Shop } from './pages/Shop/Shop';
 import TeaShop from './pages/TeaShop/TeaShop';
 import { Contacts } from './pages/Contacts/Contacts';
 import { Feedback } from './pages/Feedback/Feedback';
+
+import { ROUTES } from './constants';
 
 export const AppRoutes = () => {
   return (

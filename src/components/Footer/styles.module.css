@@ -21,6 +21,14 @@
   text-decoration: none;
 }
 
+.footer_shop__link:focus {
+  outline: 0;
+}
+
+.footer_shop__link:focus-visible {
+  outline: 1.5px solid #161616;
+}
+
 .button-wrapper {
   text-align: center;
 
@@ -78,10 +86,12 @@
   border-radius: 50%;
 }
 
+.contacts-link:focus,
 .socials__link:focus {
   outline: 0;
 }
 
+.contacts-link:focus-visible,
 .socials__link:focus-visible {
   outline: 1.5px solid #fff;
 }

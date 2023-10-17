@@ -2,7 +2,7 @@ import cn from 'classnames/bind';
 import { observer } from 'mobx-react-lite';
 
 import { getStore } from '../../utils/getStore';
-import { Button } from '../Button/Button';
+import { LinkButton } from '../LinkButton/LinkButton';
 
 import youtube from '../../images/icons/youtube-icon-light.svg';
 import telegram from '../../images/icons/telegram-icon-light.svg';
@@ -33,9 +33,9 @@ const Footer = () => {
         </div>
       )}
       <div className={cx('button-wrapper', { isShopPage: isShopPage })}>
-        <Button theme="secondary" size="m">
-          Записаться на занятия
-        </Button>
+        <LinkButton buttonUrl={URL.zenclass} theme="secondary" size="m">
+          Начать заниматься
+        </LinkButton>
       </div>
       <div className={cx('footer-bottom')}>
         <div className={cx('contacts-wrapper')}>

@@ -18,7 +18,7 @@
     "text": "Палочка для занятий тайцзи. Есть разные размеры, можно подобрать под рост и комплекцию человека. Материал - бук.Все палочки обработаны специальным маслом, которое сохраняет живую структуру дерева, защищает его от влаги, дает комфортное ощущение рукам.",
     "price": "1000₽",
     "buttonText": "купить",
-    "buttonUrl": "/",
+    "buttonUrl": "https://www.avito.ru/sankt-peterburg/sport_i_otdyh/taytsziban_palochka_dlya_zanyatiy_taytszi_2837228138",
     "imgUrl": "./data/images/shop/ban.jpg"
   },
   {
@@ -26,7 +26,7 @@
     "text": "Основа внутренней работы тайцзицюань, базовые понятия традиционной китайской медицины, теория и практика тайцзи, упражнения с подробными иллюстрациями (все изображения в книге цветные), пояснения к упражнениям, живые истории о встречах с мастерами и притчи. Эта книга - бесценный опыт самого Макена Исакова, который всю свою жизнь посвятил изучению боевых искусств и медицины. Книга полезна всем интересующимся тайцзицюань, нэйгун, здоровьем и китайской культурой.",
     "price": "1800 - 2100₽",
     "buttonText": "купить",
-    "buttonUrl": "/",
+    "buttonUrl": "https://www.avito.ru/sankt-peterburg/knigi_i_zhurnaly/vnutrennyaya_narabotka_taytszitsyuan_maken_isakov_2805417345",
     "imgUrl": "./data/images/shop/book-maken.jpg"
   },
   {
@@ -35,9 +35,9 @@
     "additionalText": "Купить книгу можно на сайте издательства, в крупных книжных и интернет магазинах. Электронная версия тоже доступна.",
     "price": "350-450₽",
     "linkText": "пройти курс",
-    "linkUrl": "/",
+    "linkUrl": "https://taihe.zenclass.ru/public/course/9e298969-e2e1-433a-89ce-37324386731d",
     "buttonText": "купить",
-    "buttonUrl": "/",
+    "buttonUrl": "https://www.ozon.ru/product/dyhatelnye-gimnastiki-pri-covid-19-rekomendatsii-dlya-patsientov-vosstanovlenie-legkih-do-vo-253328011/",
     "imgUrl": "./data/images/shop/book-gymnastics.jpg"
   }
 ]

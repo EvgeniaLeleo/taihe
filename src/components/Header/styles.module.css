@@ -10,6 +10,18 @@
   border-bottom: 1.5px solid #17171780;
 }
 
+.logo-wrapper {
+  border-radius: 50%;
+}
+
+.logo-wrapper:focus {
+  outline: 0;
+}
+
+.logo-wrapper:focus-visible {
+  outline: 1.5px solid #161616;
+}
+
 .socials {
   display: flex;
   gap: 16px;

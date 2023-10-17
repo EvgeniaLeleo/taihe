@@ -19,6 +19,8 @@
 
   color: #161616;
   text-decoration: none;
+
+  width: fit-content;
 }
 
 .link {
@@ -26,7 +28,18 @@
 
   color: #161616;
 
+  width: fit-content;
   margin-top: 5px;
+}
+
+.tel:focus,
+.link:focus {
+  outline: 0;
+}
+
+.tel:focus-visible,
+.link:focus-visible {
+  outline: 1.5px solid #161616;
 }
 
 .text {

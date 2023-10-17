@@ -3,6 +3,7 @@ import cn from 'classnames/bind';
 import styles from './styles.module.css';
 import { NavLink } from 'react-router-dom';
 import { ROUTES } from '../../constants';
+import { LinkButton } from '../LinkButton/LinkButton';
 
 const cx = cn.bind(styles);
 
@@ -58,9 +59,9 @@ export const ShopItemBlock = ({
         {!!additionalText && <p className={cx('additional-text')}>{additionalText}</p>}
         {!!price && <p className={cx('price')}>Цена {price}</p>}
         {!!buttonText && !!buttonUrl && (
-          <a className={cx('link_secondary')} href={buttonUrl} target="_blank" rel="noreferrer">
+          <LinkButton className={cx('link_secondary')} theme="secondary" size="m" buttonUrl={buttonUrl}>
             {buttonText}
-          </a>
+          </LinkButton>
         )}
       </div>
     </div>

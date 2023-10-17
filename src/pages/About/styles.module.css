@@ -30,3 +30,11 @@
 .footer-link {
   color: #161616;
 }
+
+.footer-link:focus {
+  outline: 0;
+}
+
+.footer-link:focus-visible {
+  outline: 1.5px solid #161616;
+}

@@ -21,3 +21,11 @@
 
   cursor: pointer;
 }
+
+.button-read-more:focus {
+  outline: 0;
+}
+
+.button-read-more:focus-visible {
+  outline: 1.5px solid #161616;
+}

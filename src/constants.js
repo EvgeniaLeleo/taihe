@@ -14,7 +14,7 @@ export const ROUTES = {
 export const URL = {
   youtube: 'https://www.youtube.com/channel/UCJNov9v4MSklmtsLDCkfQow',
   telegram: 'https://t.me/taiheclub',
-  zenclass: 'https://taihe.zenclass.ru/public/school',
+  zenclass: 'https://taihe.zenclass.ru',
 };
 
 export const VISIBLE_FEEDBACK = 5;

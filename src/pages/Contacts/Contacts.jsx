@@ -4,6 +4,7 @@ import cn from 'classnames/bind';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
+import { URL } from '../../constants';
 import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
@@ -26,7 +27,7 @@ export const Contacts = () => {
         <a className={cx('link')} href="mailto:taiheclub@yandex.ru">
           taiheclub@yandex.ru
         </a>
-        <a className={cx('link')} href="http://" target="_blank" rel="noopener noreferrer">
+        <a className={cx('link')} href={URL.zenclass} target="_blank" rel="noopener noreferrer">
           курсы онлайн-школы
         </a>
         <p className={cx('text')}>

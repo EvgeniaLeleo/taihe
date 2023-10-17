@@ -6,10 +6,11 @@ import { Lineage } from './pages/Lineage/Lineage';
 import { Teachers } from './pages/Teachers/Teachers';
 import { Library } from './pages/Library/Library';
 import { Media } from './pages/Media/Media';
+import { Feedback } from './pages/Feedback/Feedback';
+import { Online } from './pages/Online/Online';
 import { Shop } from './pages/Shop/Shop';
 import TeaShop from './pages/TeaShop/TeaShop';
 import { Contacts } from './pages/Contacts/Contacts';
-import { Feedback } from './pages/Feedback/Feedback';
 
 import { ROUTES } from './constants';
 
@@ -23,7 +24,7 @@ export const AppRoutes = () => {
         <Route path={ROUTES.library} element={<Library />} />
         <Route path={ROUTES.media} element={<Media />} />
         <Route path={ROUTES.feedback} element={<Feedback />} />
-        <Route path={ROUTES.online} element={<Lineage />} />
+        <Route path={ROUTES.online} element={<Online />} />
         <Route path={ROUTES.shop} element={<Shop />} />
         <Route path={ROUTES.teaShop} element={<TeaShop />} />
         <Route path={ROUTES.contacts} element={<Contacts />} />

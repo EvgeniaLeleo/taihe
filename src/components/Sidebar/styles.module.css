@@ -21,6 +21,14 @@
   text-decoration: none;
 }
 
+.sidebar-link:focus {
+  outline: 0;
+}
+
+.sidebar-link:focus-visible {
+  outline: 1.5px solid #161616;
+}
+
 .sidebar-item {
   margin-bottom: 11px;
 }

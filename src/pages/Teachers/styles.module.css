@@ -60,6 +60,14 @@
   line-height: normal;
 }
 
+.resources-link:focus {
+  outline: 0;
+}
+
+.resources-link:focus-visible {
+  outline: 1.5px solid #161616;
+}
+
 .features-list {
   list-style: none;
 

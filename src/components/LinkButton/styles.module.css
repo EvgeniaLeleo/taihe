@@ -1,9 +1,11 @@
-.button {
-  font-family: 'Montserrat', Helvetica, sans-serif;
+.link {
+  display: inline-block;
+
   font-size: 12px;
   font-weight: 600;
-  line-height: 1.2;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
 
   box-sizing: border-box;
 
@@ -15,29 +17,29 @@
   transition: all 0.2s;
 }
 
-.button:focus {
+.link:focus {
   outline: 0;
 }
 
-.button:focus-visible {
+.link:focus-visible {
   outline: 1.5px solid #161616;
 }
 
 /* PRIMARY */
 
-.button_primary {
+.link_primary {
   color: #161616;
 
   background-color: transparent;
 }
 
-.button_primary:hover {
+.link_primary:hover {
   color: #fff;
 
   background-color: #161616;
 }
 
-.button_primary:active {
+.link_primary:active {
   color: #161616;
 
   background-color: transparent;
@@ -45,19 +47,19 @@
 
 /* SECONDARY */
 
-.button_secondary {
+.link_secondary {
   color: #fff;
 
   background-color: #161616;
 }
 
-.button_secondary:hover {
+.link_secondary:hover {
   color: #161616;
 
   background-color: transparent;
 }
 
-.button_secondary:active {
+.link_secondary:active {
   color: #fff;
 
   background-color: #161616;
@@ -65,10 +67,14 @@
 
 /* SIZE */
 
-.button_size_s {
+.link_size_s {
   padding: 12px 14px;
 }
 
-.button_size_m {
+.link_size_m {
+  padding: 15px 38px;
+}
+
+.link_size_l {
   padding: 15px 63px;
 }

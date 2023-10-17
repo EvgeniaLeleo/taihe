@@ -1,8 +1,13 @@
-.lineage__image {
-  display: block;
-
+.image-wrapper {
   width: calc(100% + 1.5px);
   margin-left: -1.5px;
+  aspect-ratio: 230 / 131;
+
+  background-color: #16161615;
+}
+
+.lineage__image {
+  width: 100%;
 }
 
 .content-wrapper {

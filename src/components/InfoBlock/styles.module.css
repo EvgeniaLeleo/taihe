@@ -6,6 +6,10 @@
 }
 
 .image-wrapper {
+  aspect-ratio: 260 / 309;
+
+  background-color: #16161615;
+
   overflow: hidden;
 }
 

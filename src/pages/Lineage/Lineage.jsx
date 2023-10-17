@@ -48,7 +48,9 @@ export const Lineage = () => {
 
   return (
     <div className={cx('lineage')}>
-      <img className={cx('lineage__image')} src={mainImg} alt="" />
+      <div className={cx('image-wrapper')}>
+        <img className={cx('lineage__image')} src={mainImg} alt="Фотографии учителей" />
+      </div>
       <div className={cx('content-wrapper')}>
         <div className={cx('teachers-block')}>
           <InfoBlock

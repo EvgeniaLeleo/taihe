@@ -2,6 +2,14 @@
   margin-top: 116px;
 }
 
+.image-wrapper {
+  aspect-ratio: 48 / 25;
+
+  background-color: #16161615;
+
+  overflow: hidden;
+}
+
 .image {
   width: 100%;
 }

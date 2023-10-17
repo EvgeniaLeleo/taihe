@@ -17,25 +17,27 @@ const Footer = () => {
 
   return (
     <footer className={cx('footer')}>
-      {isShopPage && (
-        <div className={cx('footer_shop')}>
-          <p className={cx('footer_shop__text')}>
-            Заказы на чай, футболки и тайцзибан принимаются через почту{' '}
-            <a className={cx('footer_shop__link')} href="mailto:taiheclub@yandex.ru">
-              taiheclub@yandex.ru
-            </a>{' '}
-            и личные сообщения{' '}
-            <a className={cx('footer_shop__link')} href="tel:+79652071339">
-              +79652071339
-            </a>{' '}
-            (WhatsApp/Telegram). Книги доступны в розничных магазинах и под заказ.
-          </p>
+      <div className={cx('footer-top')}>
+        {isShopPage && (
+          <div className={cx('footer_shop')}>
+            <p className={cx('footer_shop__text')}>
+              Заказы на чай, футболки и тайцзибан принимаются через почту{' '}
+              <a className={cx('footer_shop__link')} href="mailto:taiheclub@yandex.ru">
+                taiheclub@yandex.ru
+              </a>{' '}
+              и личные сообщения{' '}
+              <a className={cx('footer_shop__link')} href="tel:+79652071339">
+                +79652071339
+              </a>{' '}
+              (WhatsApp/Telegram). Книги доступны в розничных магазинах и под заказ.
+            </p>
+          </div>
+        )}
+        <div className={cx('button-wrapper', { isShopPage: isShopPage })}>
+          <LinkButton buttonUrl={URL.zenclass} theme="secondary" size="m">
+            Начать заниматься
+          </LinkButton>
         </div>
-      )}
-      <div className={cx('button-wrapper', { isShopPage: isShopPage })}>
-        <LinkButton buttonUrl={URL.zenclass} theme="secondary" size="m">
-          Начать заниматься
-        </LinkButton>
       </div>
       <div className={cx('footer-bottom')}>
         <div className={cx('footer-bottom__content')}>

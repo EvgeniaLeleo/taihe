@@ -32,6 +32,7 @@ export const Shop = () => {
           buttonUrl={item.buttonUrl}
           className={cx('item')}
           imgUrl={item.imgUrl}
+          inStock={item.inStock}
           linkText={item.linkText}
           linkUrl={item.linkUrl}
           name={item.name}

@@ -15,6 +15,7 @@ export const ShopItemBlock = ({
   buttonText = '',
   className = '',
   imgUrl,
+  inStock,
   linkText = '',
   linkUrl = '',
   name = '',
@@ -24,12 +25,12 @@ export const ShopItemBlock = ({
   return (
     <div className={cx(className, 'item')}>
       <div className={cx('image-wrapper')}>
-        <img className={cx('image')} src={imgUrl} alt={name} />
+        <img className={cx('image', { image_unavailable: !inStock })} src={imgUrl} alt={name} />
       </div>
 
       <div>
         {!!name && (
-          <h2 className={cx('name')}>
+          <h2 className={cx('name', { unavailable: !inStock })}>
             {name.split('\n').map((chunk) => (
               <p className={cx('text__paragraph')} key={chunk}>
                 {chunk}
@@ -38,7 +39,7 @@ export const ShopItemBlock = ({
           </h2>
         )}
         {!!text && (
-          <div className={cx('text')}>
+          <div className={cx('text', { unavailable: !inStock })}>
             {text.split('\n').map((chunk) => (
               <p className={cx('text__paragraph')} key={chunk}>
                 {chunk}
@@ -47,7 +48,7 @@ export const ShopItemBlock = ({
           </div>
         )}
         {!!amount && (
-          <div className={cx('amount')}>
+          <div className={cx('amount', { unavailable: !inStock })}>
             {amount.split('\n').map((chunk) => (
               <p className={cx('text__paragraph')} key={chunk}>
                 {chunk}
@@ -55,19 +56,32 @@ export const ShopItemBlock = ({
             ))}
           </div>
         )}
-        {linkUrl === 'inner' && !!linkText && (
+        {inStock && linkUrl === 'inner' && !!linkText && (
           <LinkWrapper className={cx('link')} linkText={linkText} linkUrl={ROUTES.teaShop} type="nav" />
         )}
-        {!!linkUrl && linkUrl !== 'inner' && !!linkText && (
-          <LinkWrapper className={cx('link')} isUnderline={true} linkText={linkText} linkUrl={linkUrl} />
+        {inStock && !!linkUrl && linkUrl !== 'inner' && !!linkText && (
+          <LinkWrapper
+            className={cx('link')}
+            isUnderline={true}
+            linkText={linkText}
+            linkUrl={linkUrl}
+            disabled={!inStock}
+          />
         )}
-        {!!additionalText && <p className={cx('additional-text')}>{additionalText}</p>}
-        {!!price && <p className={cx('price')}>Цена {price}</p>}
-        {!!buttonText && !!buttonUrl && (
-          <LinkButton className={cx('link_secondary')} theme="secondary" size="m" buttonUrl={buttonUrl}>
+        {!!additionalText && <p className={cx('additional-text', { unavailable: !inStock })}>{additionalText}</p>}
+        {!!price && <p className={cx('price', { unavailable: !inStock })}>Цена {price}</p>}
+        {inStock && !!buttonText && !!buttonUrl && (
+          <LinkButton
+            className={cx('link_secondary')}
+            theme="secondary"
+            size="m"
+            buttonUrl={buttonUrl}
+            disabled={!inStock}
+          >
             {buttonText}
           </LinkButton>
         )}
+        {!inStock && <p className={cx('not_available')}>Нет в наличии</p>}
       </div>
     </div>
   );

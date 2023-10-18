@@ -4,6 +4,7 @@
     "text": "Зелёные\nУлуны\nКрасные\nПуэр",
     "linkText": "подробнее",
     "linkUrl": "inner",
+    "inStock": true,
     "imgUrl": "./data/images/shop/tea.jpg"
   },
   {
@@ -11,6 +12,7 @@
     "text": "Цена взрослой — 1000₽\nЦена детской — 900₽",
     "linkText": "таблица размеров",
     "linkUrl": "/",
+    "inStock": true,
     "imgUrl": "./data/images/shop/tshirt.jpg"
   },
   {
@@ -19,6 +21,7 @@
     "price": "1000₽",
     "buttonText": "купить",
     "buttonUrl": "https://www.avito.ru/sankt-peterburg/sport_i_otdyh/taytsziban_palochka_dlya_zanyatiy_taytszi_2837228138",
+    "inStock": true,
     "imgUrl": "./data/images/shop/ban.jpg"
   },
   {
@@ -27,6 +30,7 @@
     "price": "1800 - 2100₽",
     "buttonText": "купить",
     "buttonUrl": "https://www.avito.ru/sankt-peterburg/knigi_i_zhurnaly/vnutrennyaya_narabotka_taytszitsyuan_maken_isakov_2805417345",
+    "inStock": true,
     "imgUrl": "./data/images/shop/book-maken.jpg"
   },
   {
@@ -38,6 +42,7 @@
     "linkUrl": "https://taihe.zenclass.ru/public/course/9e298969-e2e1-433a-89ce-37324386731d",
     "buttonText": "купить",
     "buttonUrl": "https://www.ozon.ru/product/dyhatelnye-gimnastiki-pri-covid-19-rekomendatsii-dlya-patsientov-vosstanovlenie-legkih-do-vo-253328011/",
+    "inStock": true,
     "imgUrl": "./data/images/shop/book-gymnastics.jpg"
   }
 ]

@@ -64,6 +64,7 @@ const TeaShop = () => {
                       amount={item.amount}
                       className={cx('item')}
                       imgUrl={item.imgUrl}
+                      inStock={item.inStock}
                       name={item.name}
                       text={item.text}
                       key={item.name + item.text}

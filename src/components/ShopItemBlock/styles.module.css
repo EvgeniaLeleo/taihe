@@ -24,6 +24,10 @@
   width: 100%;
 }
 
+.image_unavailable {
+  opacity: 0.5;
+}
+
 .name {
   font-size: 16px;
   font-weight: 600;
@@ -58,4 +62,14 @@
 
 .link_secondary {
   margin-top: 24px;
+}
+
+.unavailable {
+  color: #16161680;
+}
+
+.not_available {
+  text-transform: uppercase;
+
+  margin: 20px 0 0;
 }

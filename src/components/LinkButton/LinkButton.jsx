@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
-export const LinkButton = ({ theme, buttonUrl = '', children = '', size = 's', className = '' }) => {
+export const LinkButton = ({ buttonUrl = '', children = '', className = '', size = 's', theme }) => {
   return (
     <a
       href={buttonUrl}

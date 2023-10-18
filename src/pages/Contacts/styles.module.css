@@ -1,8 +1,9 @@
 .contacts-wrapper {
-  padding: 84px 0 0 50px;
+  padding: 86px 0 0 50px;
 }
 
 .contacts {
+  max-width: 430px;
   margin-bottom: 70px;
 }
 
@@ -43,5 +44,5 @@
 }
 
 .text {
-  margin: 10px 0 0;
+  margin: 12px 0 0;
 }

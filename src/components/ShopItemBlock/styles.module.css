@@ -1,5 +1,11 @@
 .item {
   display: flex;
+
+  margin-bottom: 50px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
 }
 
 .image-wrapper {
@@ -35,7 +41,7 @@
 }
 
 .additional-text {
-  margin: 38px 0 0;
+  margin: 40px 0 0;
 }
 
 .price {

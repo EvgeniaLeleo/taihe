@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         )}
         <div className={cx('button-wrapper', { isShopPage: isShopPage })}>
-          <LinkButton buttonUrl={URL.zenclass} theme="secondary" size="m">
+          <LinkButton buttonUrl={URL.zenclass} theme="secondary" size="l">
             Начать заниматься
           </LinkButton>
         </div>

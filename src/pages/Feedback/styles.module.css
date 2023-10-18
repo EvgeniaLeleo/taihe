@@ -1,5 +1,7 @@
 .feedback-wrapper {
-  padding: 84px 0 0 50px;
+  max-width: 680px;
+  padding: 86px 0 0 50px;
+  box-sizing: border-box;
 }
 
 .footer {

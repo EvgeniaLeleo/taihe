@@ -27,7 +27,15 @@ export const ShopItemBlock = ({
       </div>
 
       <div>
-        {!!name && <h2 className={cx('name')}>{name}</h2>}
+        {!!name && (
+          <h2 className={cx('name')}>
+            {name.split('\n').map((chunk) => (
+              <p className={cx('text__paragraph')} key={chunk}>
+                {chunk}
+              </p>
+            ))}
+          </h2>
+        )}
         {!!text && (
           <div className={cx('text')}>
             {text.split('\n').map((chunk) => (

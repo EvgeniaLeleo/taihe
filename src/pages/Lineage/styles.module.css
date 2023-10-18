@@ -11,11 +11,11 @@
 }
 
 .content-wrapper {
-  padding: 70px 0 0 50px;
+  padding: 74px 0 0 50px;
 }
 
 .teachers-block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 44px;
+  gap: 40px;
 }

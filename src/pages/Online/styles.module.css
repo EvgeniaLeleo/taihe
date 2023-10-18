@@ -1,5 +1,5 @@
 .online-wrapper {
-  padding: 84px 0 0 50px;
+  padding: 86px 0 0 50px;
 }
 
 .section {
@@ -21,7 +21,8 @@
   font-weight: 600;
   text-transform: uppercase;
 
-  margin: 0 0 38px;
+  max-width: 430px;
+  margin: 0 0 38px 70px;
 }
 
 .link_secondary {

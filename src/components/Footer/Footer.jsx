@@ -1,23 +1,34 @@
-import cn from 'classnames/bind';
+import { useEffect, useState } from 'react';
 import { observer } from 'mobx-react-lite';
+import cn from 'classnames/bind';
 
 import { LinkButton } from '../LinkButton/LinkButton';
 import { LinkWrapper } from '../LinkWrapper/LinkWrapper';
+import { Socials } from '../Socials/Socials';
 import { getStore } from '../../utils/getStore';
+import { scrollToTop } from '../../utils/scrollToTop';
 
 import youtube from '../../images/icons/youtube-icon-light.svg';
 import telegram from '../../images/icons/telegram-icon-light.svg';
 import youtubeHover from '../../images/icons/youtube-icon-hover-light.svg';
 import telegramHover from '../../images/icons/telegram-icon-hover-light.svg';
+import arrowUp from '../../images/icons/arrow-up.svg';
 
 import { URL } from '../../constants';
 import styles from './styles.module.css';
-import { Socials } from '../Socials/Socials';
 
 const cx = cn.bind(styles);
 
 const Footer = () => {
   const { isShopPage } = getStore;
+
+  const [isArrowUpVisible, setIsArrowUpVisible] = useState(false);
+
+  useEffect(() => {
+    window.onscroll = function () {
+      window.scrollY > 650 ? setIsArrowUpVisible(true) : setIsArrowUpVisible(false);
+    };
+  }, []);
 
   return (
     <footer className={cx('footer')}>
@@ -43,8 +54,16 @@ const Footer = () => {
           </LinkButton>
         </div>
       </div>
+
+      {/* Dark block */}
       <div className={cx('footer-bottom')}>
         <div className={cx('footer-bottom__content')}>
+          {isArrowUpVisible && (
+            <button className={cx('button-up')} onClick={scrollToTop}>
+              <img className={cx('button-up__icon')} src={arrowUp} alt="Наверх" />
+            </button>
+          )}
+
           <div className={cx('contacts-wrapper')}>
             <a className={cx('contacts-link')} href="mailto:taiheclub@yandex.ru">
               taiheclub@yandex.ru

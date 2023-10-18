@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
 import { LinkButton } from '../../components/LinkButton/LinkButton';
+import { OnlineCarousel } from '../../components/OnlineCarousel/OnlineCarousel';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
 import styles from './styles.module.css';
-import { FeedbackCarousel } from '../../components/FeedbackCarousel/FeedbackCarousel';
 
 const cx = cn.bind(styles);
 
@@ -22,6 +22,8 @@ export const Online = () => {
     scrollToTop();
   }, []);
 
+  useEffect(() => {});
+
   useEffect(() => {
     getData({ url: './data/courses.json', callback: setData });
   }, []);
@@ -33,7 +35,7 @@ export const Online = () => {
 
         {!!data && (
           <>
-            <FeedbackCarousel data={data.beginner} setIndex={setBeginnerIndex} />
+            <OnlineCarousel data={data.beginner} setIndex={setBeginnerIndex} />
 
             <LinkButton className={cx('link_secondary')} buttonUrl={data.beginner[beginnerIndex].url} theme="secondary">
               Записаться на курс
@@ -48,7 +50,7 @@ export const Online = () => {
         </h2>
         {!!data && (
           <>
-            <FeedbackCarousel data={data.master} setIndex={setMasterIndex} />
+            <OnlineCarousel data={data.master} setIndex={setMasterIndex} />
 
             <LinkButton className={cx('link_secondary')} buttonUrl={data.master[masterIndex].url} theme="secondary">
               Записаться на курс

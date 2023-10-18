@@ -12,10 +12,6 @@
   top: 50%;
   transform: translateY(-50%);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   width: 36px;
   height: 36px;
   padding: 0;
@@ -47,6 +43,14 @@
 .button_disabled {
   opacity: 0.3;
   cursor: default;
+}
+
+.arrow-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
 }
 
 .arrow-img {

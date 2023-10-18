@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.81626e72.css",
+    "main.js": "/static/js/main.7913382e.js",
+    "static/media/about.jpg": "/static/media/about.8525103cfee232bf9dfc.jpg",
+    "static/media/fen-big.jpg": "/static/media/fen-big.d4e04e5096f14b2bd6dd.jpg",
+    "static/media/chen-big.jpg": "/static/media/chen-big.72ed06491496de3badbc.jpg",
+    "static/media/main.jpg": "/static/media/main.057c53b8c28f93868b96.jpg",
+    "static/media/fen-portrait.jpg": "/static/media/fen-portrait.b0c7b789bffbbc625a1b.jpg",
+    "static/media/natasha-portrait.jpg": "/static/media/natasha-portrait.04961b56ad7b0315f73d.jpg",
+    "static/media/chen-portrait.jpg": "/static/media/chen-portrait.873839dca36baac958f6.jpg",
+    "static/media/logo.svg": "/static/media/logo.18b115367ff0e6f935b579124c799189.svg",
+    "index.html": "/index.html",
+    "static/media/youtube-icon.svg": "/static/media/youtube-icon.f65e54d6133b7d1f5c674b53bb11fafd.svg",
+    "static/media/youtube-icon-light.svg": "/static/media/youtube-icon-light.5051d7e72476e40f485ab57da08ff07d.svg",
+    "static/media/telegram-icon.svg": "/static/media/telegram-icon.a8ea8de48253e479f26d645a938e523f.svg",
+    "static/media/telegram-icon-light.svg": "/static/media/telegram-icon-light.444aca9eacba6ddc72bab1e6c0705c16.svg",
+    "static/media/arrow-small.svg": "/static/media/arrow-small.a636630d13c450095788a59e53704fd2.svg",
+    "main.81626e72.css.map": "/static/css/main.81626e72.css.map",
+    "main.7913382e.js.map": "/static/js/main.7913382e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81626e72.css",
+    "static/js/main.7913382e.js"
+  ]
+}

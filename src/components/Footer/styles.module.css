@@ -90,12 +90,16 @@
   color: #ffffff80;
 }
 
+/* SOCIALS */
+
 .socials {
   display: flex;
   gap: 16px;
 }
 
 .socials__link {
+  position: relative;
+
   display: inline-block;
 
   width: 36px;
@@ -117,8 +121,25 @@
 }
 
 .socials__image {
+  position: absolute;
+  left: 0;
+
   width: 100%;
   height: 100%;
+
+  transition: opacity 0.25s;
+}
+
+.socials__image_hover {
+  opacity: 0;
+}
+
+.socials__link:hover .socials__image {
+  opacity: 0;
+}
+
+.socials__link:hover .socials__image_hover {
+  opacity: 1;
 }
 
 @media (max-width: 1240px) {

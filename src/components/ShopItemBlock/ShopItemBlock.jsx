@@ -1,10 +1,10 @@
 import cn from 'classnames/bind';
 
-import styles from './styles.module.css';
-import { NavLink } from 'react-router-dom';
-import { ROUTES } from '../../constants';
 import { LinkButton } from '../LinkButton/LinkButton';
 import { LinkWrapper } from '../LinkWrapper/LinkWrapper';
+
+import { ROUTES } from '../../constants';
+import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 

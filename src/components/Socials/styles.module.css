@@ -1,0 +1,48 @@
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.socials__link {
+  position: relative;
+
+  display: inline-block;
+
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.socials__link:focus,
+.socials__link:focus-visible {
+  outline: 0;
+}
+
+.socials__image {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  transition: opacity 0.25s;
+}
+
+.socials__image_hover {
+  opacity: 0;
+}
+
+.socials__link:hover .socials__image,
+.socials__link:focus .socials__image {
+  opacity: 0;
+}
+
+.socials__link:hover .socials__image_hover,
+.socials__link:focus .socials__image_hover {
+  opacity: 1;
+}

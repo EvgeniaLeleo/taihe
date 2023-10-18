@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
 import cn from 'classnames/bind';
 
 import { TextBlock } from '../../components/TextBlock/TextBlock';

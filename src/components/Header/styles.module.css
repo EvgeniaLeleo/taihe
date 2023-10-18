@@ -21,34 +21,3 @@
 .logo-wrapper:focus-visible {
   outline: 1.5px solid #161616;
 }
-
-.socials {
-  display: flex;
-  gap: 16px;
-}
-
-.socials__link {
-  display: inline-block;
-
-  width: 36px;
-  height: 36px;
-  padding: 0;
-  box-sizing: border-box;
-
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-}
-
-.socials__link:focus {
-  outline: 0;
-}
-
-.socials__link:focus-visible {
-  outline: 1.5px solid #161616;
-}
-
-.socials__image {
-  width: 100%;
-  height: 100%;
-}

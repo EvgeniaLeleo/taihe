@@ -82,6 +82,12 @@
 .contacts-link {
   text-decoration: none;
   color: #fff;
+
+  transition: color 0.15s;
+}
+
+.contacts-link:hover {
+  color: #ffffff80;
 }
 
 .socials {

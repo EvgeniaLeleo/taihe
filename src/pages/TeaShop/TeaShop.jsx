@@ -4,10 +4,9 @@ import cn from 'classnames/bind';
 
 import { ShopItemBlock } from '../../components/ShopItemBlock/ShopItemBlock';
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
+import { Arrow } from '../../components/Arrow/Arrow';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
-
-import arrow from '../../images/icons/arrow-small.svg';
 
 import { ROUTES } from '../../constants';
 import styles from './styles.module.css';
@@ -35,7 +34,7 @@ const TeaShop = () => {
         isUnderline={false}
         linkText={
           <>
-            <img className={cx('arrow-icon')} src={arrow} alt="Вернуться в магазин" />
+            <Arrow className={cx('arrow-icon')} />
             вернуться в магазин
           </>
         }

@@ -2,8 +2,7 @@ import Slider from 'react-slick';
 import cn from 'classnames/bind';
 
 import { CourseBlock } from '../CourseBlock/CourseBlock';
-
-import arrow from '../../images/icons/arrow-small.svg';
+import { Arrow } from '../Arrow/Arrow';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -31,7 +30,7 @@ export const OnlineCarousel = ({ data, setIndex }) => {
     return (
       <button className={cx('button', 'button_left', { button_disabled: isFirstSlide })} onClick={onClick}>
         <div className={cx('arrow-img-wrapper')} onClick={handleShowPreviousSlide({ currentSlide, isFirstSlide })}>
-          <img className={cx('arrow-img')} src={arrow} alt="Предыдущий" />
+          <Arrow className={cx('arrow-img', 'arrow-img_left')} />
         </div>
       </button>
     );
@@ -44,7 +43,7 @@ export const OnlineCarousel = ({ data, setIndex }) => {
     return (
       <button className={cx('button', 'button_right', { button_disabled: isLastSlide })} onClick={onClick}>
         <div className={cx('arrow-img-wrapper')} onClick={handleShowNextSlide({ currentSlide, isLastSlide })}>
-          <img className={cx('arrow-img', 'arrow-img_right')} src={arrow} alt="Следующий" />
+          <Arrow className={cx('arrow-img', 'arrow-img_right')} />
         </div>
       </button>
     );

@@ -22,7 +22,7 @@ export const Online = () => {
     scrollToTop();
   }, []);
 
-  useEffect(() => {});
+  // useEffect(() => {});
 
   useEffect(() => {
     getData({ url: './data/courses.json', callback: setData });

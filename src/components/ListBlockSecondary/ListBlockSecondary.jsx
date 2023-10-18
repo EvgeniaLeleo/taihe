@@ -1,6 +1,7 @@
 import cn from 'classnames/bind';
 
 import styles from './styles.module.css';
+import { LinkWrapper } from '../LinkWrapper/LinkWrapper';
 
 const cx = cn.bind(styles);
 
@@ -12,9 +13,7 @@ export const ListBlockSecondary = ({ list, title }) => {
         <ul className={cx('list')}>
           {list.map((item) => (
             <li className={cx('list-item')} key={item.name + item.link}>
-              <a className={cx('list-link')} href={item.link} target="_blank" rel="noreferrer">
-                {item.name}
-              </a>
+              <LinkWrapper className={cx('list-link')} linkText={item.name} linkUrl={item.link} />
             </li>
           ))}
         </ul>

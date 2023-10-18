@@ -55,6 +55,7 @@
 .link {
   display: inline-block;
 
+  text-decoration: none;
   color: #161616;
 
   margin-top: 18px;

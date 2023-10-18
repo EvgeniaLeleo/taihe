@@ -1,6 +1,7 @@
 import cn from 'classnames/bind';
 
 import { LinkButton } from '../LinkButton/LinkButton';
+import { LinkWrapper } from '../LinkWrapper/LinkWrapper';
 
 import styles from './styles.module.css';
 
@@ -54,9 +55,7 @@ export const InfoBlock = ({
         )}
       </div>
       {!!linkUrl && !!linkText && (
-        <a className={cx('link')} href={linkUrl} target="_blank" rel="noreferrer">
-          {linkText}
-        </a>
+        <LinkWrapper className={cx('link')} isUnderline={true} linkText={linkText} linkUrl={linkUrl} />
       )}
     </div>
   );

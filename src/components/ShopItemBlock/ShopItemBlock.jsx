@@ -4,6 +4,7 @@ import styles from './styles.module.css';
 import { NavLink } from 'react-router-dom';
 import { ROUTES } from '../../constants';
 import { LinkButton } from '../LinkButton/LinkButton';
+import { LinkWrapper } from '../LinkWrapper/LinkWrapper';
 
 const cx = cn.bind(styles);
 
@@ -60,9 +61,7 @@ export const ShopItemBlock = ({
           </NavLink>
         )}
         {!!linkUrl && linkUrl !== 'inner' && !!linkText && (
-          <a className={cx('link')} href={linkUrl} target="_blank" rel="noreferrer">
-            {linkText}
-          </a>
+          <LinkWrapper className={cx('link')} isUnderline={true} linkText={linkText} linkUrl={linkUrl} />
         )}
         {!!additionalText && <p className={cx('additional-text')}>{additionalText}</p>}
         {!!price && <p className={cx('price')}>Цена {price}</p>}

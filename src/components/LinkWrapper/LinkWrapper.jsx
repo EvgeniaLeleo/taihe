@@ -5,9 +5,9 @@ import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
-export const LinkWrapper = ({ className, type = 'a', linkText = '', linkUrl = '' }) => {
+export const LinkWrapper = ({ className, isUnderline = true, linkText = '', linkUrl = '', type = 'a' }) => {
   return (
-    <div className={cx('link-underline')}>
+    <div className={cx('link', { 'link-double-underline': isUnderline }, { 'link-underline': !isUnderline })}>
       {type === 'a' && (
         <a className={className} href={linkUrl} target="_blank" rel="noreferrer">
           {linkText}

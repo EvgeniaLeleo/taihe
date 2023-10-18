@@ -13,7 +13,7 @@ export const ListBlockSecondary = ({ list, title }) => {
         <ul className={cx('list')}>
           {list.map((item) => (
             <li className={cx('list-item')} key={item.name + item.link}>
-              <LinkWrapper className={cx('list-link')} linkText={item.name} linkUrl={item.link} />
+              <LinkWrapper className={cx('list-link')} isUnderline={false} linkText={item.name} linkUrl={item.link} />
             </li>
           ))}
         </ul>

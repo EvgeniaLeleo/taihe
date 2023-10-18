@@ -25,6 +25,7 @@ export const Feedback = () => {
   }, []);
 
   useEffect(() => {
+    console.log('f');
     getData({ url: './data/feedback.json', callback: setData });
     setVisibleData(data.slice(0, VISIBLE_FEEDBACK));
     setIsRemainingFeedback(data.length > VISIBLE_FEEDBACK);

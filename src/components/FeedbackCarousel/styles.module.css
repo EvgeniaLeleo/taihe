@@ -5,23 +5,6 @@
   max-width: calc(100% - 72px);
   margin-left: 70px;
   box-sizing: border-box;
-
-  /* height: 400px;
-  border: 2px solid green; */
-}
-
-.MMMslider {
-  /* border: 1px solid red; */
-  min-height: 250px;
-  overflow: unset;
-
-  overflow-x: hidden;
-}
-
-.slide {
-  height: unset;
-  /* border: 1px solid blue; */
-  min-height: 200px;
 }
 
 .button {
@@ -41,6 +24,16 @@
 
   border: 1.5px solid #16161680;
   border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:focus-visible {
+  outline: 1.5px solid #161616;
 }
 
 .button_left {
@@ -63,16 +56,4 @@
 
 .arrow-img_right {
   transform: rotate(180deg);
-}
-
-.MMMslider:focus,
-.slide:focus,
-.button:focus {
-  outline: 0;
-}
-
-.MMMslider:focus-visible,
-.slide:focus-visible,
-.button:focus-visible {
-  outline: 1.5px solid #161616;
 }

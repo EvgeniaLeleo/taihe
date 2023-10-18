@@ -86,14 +86,14 @@ export const About = () => {
         <TextBlock isBorder={true} title={HUNUAN.title} contentFirst={HUNUAN.first} contentSecond={HUNUAN.second} />
 
         <footer className={cx('footer')}>
-          <p className={cx('footer__paragraph')}>
+          <div className={cx('footer__paragraph')}>
             Подробнее про мастеров, школу и методы Хуньюань вы можете найти в разделе{' '}
             <LinkWrapper linkText="Библиотека" linkUrl={ROUTES.library} type="nav" />
-          </p>
-          <p className={cx('footer__paragraph')}>
+          </div>
+          <div className={cx('footer__paragraph')}>
             Подробнее о том, у кого можно учиться и о наших занятиях - в разделе{' '}
             <LinkWrapper linkText="Преподаватели" linkUrl={ROUTES.teachers} type="nav" />
-          </p>
+          </div>
         </footer>
       </div>
     </div>

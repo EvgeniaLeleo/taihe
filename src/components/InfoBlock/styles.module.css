@@ -31,26 +31,9 @@
 
 .link {
   display: inline-block;
-  text-decoration: none;
-
-  color: #161616;
 
   width: fit-content;
   margin-top: 10px;
-}
-
-.link_inline {
-  color: #161616;
-}
-
-.link:focus,
-.link_inline:focus {
-  outline: 0;
-}
-
-.link:focus-visible,
-.link_inline:focus-visible {
-  outline: 1.5px solid #161616;
 }
 
 .link_secondary {

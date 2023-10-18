@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
 import { FeedbackBlock } from '../../components/FeedbackBlock/FeedbackBlock';
+import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -47,9 +48,12 @@ export const Feedback = () => {
 
       <footer className={cx('footer')}>
         {isRemainingFeedback && (
-          <button className={cx('button-read-more')} onClick={handleShowMore}>
-            Читать далее
-          </button>
+          <LinkWrapper
+            className={cx('button-read-more')}
+            linkText="Читать далее"
+            onClick={handleShowMore}
+            type="button"
+          />
         )}
       </footer>
     </div>

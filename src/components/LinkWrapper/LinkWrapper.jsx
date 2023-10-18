@@ -5,18 +5,37 @@ import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
-export const LinkWrapper = ({ className, isUnderline = true, linkText = '', linkUrl = '', type = 'a' }) => {
+export const LinkWrapper = ({
+  className,
+  isUnderline = true,
+  linkText = '',
+  linkUrl = '',
+  onClick = '',
+  type = 'a',
+}) => {
   return (
-    <div className={cx('link', { 'link-double-underline': isUnderline }, { 'link-underline': !isUnderline })}>
+    <div
+      className={cx(
+        className,
+        'link-wrapper',
+        { 'link-double-underline': isUnderline },
+        { 'link-underline': !isUnderline },
+      )}
+    >
       {type === 'a' && (
-        <a className={className} href={linkUrl} target="_blank" rel="noreferrer">
+        <a className={cx('link')} href={linkUrl} target="_blank" rel="noreferrer">
           {linkText}
         </a>
       )}
       {type === 'nav' && (
-        <NavLink className={className} to={linkUrl}>
+        <NavLink className={cx('link')} to={linkUrl}>
           {linkText}
         </NavLink>
+      )}
+      {type === 'button' && (
+        <button className={cx('button')} onClick={onClick}>
+          {linkText}
+        </button>
       )}
     </div>
   );

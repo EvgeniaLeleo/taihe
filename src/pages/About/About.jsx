@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import cn from 'classnames/bind';
 
 import { TextBlock } from '../../components/TextBlock/TextBlock';
+import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -88,15 +89,11 @@ export const About = () => {
         <footer className={cx('footer')}>
           <p className={cx('footer__paragraph')}>
             Подробнее про мастеров, школу и методы Хуньюань вы можете найти в разделе{' '}
-            <NavLink className={cx('footer-link')} to={ROUTES.library}>
-              Библиотека
-            </NavLink>
+            <LinkWrapper linkText="Библиотека" linkUrl={ROUTES.library} type="nav" />
           </p>
           <p className={cx('footer__paragraph')}>
             Подробнее о том, у кого можно учиться и о наших занятиях - в разделе{' '}
-            <NavLink className={cx('footer-link')} to={ROUTES.teachers}>
-              Преподаватели
-            </NavLink>
+            <LinkWrapper linkText="Преподаватели" linkUrl={ROUTES.teachers} type="nav" />
           </p>
         </footer>
       </div>

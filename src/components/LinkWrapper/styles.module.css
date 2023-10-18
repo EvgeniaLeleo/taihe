@@ -1,7 +1,7 @@
-.link {
+.link-wrapper {
   position: relative;
 
-  display: flex;
+  display: inline-flex;
 
   line-height: 1.2;
   white-space: nowrap;
@@ -9,6 +9,19 @@
   width: max-content;
 
   cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: #161616;
+}
+
+.link:focus {
+  outline: 0;
+}
+
+.link:focus-visible {
+  outline: 1.5px solid #161616;
 }
 
 .link-underline::before {
@@ -67,4 +80,27 @@
     transform-origin: left;
     transform: scaleX(1);
   }
+}
+
+.button {
+  color: #161616;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.22;
+
+  padding: 2px 2px 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:focus-visible {
+  outline: 1.5px solid #161616;
 }

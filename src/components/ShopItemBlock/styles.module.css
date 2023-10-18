@@ -53,20 +53,7 @@
 }
 
 .link {
-  display: inline-block;
-
-  text-decoration: none;
-  color: #161616;
-
   margin-top: 18px;
-}
-
-.link:focus {
-  outline: 0;
-}
-
-.link:focus-visible {
-  outline: 1.5px solid #161616;
 }
 
 .link_secondary {

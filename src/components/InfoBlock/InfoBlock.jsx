@@ -18,9 +18,12 @@ const getStringWithLink = ({ string, url }) => {
   return (
     <span>
       {string.slice(0, startIndex)}
-      <a className={cx('link_inline')} href={url} target="_blank" rel="noreferrer">
-        {string.slice(startIndex + 2, endIndex)}
-      </a>
+      <LinkWrapper
+        className={cx('link_inline')}
+        isUnderline={true}
+        linkText={string.slice(startIndex + 2, endIndex)}
+        linkUrl={url}
+      />
       {string.slice(endIndex + 2)}
     </span>
   );

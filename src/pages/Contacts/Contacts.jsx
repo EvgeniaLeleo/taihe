@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import cn from 'classnames/bind';
 
+import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -21,15 +22,14 @@ export const Contacts = () => {
     <div className={cx('contacts-wrapper')}>
       <section className={cx('contacts')}>
         <h2 className={cx('title')}>Борисова Наташа</h2>
-        <a className={cx('tel')} href="tel:+79652071339">
-          +7 (965) 207-13-39
-        </a>
-        <a className={cx('link')} href="mailto:taiheclub@yandex.ru">
-          taiheclub@yandex.ru
-        </a>
-        <a className={cx('link')} href={URL.zenclass} target="_blank" rel="noopener noreferrer">
-          курсы онлайн-школы
-        </a>
+        <LinkWrapper linkText="+7 (965) 207-13-39" linkUrl="tel:+79652071339" isUnderline={false} />
+        <LinkWrapper
+          className={cx('link')}
+          linkText="mailto:taiheclub@yandex.ru"
+          linkUrl="mailto:taiheclub@yandex.ru"
+        />
+        <LinkWrapper className={cx('link')} linkText="курсы онлайн-школы" linkUrl={URL.zenclass} />
+
         <p className={cx('text')}>
           В Санкт-Петербурге возможна запись на очные индивидуальные занятия. Для жителей других городов и стран
           индивидуальные занятия проводятся онлайн.

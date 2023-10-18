@@ -7,18 +7,7 @@
   display: flex;
   align-items: center;
 
-  color: #161616;
-  text-decoration: none;
-
   width: fit-content;
-}
-
-.link-back:focus {
-  outline: 0;
-}
-
-.link-back:focus-visible {
-  outline: 1.5px solid #161616;
 }
 
 .arrow-icon {

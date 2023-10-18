@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
 import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
+import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -54,10 +55,7 @@ export const Teachers = () => {
         <h2 className={cx('header', 'resources')}>Доступные ресурсы</h2>
         <ol className={cx('resources-list')}>
           <li className={cx('resources-item')}>
-            Наш основной информационный{' '}
-            <a className={cx('resources-link')} href={URL.telegram} target="_blank" rel="noreferrer">
-              Телеграм канал.
-            </a>
+            Наш основной информационный <LinkWrapper linkText="Телеграм канал" linkUrl={URL.telegram} />
             <h3 className={cx('resources-item__title')}>Там публикуются:</h3>
             <ul className={cx('features-list')}>
               <li>- Методы и принципы Хуньюань Тайцзицюань</li>
@@ -69,10 +67,7 @@ export const Teachers = () => {
           </li>
 
           <li className={cx('resources-item')}>
-            <a className={cx('resources-link')} href={URL.youtube} target="_blank" rel="noreferrer">
-              YouTube Канал Борисовой Наташи.
-            </a>
-
+            <LinkWrapper linkText="YouTube Канал Борисовой Наташи" linkUrl={URL.youtube} />
             <h3 className={cx('resources-item__title')}>Там публикуются:</h3>
             <ul className={cx('features-list')}>
               <li>- Записи отдельных упражнений, практик и методов</li>
@@ -83,9 +78,7 @@ export const Teachers = () => {
           </li>
 
           <li className={cx('resources-item')}>
-            <a className={cx('resources-link')} href={URL.zenclass} target="_blank" rel="noreferrer">
-              Курсы нашей онлайн школы
-            </a>
+            <LinkWrapper linkText="Курсы нашей онлайн школы" linkUrl={URL.zenclass} />
           </li>
         </ol>
       </footer>

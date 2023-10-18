@@ -56,9 +56,7 @@ export const ShopItemBlock = ({
           </div>
         )}
         {linkUrl === 'inner' && !!linkText && (
-          <NavLink className={cx('link')} to={ROUTES.teaShop}>
-            {linkText}
-          </NavLink>
+          <LinkWrapper className={cx('link')} linkText={linkText} linkUrl={ROUTES.teaShop} type="nav" />
         )}
         {!!linkUrl && linkUrl !== 'inner' && !!linkText && (
           <LinkWrapper className={cx('link')} isUnderline={true} linkText={linkText} linkUrl={linkUrl} />

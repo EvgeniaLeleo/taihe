@@ -64,3 +64,15 @@
 .arrow-img_right {
   transform: rotate(180deg);
 }
+
+.MMMslider:focus,
+.slide:focus,
+.button:focus {
+  outline: 0;
+}
+
+.MMMslider:focus-visible,
+.slide:focus-visible,
+.button:focus-visible {
+  outline: 1.5px solid #161616;
+}

@@ -55,19 +55,6 @@
   margin: 12px 0 0;
 }
 
-.resources-link {
-  color: #161616;
-  line-height: normal;
-}
-
-.resources-link:focus {
-  outline: 0;
-}
-
-.resources-link:focus-visible {
-  outline: 1.5px solid #161616;
-}
-
 .features-list {
   list-style: none;
 

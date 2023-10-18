@@ -9,25 +9,5 @@
 }
 
 .button-read-more {
-  color: #161616;
-  font-family: Montserrat, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.2;
-  text-decoration: underline;
-
   margin-top: 62px;
-
-  background-color: transparent;
-  border: none;
-
-  cursor: pointer;
-}
-
-.button-read-more:focus {
-  outline: 0;
-}
-
-.button-read-more:focus-visible {
-  outline: 1.5px solid #161616;
 }

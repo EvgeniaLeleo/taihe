@@ -28,16 +28,3 @@
 .list-item:last-child {
   margin-bottom: 0;
 }
-
-.list-link {
-  color: #161616;
-  text-decoration: none;
-}
-
-.list-link:focus {
-  outline: 0;
-}
-
-.list-link:focus-visible {
-  outline: 1.5px solid #161616;
-}

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { observer } from 'mobx-react';
-import { NavLink } from 'react-router-dom';
 import cn from 'classnames/bind';
 
 import { ShopItemBlock } from '../../components/ShopItemBlock/ShopItemBlock';
+import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -30,10 +30,18 @@ const TeaShop = () => {
 
   return (
     <div className={cx('shop')}>
-      <NavLink className={cx('link-back')} to={ROUTES.shop}>
-        <img className={cx('arrow-icon')} src={arrow} alt="Вернуться в магазин" />
-        вернуться в магазин
-      </NavLink>
+      <LinkWrapper
+        className={cx('link-back')}
+        isUnderline={false}
+        linkText={
+          <>
+            <img className={cx('arrow-icon')} src={arrow} alt="Вернуться в магазин" />
+            вернуться в магазин
+          </>
+        }
+        linkUrl={ROUTES.shop}
+        type="nav"
+      />
 
       {!!data && (
         <>

@@ -19,6 +19,16 @@
   text-transform: uppercase;
   color: #16161680;
   text-decoration: none;
+
+  transform: color 0.2s;
+}
+
+.sidebar-link:hover {
+  color: #161616bf;
+}
+
+.sidebar-link:active {
+  color: #161616;
 }
 
 .sidebar-link:focus {

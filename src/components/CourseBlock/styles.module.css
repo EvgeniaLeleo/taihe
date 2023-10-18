@@ -20,6 +20,10 @@
   margin: 0;
 }
 
+.text__paragraph {
+  margin: 0;
+}
+
 .description {
   font-size: 16px;
   font-weight: 600;

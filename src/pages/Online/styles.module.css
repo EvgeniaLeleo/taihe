@@ -1,10 +1,13 @@
 .online-wrapper {
   padding: 86px 0 0 50px;
+  max-width: calc(100% - 274px);
+  box-sizing: border-box;
 }
 
 .section {
   padding: 72px 0 0;
   margin-top: 122px;
+  box-sizing: border-box;
 
   border-top: 1.5px solid #17171780;
 }
@@ -26,5 +29,11 @@
 }
 
 .link_secondary {
-  margin-top: 24px;
+  margin: 24px 0 0 70px;
+}
+
+@media (max-width: 1240px) {
+  /* .online-wrapper {
+    max-width: calc(100% - 72px);
+  } */
 }

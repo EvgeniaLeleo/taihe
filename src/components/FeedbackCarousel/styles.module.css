@@ -1,0 +1,70 @@
+.carousel {
+  position: relative;
+  width: 510px;
+
+  /* max-width: 510px; */
+
+  /* max-width: 510px;
+
+   */
+  max-width: calc(100% - 72px);
+  margin-left: 70px;
+  box-sizing: border-box;
+  border: 2px solid green;
+}
+
+/* .slider {
+} */
+
+.MMMslider {
+  border: 1px solid red;
+  overflow: unset;
+  overflow-x: hidden;
+  height: 300px;
+}
+
+.slide {
+  height: 200px;
+  /* padding-bottom: 0 !important; */
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 36px;
+  height: 36px;
+  padding: 0;
+
+  background-color: transparent;
+
+  border: 1.5px solid #16161680;
+  border-radius: 50%;
+}
+
+.button_left {
+  left: -72px;
+}
+
+.button_right {
+  right: -72px;
+}
+
+.button_disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.arrow-img {
+  width: 9px;
+  height: 14px;
+}
+
+.arrow-img_right {
+  transform: rotate(180deg);
+}

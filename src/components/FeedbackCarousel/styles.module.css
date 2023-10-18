@@ -1,31 +1,27 @@
 .carousel {
   position: relative;
+
   width: 510px;
-
-  /* max-width: 510px; */
-
-  /* max-width: 510px;
-
-   */
   max-width: calc(100% - 72px);
   margin-left: 70px;
   box-sizing: border-box;
-  border: 2px solid green;
+
+  /* height: 400px;
+  border: 2px solid green; */
 }
 
-/* .slider {
-} */
-
 .MMMslider {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  min-height: 250px;
   overflow: unset;
+
   overflow-x: hidden;
-  height: 300px;
 }
 
 .slide {
-  height: 200px;
-  /* padding-bottom: 0 !important; */
+  height: unset;
+  /* border: 1px solid blue; */
+  min-height: 200px;
 }
 
 .button {

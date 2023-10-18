@@ -51,7 +51,7 @@ export const FeedbackCarousel = ({ data, setIndex }) => {
       children={data}
       infinite={false}
       swiping={true}
-      responsive={true}
+      // responsive={true}
       useArrowKeys={true}
       leftArrow={ButtonBack}
       rightArrow={ButtonNext}

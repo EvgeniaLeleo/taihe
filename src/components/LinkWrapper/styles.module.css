@@ -1,8 +1,6 @@
 .link-wrapper {
   position: relative;
 
-  display: inline-flex;
-
   line-height: 1.2;
   white-space: nowrap;
 
@@ -16,6 +14,10 @@
   color: #161616;
 }
 
+.link_inline {
+  display: inline;
+}
+
 .link:focus {
   outline: 0;
 }
@@ -24,7 +26,7 @@
   outline: 1.5px solid #161616;
 }
 
-.link-underline::before {
+.link_underline::before {
   content: '';
 
   position: absolute;
@@ -42,12 +44,12 @@
   transition: transform 0.4s cubic-bezier(0.33, 0, 0.13, 1);
 }
 
-.link-underline:hover::before {
+.link_underline:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
 
-.link-double-underline::before {
+.link_double-underline::before {
   content: '';
 
   position: absolute;
@@ -63,7 +65,7 @@
   transform-origin: right;
 }
 
-.link-double-underline:hover::before {
+.link_double-underline:hover::before {
   animation: animation-name 0.5s cubic-bezier(0.33, 0, 0.13, 1);
 }
 

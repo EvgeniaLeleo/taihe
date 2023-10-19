@@ -15,6 +15,7 @@ export const URL = {
   youtube: 'https://www.youtube.com/channel/UCJNov9v4MSklmtsLDCkfQow',
   telegram: 'https://t.me/taiheclub',
   zenclass: 'https://taihe.zenclass.ru',
+  mailto: 'mailto:taiheclub@yandex.ru',
 };
 
 export const VISIBLE_FEEDBACK = 5;

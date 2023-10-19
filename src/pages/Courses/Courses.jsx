@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
 import { LinkButton } from '../../components/LinkButton/LinkButton';
-import { OnlineCarousel } from '../../components/OnlineCarousel/OnlineCarousel';
+import { CoursesCarousel } from '../../components/CoursesCarousel/CoursesCarousel';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -10,7 +10,7 @@ import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
-export const Online = () => {
+export const Courses = () => {
   const { getData, setIsShopPage } = getStore;
 
   const [data, setData] = useState(null);
@@ -35,10 +35,14 @@ export const Online = () => {
 
         {!!data && (
           <>
-            <OnlineCarousel data={data.beginner} setIndex={setBeginnerIndex} />
+            <CoursesCarousel data={data.beginner} setIndex={setBeginnerIndex} />
 
-            <LinkButton className={cx('link_secondary')} buttonUrl={data.beginner[beginnerIndex].url} theme="secondary">
-              Записаться на курс
+            <LinkButton
+              className={cx('link_secondary')}
+              buttonUrl={data.beginner[beginnerIndex].linkUrl}
+              theme="secondary"
+            >
+              {data.beginner[beginnerIndex].linkText || 'Записаться на курс'}
             </LinkButton>
           </>
         )}
@@ -50,10 +54,10 @@ export const Online = () => {
         </h2>
         {!!data && (
           <>
-            <OnlineCarousel data={data.master} setIndex={setMasterIndex} />
+            <CoursesCarousel data={data.master} setIndex={setMasterIndex} />
 
-            <LinkButton className={cx('link_secondary')} buttonUrl={data.master[masterIndex].url} theme="secondary">
-              Записаться на курс
+            <LinkButton className={cx('link_secondary')} buttonUrl={data.master[masterIndex].linkUrl} theme="secondary">
+              {data.master[masterIndex].linkText || 'Записаться на курс'}
             </LinkButton>
           </>
         )}

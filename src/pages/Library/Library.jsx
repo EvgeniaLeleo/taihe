@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import cn from 'classnames/bind';
 
 import { ListBlock } from '../../components/ListBlock/ListBlock';
-import { ListBlockSecondary } from '../../components/ListBlockSecondary/ListBlockSecondary';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -14,28 +13,26 @@ const MATERIALS = {
   title: 'Материалы по Хуньюань Тайцзи',
   description: 'Первый раздел касается Хуньюань Тайцзи. Здесь вы найдете:',
   list: [
-    'Статьи по истории стиля',
-    'Биографии мастеров, их интервью',
-    'Различные заметки и ссылки на материалы по Хуньюань Тайцзи',
-    'Словарь терминов',
-    'Структуру и описание техник школы',
-    'Шпаргалки по некоторым методам',
-    'Списки с названиями форм и тд.',
+    { name: 'Статьи по истории стиля', link: '' },
+    { name: 'Биографии мастеров, их интервью', link: '' },
+    { name: 'Различные заметки и ссылки на материалы по Хуньюань Тайцзи', link: '' },
+    { name: 'Словарь терминов', link: '' },
+    { name: 'Структуру и описание техник школы', link: '' },
+    { name: 'Шпаргалки по некоторым методам', link: '' },
+    { name: 'Списки с названиями форм и тд.', link: '' },
   ],
-  links: ['', '', '', ''],
 };
 
 const USEFUL = {
   title: 'Разные полезности',
   description: 'Второй раздел содержит дополнительную информацию, которая может пригодиться при изучении тайцзи:',
   list: [
-    'Книги по ушу и цигун',
-    'Материалы по традиционной китайской медицине (ТКМ)',
-    'Книги и статьи по другим дисциплинам',
-    'Художественная литература для вдохновения',
-    'Материалы по чайной культуре',
+    { name: 'Книги по ушу и цигун', link: 'https://disk.yandex.ru/d/iB3XTE9Z9h7wiQ' },
+    { name: 'Книги и статьи по другим дисциплинам', link: 'https://disk.yandex.ru/d/WQxd1b7jYSbPWQ' },
+    { name: 'Материалы по традиционной китайской медицине (ТКМ)', link: 'https://disk.yandex.ru/d/TsiFyIZ8qgTgYg' },
+    { name: 'Материалы по чайной культуре', link: 'https://disk.yandex.ru/d/aHUinVYm4chY4w' },
+    { name: 'Художественная литература для вдохновения', link: 'https://disk.yandex.ru/d/ejozlhOyqblcoQ' },
   ],
-  links: ['', '', '', ''],
 };
 
 const BROTHERS = {
@@ -83,10 +80,10 @@ export const Library = () => {
 
   return (
     <div className={cx('library')}>
-      <ListBlock title={MATERIALS.title} description={MATERIALS.description} list={MATERIALS.list} />
-      <ListBlock title={USEFUL.title} description={USEFUL.description} list={USEFUL.list} />
-      <ListBlockSecondary title={BROTHERS.title} description={BROTHERS.description} list={BROTHERS.list} />
-      <ListBlockSecondary title={FRIENDS.title} description={FRIENDS.description} list={FRIENDS.list} />
+      <ListBlock title={MATERIALS.title} description={MATERIALS.description} list={MATERIALS.list} theme="dash" />
+      <ListBlock title={USEFUL.title} description={USEFUL.description} list={USEFUL.list} theme="dash" />
+      <ListBlock title={BROTHERS.title} description={BROTHERS.description} list={BROTHERS.list} />
+      <ListBlock title={FRIENDS.title} description={FRIENDS.description} list={FRIENDS.list} />
     </div>
   );
 };

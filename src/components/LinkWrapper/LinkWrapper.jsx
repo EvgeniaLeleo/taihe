@@ -7,10 +7,12 @@ const cx = cn.bind(styles);
 
 export const LinkWrapper = ({
   className,
+  inline = false,
   isUnderline = true,
   linkText = '',
   linkUrl = '',
   onClick = '',
+  target = 'blank',
   type = 'a',
 }) => {
   return (
@@ -18,12 +20,18 @@ export const LinkWrapper = ({
       className={cx(
         className,
         'link-wrapper',
-        { 'link-double-underline': isUnderline },
-        { 'link-underline': !isUnderline },
+        { 'link_double-underline': isUnderline },
+        { link_underline: !isUnderline },
+        { link_inline: inline },
       )}
     >
-      {type === 'a' && (
+      {type === 'a' && target === 'blank' && (
         <a className={cx('link')} href={linkUrl} target="_blank" rel="noreferrer">
+          {linkText}
+        </a>
+      )}
+      {type === 'a' && target === 'current' && (
+        <a className={cx('link')} href={linkUrl}>
           {linkText}
         </a>
       )}

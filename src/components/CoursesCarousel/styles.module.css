@@ -62,25 +62,23 @@
   width: 9px;
   height: 14px;
 
-  transition: transform 0.2s ease-out;
+  transition: transform 0.4s;
 }
 
 .arrow-img_left,
-.arrow-img-wrapper:active .arrow-img_left,
 .button_disabled .arrow-img-wrapper:hover .arrow-img_left {
   transform: translateX(0);
 }
 
-.arrow-img-wrapper:hover .arrow-img_left {
+.arrow-img-wrapper:active .arrow-img_left {
   transform: translateX(-3px);
 }
 
 .arrow-img_right,
-.arrow-img-wrapper:active .arrow-img_right,
 .button_disabled .arrow-img-wrapper:hover .arrow-img_right {
-  transform: translateX(0) rotate(180deg);
+  transform: translateX(0);
 }
 
-.arrow-img-wrapper:hover .arrow-img_right {
-  transform: translateX(3px) rotate(180deg);
+.arrow-img-wrapper:active .arrow-img_right {
+  transform: translateX(3px);
 }

@@ -9,5 +9,7 @@
 }
 
 .button-read-more {
+  display: inline-block;
+
   margin-top: 62px;
 }

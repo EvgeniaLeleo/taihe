@@ -88,11 +88,23 @@ export const About = () => {
         <footer className={cx('footer')}>
           <div className={cx('footer__paragraph')}>
             Подробнее про мастеров, школу и методы Хуньюань вы можете найти в разделе{' '}
-            <LinkWrapper linkText="Библиотека" linkUrl={ROUTES.library} type="nav" />
+            <LinkWrapper
+              className={cx('link')}
+              inline={true}
+              linkText="Библиотека"
+              linkUrl={ROUTES.library}
+              type="nav"
+            />
           </div>
           <div className={cx('footer__paragraph')}>
             Подробнее о том, у кого можно учиться и о наших занятиях - в разделе{' '}
-            <LinkWrapper linkText="Преподаватели" linkUrl={ROUTES.teachers} type="nav" />
+            <LinkWrapper
+              className={cx('link')}
+              inline={true}
+              linkText="Преподаватели"
+              linkUrl={ROUTES.teachers}
+              type="nav"
+            />
           </div>
         </footer>
       </div>

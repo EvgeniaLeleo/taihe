@@ -55,7 +55,7 @@ export const Teachers = () => {
         <h2 className={cx('header', 'resources')}>Доступные ресурсы</h2>
         <ol className={cx('resources-list')}>
           <li className={cx('resources-item')}>
-            Наш основной информационный <LinkWrapper linkText="Телеграм канал" linkUrl={URL.telegram} />
+            Наш основной информационный <LinkWrapper inline={true} linkText="Телеграм канал" linkUrl={URL.telegram} />
             <h3 className={cx('resources-item__title')}>Там публикуются:</h3>
             <ul className={cx('features-list')}>
               <li>- Методы и принципы Хуньюань Тайцзицюань</li>

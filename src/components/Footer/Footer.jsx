@@ -39,11 +39,20 @@ const Footer = () => {
               Заказы на чай, футболки и тайцзибан принимаются через почту{' '}
               <LinkWrapper
                 className={cx('button-read-more')}
+                inline={true}
                 isUnderline={false}
                 linkText="taiheclub@yandex.ru"
-                linkUrl="mailto:taiheclub@yandex.ru"
+                linkUrl={URL.mailto}
+                target="current"
               />{' '}
-              и личные сообщения <LinkWrapper isUnderline={false} linkText="+79652071339" linkUrl="tel:+79652071339" />{' '}
+              и личные сообщения{' '}
+              <LinkWrapper
+                inline={true}
+                isUnderline={false}
+                linkText="+79652071339"
+                linkUrl="tel:+79652071339"
+                target="current"
+              />{' '}
               (WhatsApp/Telegram). Книги доступны в розничных магазинах и под заказ.
             </p>
           </div>
@@ -55,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Dark block */}
+      {/* Dark footer block */}
       <div className={cx('footer-bottom')}>
         <div className={cx('footer-bottom__content')}>
           {isArrowUpVisible && (
@@ -65,7 +74,7 @@ const Footer = () => {
           )}
 
           <div className={cx('contacts-wrapper')}>
-            <a className={cx('contacts-link')} href="mailto:taiheclub@yandex.ru">
+            <a className={cx('contacts-link')} href={URL.mailto}>
               taiheclub@yandex.ru
             </a>
             <a className={cx('contacts-link')} href="tel:+79652071339">

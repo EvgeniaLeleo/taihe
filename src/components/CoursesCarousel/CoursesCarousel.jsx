@@ -10,7 +10,7 @@ import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
-export const OnlineCarousel = ({ data, setIndex }) => {
+export const CoursesCarousel = ({ data, setIndex }) => {
   const handleShowPreviousSlide = ({ currentSlide, isFirstSlide }) => {
     if (!isFirstSlide) {
       setIndex(currentSlide);
@@ -43,7 +43,7 @@ export const OnlineCarousel = ({ data, setIndex }) => {
     return (
       <button className={cx('button', 'button_right', { button_disabled: isLastSlide })} onClick={onClick}>
         <div className={cx('arrow-img-wrapper')} onClick={handleShowNextSlide({ currentSlide, isLastSlide })}>
-          <Arrow className={cx('arrow-img', 'arrow-img_right')} />
+          <Arrow className={cx('arrow-img', 'arrow-img_right')} direction="right" />
         </div>
       </button>
     );

@@ -22,16 +22,12 @@ export const Contacts = () => {
     <div className={cx('contacts-wrapper')}>
       <section className={cx('contacts')}>
         <h2 className={cx('title')}>Борисова Наташа</h2>
-        <LinkWrapper linkText="+7 (965) 207-13-39" linkUrl="tel:+79652071339" isUnderline={false} />
-        <LinkWrapper
-          className={cx('link')}
-          linkText="mailto:taiheclub@yandex.ru"
-          linkUrl="mailto:taiheclub@yandex.ru"
-        />
+        <LinkWrapper linkText="+7 (965) 207-13-39" linkUrl="tel:+79652071339" isUnderline={false} target="current" />
+        <LinkWrapper className={cx('link')} linkText="taiheclub@yandex.ru" linkUrl={URL.mailto} target="current" />
         <LinkWrapper className={cx('link')} linkText="курсы онлайн-школы" linkUrl={URL.zenclass} />
 
         <p className={cx('text')}>
-          В Санкт-Петербурге возможна запись на очные индивидуальные занятия. Для жителей других городов и стран
+          В Санкт-Петербурге можно записаться на очные индивидуальные занятия. Для жителей других городов и&nbsp;стран
           индивидуальные занятия проводятся онлайн.
         </p>
       </section>

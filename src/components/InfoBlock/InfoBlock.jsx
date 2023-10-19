@@ -18,7 +18,7 @@ const getStringWithLink = ({ string, url }) => {
   return (
     <span>
       {string.slice(0, startIndex)}
-      <LinkWrapper isUnderline={true} inline={true} linkText={string.slice(startIndex + 2, endIndex)} linkUrl={url} />
+      <LinkWrapper isUnderline={true} isInline={true} linkText={string.slice(startIndex + 2, endIndex)} linkUrl={url} />
       {string.slice(endIndex + 2)}
     </span>
   );
@@ -53,7 +53,7 @@ export const InfoBlock = ({
         )}
       </div>
       {!!linkUrl && !!linkText && (
-        <LinkWrapper className={cx('link')} isUnderline={true} linkText={linkText} linkUrl={linkUrl} inline={true} />
+        <LinkWrapper className={cx('link')} isUnderline={true} linkText={linkText} linkUrl={linkUrl} isInline={true} />
       )}
     </div>
   );

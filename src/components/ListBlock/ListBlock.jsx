@@ -16,7 +16,7 @@ export const ListBlock = ({ description, list, title, theme }) => {
           {list.map((item) => (
             <li key={item.name + item.link}>
               {theme === 'dash' && '- '}
-              <LinkWrapper inline={true} isUnderline={false} linkText={item.name} linkUrl={item.link} />
+              <LinkWrapper isInline={true} isUnderline={false} linkText={item.name} linkUrl={item.link} />
             </li>
           ))}
         </ul>

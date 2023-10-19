@@ -31,3 +31,26 @@
 .text {
   margin: 12px 0 0;
 }
+
+.button {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  color: #161616;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:focus-visible {
+  outline: 1.5px solid #161616;
+}

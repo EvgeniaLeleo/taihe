@@ -7,7 +7,7 @@ const cx = cn.bind(styles);
 
 export const LinkWrapper = ({
   className,
-  inline = false,
+  isInline = false,
   isUnderline = true,
   linkText = '',
   linkUrl = '',
@@ -22,7 +22,7 @@ export const LinkWrapper = ({
         'link-wrapper',
         { 'link_double-underline': isUnderline },
         { link_underline: !isUnderline },
-        { link_inline: inline },
+        { link_inline: isInline },
       )}
     >
       {type === 'a' && target === 'blank' && (

@@ -4,6 +4,7 @@ import cn from 'classnames/bind';
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
+import copyTextToClipboard from '../../utils/copyTextToClipboard';
 
 import { URL } from '../../constants';
 import styles from './styles.module.css';
@@ -34,7 +35,16 @@ export const Contacts = () => {
 
       <section>
         <h2 className={cx('title')}>Поддержать проекты и автора</h2>
-        <p className={cx('text')}>Сбер: 2202 2035 1385 4861</p>
+        <p className={cx('text')}>
+          Сбер:{' '}
+          <button
+            className={cx('button')}
+            onClick={() => copyTextToClipboard('2202203513854861')}
+            title="Копировать номер карты"
+          >
+            2202 2035 1385 4861
+          </button>
+        </p>
         <p className={cx('text')}>Благодарю!</p>
       </section>
     </div>

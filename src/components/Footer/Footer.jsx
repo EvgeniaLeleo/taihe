@@ -39,7 +39,7 @@ const Footer = () => {
               Заказы на чай, футболки и тайцзибан принимаются через почту{' '}
               <LinkWrapper
                 className={cx('button-read-more')}
-                inline={true}
+                isInline={true}
                 isUnderline={false}
                 linkText="taiheclub@yandex.ru"
                 linkUrl={URL.mailto}
@@ -47,7 +47,7 @@ const Footer = () => {
               />{' '}
               и личные сообщения{' '}
               <LinkWrapper
-                inline={true}
+                isInline={true}
                 isUnderline={false}
                 linkText="+79652071339"
                 linkUrl="tel:+79652071339"

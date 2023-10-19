@@ -90,7 +90,7 @@ export const About = () => {
             Подробнее про мастеров, школу и методы Хуньюань вы можете найти в разделе{' '}
             <LinkWrapper
               className={cx('link')}
-              inline={true}
+              isInline={true}
               linkText="Библиотека"
               linkUrl={ROUTES.library}
               type="nav"
@@ -100,7 +100,7 @@ export const About = () => {
             Подробнее о том, у кого можно учиться и о наших занятиях - в разделе{' '}
             <LinkWrapper
               className={cx('link')}
-              inline={true}
+              isInline={true}
               linkText="Преподаватели"
               linkUrl={ROUTES.teachers}
               type="nav"

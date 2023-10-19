@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
@@ -14,10 +14,19 @@ const cx = cn.bind(styles);
 export const Contacts = () => {
   const { setIsShopPage } = getStore;
 
+  const [buttonText, setButtonText] = useState('копировать номер карты');
+  const [isCopied, setIsCopied] = useState(false);
+
   useEffect(() => {
     setIsShopPage(false);
     scrollToTop();
   }, []);
+
+  const handleCopy = () => {
+    copyTextToClipboard('2202203513854861');
+    setButtonText('номер скопирован');
+    setIsCopied(true);
+  };
 
   return (
     <div className={cx('contacts-wrapper')}>
@@ -35,16 +44,14 @@ export const Contacts = () => {
 
       <section>
         <h2 className={cx('title')}>Поддержать проекты и автора</h2>
-        <p className={cx('text')}>
-          Сбер:{' '}
-          <button
-            className={cx('button')}
-            onClick={() => copyTextToClipboard('2202203513854861')}
-            title="Копировать номер карты"
-          >
-            2202 2035 1385 4861
-          </button>
-        </p>
+        <div className={cx('text')}>
+          Сбер 2202 2035 1385 4861
+          <div className={cx('button-wrapper', { 'button-wrapper_underlined': !isCopied })}>
+            <button className={cx('button')} onClick={handleCopy}>
+              {buttonText}
+            </button>
+          </div>
+        </div>
         <p className={cx('text')}>Благодарю!</p>
       </section>
     </div>

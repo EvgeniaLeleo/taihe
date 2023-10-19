@@ -26,6 +26,8 @@
   outline: 1.5px solid #161616;
 }
 
+/* ЕСЛИ ИЗНАЧАЛЬНО НЕТ ПОДЧЕРКИВАНИЯ */
+
 .link_underline::before {
   content: '';
 
@@ -48,6 +50,8 @@
   transform-origin: left;
   transform: scaleX(1);
 }
+
+/* ЕСЛИ ИЗНАЧАЛЬНО ЕСТЬ ПОДЧЕРКИВАНИЕ */
 
 .link_double-underline::before {
   content: '';
@@ -83,6 +87,8 @@
     transform: scaleX(1);
   }
 }
+
+/* BUTTON */
 
 .button {
   color: #161616;

@@ -44,7 +44,7 @@
   background-color: transparent;
   border: none;
 
-  cursor: pointer;
+  transition: color 0.2s;
 }
 
 .button:focus {
@@ -53,4 +53,57 @@
 
 .button:focus-visible {
   outline: 1.5px solid #161616;
+}
+
+/* BUTTON WRAPPER */
+
+.button-wrapper {
+  position: relative;
+
+  display: inline;
+
+  line-height: 1.2;
+  white-space: nowrap;
+
+  width: max-content;
+  margin-left: 14px;
+}
+
+.button-wrapper_underlined .button {
+  cursor: pointer;
+}
+
+.button-wrapper_underlined::before {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: currentColor;
+  pointer-events: none;
+
+  transform-origin: right;
+}
+
+.button-wrapper_underlined:hover::before {
+  animation: animation-name 0.5s cubic-bezier(0.33, 0, 0.13, 1);
+}
+
+@keyframes animation-name {
+  50% {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+  50.1% {
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+  100% {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
 }

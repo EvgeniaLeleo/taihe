@@ -1,17 +1,29 @@
 .main-wrapper {
-  width: 100%;
+  width: calc(100% - 60px);
   padding: 86px 0 0 50px;
   box-sizing: border-box;
 }
 
+.main-wrapper.main-wrapper_sub {
+  width: 100%;
+}
+
 @media (max-width: 1024px) {
   .main-wrapper {
+    width: calc(100% - 180px);
     padding-left: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .main-wrapper {
+    width: calc(100% - 150px);
     padding-left: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-wrapper {
+    width: calc(100% - 140px);
   }
 }

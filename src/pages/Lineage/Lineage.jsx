@@ -52,7 +52,7 @@ export const Lineage = () => {
       <div className={cx('image-wrapper')}>
         <img className={cx('lineage__image')} src={mainImg} alt="Фотографии учителей" />
       </div>
-      <MainWrapper>
+      <MainWrapper type="sub">
         <div className={cx('content-wrapper')}>
           <div className={cx('teachers-block')}>
             <InfoBlock

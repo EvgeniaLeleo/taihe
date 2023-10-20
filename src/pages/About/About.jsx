@@ -74,7 +74,7 @@ export const About = () => {
       <div className={cx('image-wrapper')}>
         <img className={cx('about__image')} src={img} alt="Групповое фото" />
       </div>
-      <MainWrapper>
+      <MainWrapper type="sub">
         <div className={cx('text-wrapper')}>
           <p className={cx('description')}>
             Мы объединяем всех, кому нравится быть здоровыми и счастливыми, кому интересно исследовать себя и окружающий

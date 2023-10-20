@@ -6,7 +6,7 @@ const cx = cn.bind(styles);
 
 export const CourseBlock = ({ description, name, text }) => {
   return (
-    <div className={cx('feedback-block')}>
+    <>
       {!!name && (
         <h2 className={cx('name')}>
           {name.split('\n').map((chunk) => (
@@ -18,6 +18,6 @@ export const CourseBlock = ({ description, name, text }) => {
       )}
       {!!description && <p className={cx('description')}>{description}</p>}
       {!!text && <p className={cx('text')}>{text}</p>}
-    </div>
+    </>
   );
 };

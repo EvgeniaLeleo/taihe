@@ -19,7 +19,7 @@
   text-transform: uppercase;
 
   max-width: 430px;
-  width: calc(100% - 254px);
+  width: calc(100% - 144px); /* 72px button + 72px button-margin */
   margin: 0 0 38px 70px;
 }
 

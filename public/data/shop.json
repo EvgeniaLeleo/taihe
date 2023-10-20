@@ -11,7 +11,7 @@
     "name": "Футболка Клуба «Тай Хэ»",
     "text": "Цена взрослой — 1000₽\nЦена детской — 900₽",
     "linkText": "таблица размеров",
-    "linkUrl": "/",
+    "linkUrl": "",
     "inStock": true,
     "imgUrl": "./data/images/shop/tshirt.jpg"
   },

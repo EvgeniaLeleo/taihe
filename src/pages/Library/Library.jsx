@@ -13,13 +13,22 @@ const MATERIALS = {
   title: 'Материалы по Хуньюань Тайцзи',
   description: 'Первый раздел касается Хуньюань Тайцзи. Здесь вы найдете:',
   list: [
-    { name: 'Статьи по истории стиля', link: '' },
-    { name: 'Биографии мастеров, их интервью', link: '' },
-    { name: 'Различные заметки и ссылки на материалы по Хуньюань Тайцзи', link: '' },
-    { name: 'Словарь терминов', link: '' },
-    { name: 'Структуру и описание техник школы', link: '' },
-    { name: 'Шпаргалки по некоторым методам', link: '' },
-    { name: 'Списки с названиями форм и тд.', link: '' },
+    { name: 'Биографии мастеров, интервью, тексты', link: 'https://disk.yandex.ru/d/DnebRrSNUCsLng' },
+    { name: 'Шпаргалки по методам и практикам Хуньюань Тайцзи', link: 'https://disk.yandex.ru/d/jBBfrbz6AhgD2g' },
+    { name: 'Статьи по теории, полезные материалы для занимающихся', link: 'https://disk.yandex.ru/d/MqS6DGTUlSE3ZA' },
+  ],
+};
+
+const PDF = {
+  title: '',
+  description: '',
+  list: [
+    { name: 'Структура Хуньюань Тайцзи', link: './data/pdf/structure_of_hunuan_taichi.pdf' },
+    { name: 'Легендарная история Фэн Чжицяна', link: './data/pdf/legenradnaya_istoriya_fen_chzhitsana.pdf' },
+    {
+      name: 'Ярек Шиманский. Интервью с Фэн Чжицяном',
+      link: './data/pdf/yarek_shimansky_interview_s_fen_chzhitsanom.pdf',
+    },
   ],
 };
 
@@ -80,10 +89,32 @@ export const Library = () => {
 
   return (
     <div className={cx('library')}>
-      <ListBlock title={MATERIALS.title} description={MATERIALS.description} list={MATERIALS.list} theme="dash" />
-      <ListBlock title={USEFUL.title} description={USEFUL.description} list={USEFUL.list} theme="dash" />
-      <ListBlock title={BROTHERS.title} description={BROTHERS.description} list={BROTHERS.list} />
-      <ListBlock title={FRIENDS.title} description={FRIENDS.description} list={FRIENDS.list} />
+      <ListBlock
+        className={cx('library-section')}
+        title={MATERIALS.title}
+        description={MATERIALS.description}
+        list={MATERIALS.list}
+        theme="dash"
+      />
+      <ListBlock className={cx('library-section', 'library-section_no-margin')} list={PDF.list} />
+      <ListBlock
+        className={cx('library-section')}
+        title={USEFUL.title}
+        description={USEFUL.description}
+        list={USEFUL.list}
+      />
+      <ListBlock
+        className={cx('library-section')}
+        title={BROTHERS.title}
+        description={BROTHERS.description}
+        list={BROTHERS.list}
+      />
+      <ListBlock
+        className={cx('library-section')}
+        title={FRIENDS.title}
+        description={FRIENDS.description}
+        list={FRIENDS.list}
+      />
     </div>
   );
 };

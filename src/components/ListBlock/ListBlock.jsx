@@ -6,17 +6,17 @@ import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
-export const ListBlock = ({ description, list, title, theme }) => {
+export const ListBlock = ({ className, description, list, title, theme }) => {
   return (
-    <div className={cx('list-block')}>
+    <div className={cx('list-block', className)}>
       {!!title && <h3 className={cx('title')}>{title}</h3>}
       {!!description && <p className={cx('description')}>{description}</p>}
       {!!list && (
         <ul className={cx('list')}>
           {list.map((item) => (
-            <li key={item.name + item.link}>
+            <li className={cx('list-item')} key={item.name + item.link}>
               {theme === 'dash' && '- '}
-              <LinkWrapper isInline={true} isUnderline={false} linkText={item.name} linkUrl={item.link} />
+              <LinkWrapper isInline={true} isUnderline={true} linkText={item.name} linkUrl={item.link} />
             </li>
           ))}
         </ul>

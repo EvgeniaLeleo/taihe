@@ -1,9 +1,5 @@
 .list-block {
-  margin-bottom: 110px;
-}
-
-.list-block:last-child {
-  margin-bottom: 0;
+  max-width: 630px;
 }
 
 .title {
@@ -23,4 +19,8 @@
 
   margin: 0;
   padding: 0;
+}
+
+.list-item {
+  margin-top: 7px;
 }

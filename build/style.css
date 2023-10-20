@@ -1,13 +1,16 @@
+html {
+  font-size: 14px;
+}
+
 .body {
   position: relative;
 
   font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.22;
   color: #161616;
 
-  min-width: 890px;
+  min-width: 570px;
   margin: 0;
 }
 
@@ -21,6 +24,31 @@
 @media (max-width: 1240px) {
   .content-wrapper {
     padding: 0 60px;
-    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 13px;
+  }
+
+  .content-wrapper {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  .content-wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 11px;
   }
 }

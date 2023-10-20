@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
+import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { FeedbackBlock } from '../../components/FeedbackBlock/FeedbackBlock';
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { getStore } from '../../utils/getStore';
@@ -39,23 +40,25 @@ export const Feedback = () => {
   };
 
   return (
-    <div className={cx('feedback-wrapper')}>
-      <div className={cx('feedback')}>
-        {visibleData.map((item) => (
-          <FeedbackBlock name={item.name} course={item.course} text={item.text} key={item.name + item.text} />
-        ))}
-      </div>
+    <MainWrapper>
+      <div className={cx('feedback-wrapper')}>
+        <div className={cx('feedback')}>
+          {visibleData.map((item) => (
+            <FeedbackBlock name={item.name} course={item.course} text={item.text} key={item.name + item.text} />
+          ))}
+        </div>
 
-      <footer className={cx('footer')}>
-        {isRemainingFeedback && (
-          <LinkWrapper
-            className={cx('button-read-more')}
-            linkText="Читать далее"
-            onClick={handleShowMore}
-            type="button"
-          />
-        )}
-      </footer>
-    </div>
+        <footer className={cx('footer')}>
+          {isRemainingFeedback && (
+            <LinkWrapper
+              className={cx('button-read-more')}
+              linkText="Читать далее"
+              onClick={handleShowMore}
+              type="button"
+            />
+          )}
+        </footer>
+      </div>
+    </MainWrapper>
   );
 };

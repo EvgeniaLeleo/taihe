@@ -8,7 +8,6 @@
   list-style: none;
 
   width: 214px;
-
   padding: 0 50px 54px 0;
   margin: 0;
   box-sizing: border-box;
@@ -49,4 +48,31 @@
 
 .sidebar-item_active {
   color: #161616;
+}
+
+/* @media (max-width: 1240px) {
+  .sidebar-list {
+    width: 214px;
+    padding: 0 50px 54px 0;
+  }
+} */
+
+@media (max-width: 1024px) {
+  .sidebar-list {
+    width: 180px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-list {
+    width: 150px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar-list {
+    width: 140px;
+  }
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { observer } from 'mobx-react';
 import cn from 'classnames/bind';
 
+import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { ShopItemBlock } from '../../components/ShopItemBlock/ShopItemBlock';
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { Arrow } from '../../components/Arrow/Arrow';
@@ -28,7 +29,7 @@ const TeaShop = () => {
   }, []);
 
   return (
-    <div className={cx('shop')}>
+    <MainWrapper>
       <LinkWrapper
         className={cx('link-back')}
         isUnderline={false}
@@ -75,7 +76,7 @@ const TeaShop = () => {
           </div>
         </>
       )}
-    </div>
+    </MainWrapper>
   );
 };
 

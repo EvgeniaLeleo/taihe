@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
+import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
@@ -24,16 +25,18 @@ export const Media = () => {
   }, [data.length]);
 
   return (
-    <div className={cx('media')}>
-      {data.map((item) => (
-        <InfoBlock
-          name={item.name}
-          imgUrl={item.imgUrl}
-          linkUrl={item.linkUrl}
-          linkText={item.linkText}
-          key={item.name + item.url}
-        />
-      ))}
-    </div>
+    <MainWrapper>
+      <div className={cx('media')}>
+        {data.map((item) => (
+          <InfoBlock
+            name={item.name}
+            imgUrl={item.imgUrl}
+            linkUrl={item.linkUrl}
+            linkText={item.linkText}
+            key={item.name + item.url}
+          />
+        ))}
+      </div>
+    </MainWrapper>
   );
 };

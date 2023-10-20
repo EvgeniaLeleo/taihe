@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import cn from 'classnames/bind';
 
+import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { TextBlock } from '../../components/TextBlock/TextBlock';
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { getStore } from '../../utils/getStore';
@@ -73,41 +74,43 @@ export const About = () => {
       <div className={cx('image-wrapper')}>
         <img className={cx('about__image')} src={img} alt="Групповое фото" />
       </div>
-      <div className={cx('text-wrapper')}>
-        <p className={cx('description')}>
-          Мы объединяем всех, кому нравится быть здоровыми и счастливыми, кому интересно исследовать себя и окружающий
-          мир. Нам и нашим друзьям важно жить в гармонии с Природой, с другими людьми, а главное - с самими собой. Среди
-          нас тайцзишники и цигунисты, остеопаты, врачи, учителя, художники, музыканты и просто хорошие люди.
-        </p>
+      <MainWrapper>
+        <div className={cx('text-wrapper')}>
+          <p className={cx('description')}>
+            Мы объединяем всех, кому нравится быть здоровыми и счастливыми, кому интересно исследовать себя и окружающий
+            мир. Нам и нашим друзьям важно жить в гармонии с Природой, с другими людьми, а главное - с самими собой.
+            Среди нас тайцзишники и цигунисты, остеопаты, врачи, учителя, художники, музыканты и просто хорошие люди.
+          </p>
 
-        <TextBlock contentFirst={DESCRIPTION.first} contentSecond={DESCRIPTION.second} />
-        <TextBlock isBorder={true} title={CIGUN.title} contentFirst={CIGUN.first} contentSecond={CIGUN.second} />
-        <TextBlock isBorder={true} title={TAICHI.title} contentFirst={TAICHI.first} contentSecond={TAICHI.second} />
-        <TextBlock isBorder={true} title={HUNUAN.title} contentFirst={HUNUAN.first} contentSecond={HUNUAN.second} />
+          <TextBlock contentFirst={DESCRIPTION.first} contentSecond={DESCRIPTION.second} />
+          <TextBlock isBorder={true} title={CIGUN.title} contentFirst={CIGUN.first} contentSecond={CIGUN.second} />
+          <TextBlock isBorder={true} title={TAICHI.title} contentFirst={TAICHI.first} contentSecond={TAICHI.second} />
+          <TextBlock isBorder={true} title={HUNUAN.title} contentFirst={HUNUAN.first} contentSecond={HUNUAN.second} />
 
-        <footer className={cx('footer')}>
-          <div className={cx('footer__paragraph')}>
-            Подробнее про мастеров, школу и методы Хуньюань вы можете найти в разделе{' '}
-            <LinkWrapper
-              className={cx('link')}
-              isInline={true}
-              linkText="Библиотека"
-              linkUrl={ROUTES.library}
-              type="nav"
-            />
-          </div>
-          <div className={cx('footer__paragraph')}>
-            Подробнее о том, у кого можно учиться и о наших занятиях - в разделе{' '}
-            <LinkWrapper
-              className={cx('link')}
-              isInline={true}
-              linkText="Преподаватели"
-              linkUrl={ROUTES.teachers}
-              type="nav"
-            />
-          </div>
-        </footer>
-      </div>
+          <footer className={cx('footer')}>
+            <div className={cx('footer__paragraph')}>
+              Подробнее про мастеров, школу и методы Хуньюань вы можете найти в разделе{' '}
+              <LinkWrapper
+                className={cx('link')}
+                isInline={true}
+                linkText="Библиотека"
+                linkUrl={ROUTES.library}
+                type="nav"
+              />
+            </div>
+            <div className={cx('footer__paragraph')}>
+              Подробнее о том, у кого можно учиться и о наших занятиях - в разделе{' '}
+              <LinkWrapper
+                className={cx('link')}
+                isInline={true}
+                linkText="Преподаватели"
+                linkUrl={ROUTES.teachers}
+                type="nav"
+              />
+            </div>
+          </footer>
+        </div>
+      </MainWrapper>
     </div>
   );
 };

@@ -1,7 +1,3 @@
-.teachers-page {
-  padding: 86px 0 0 50px;
-}
-
 .teachers-block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

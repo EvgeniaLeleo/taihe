@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
+import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
@@ -29,7 +30,7 @@ export const Contacts = () => {
   };
 
   return (
-    <div className={cx('contacts-wrapper')}>
+    <MainWrapper>
       <section className={cx('contacts')}>
         <h2 className={cx('title')}>Борисова Наташа</h2>
         <LinkWrapper linkText="+7 (965) 207-13-39" linkUrl="tel:+79652071339" isUnderline={false} target="current" />
@@ -54,6 +55,6 @@ export const Contacts = () => {
         </div>
         <p className={cx('text')}>Благодарю!</p>
       </section>
-    </div>
+    </MainWrapper>
   );
 };

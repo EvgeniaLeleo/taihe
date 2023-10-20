@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import cn from 'classnames/bind';
 
+import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { getStore } from '../../utils/getStore';
@@ -26,7 +27,7 @@ export const Teachers = () => {
   }, [data.length]);
 
   return (
-    <div className={cx('teachers-page')}>
+    <MainWrapper>
       {!!data && !!data.length && (
         <div className={cx('teachers-block')}>
           {data.map((item) => (
@@ -82,6 +83,6 @@ export const Teachers = () => {
           </li>
         </ol>
       </footer>
-    </div>
+    </MainWrapper>
   );
 };

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import cn from 'classnames/bind';
 
+import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { ListBlock } from '../../components/ListBlock/ListBlock';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
@@ -109,7 +110,7 @@ export const Library = () => {
   }, []);
 
   return (
-    <div className={cx('library')}>
+    <MainWrapper>
       <ListBlock
         className={cx('library-section')}
         title={MATERIALS.title}
@@ -136,6 +137,6 @@ export const Library = () => {
         description={FRIENDS.description}
         list={FRIENDS.list}
       />
-    </div>
+    </MainWrapper>
   );
 };

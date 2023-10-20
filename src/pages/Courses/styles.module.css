@@ -1,6 +1,6 @@
 .online-wrapper {
-  padding: 86px 0 0 50px;
-  max-width: calc(100% - 274px);
+  width: calc(100% - 60px);
+  max-width: 584px;
   box-sizing: border-box;
 }
 

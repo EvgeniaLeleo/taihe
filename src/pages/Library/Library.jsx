@@ -48,16 +48,20 @@ const BROTHERS = {
   title: 'Собратья по Хуньюань Тайцзи',
   description: '',
   list: [
-    { name: 'Китай (Академия Фэн Чжицяна)', link: 'http://www.hunyuantaiji.com.cn/en/Default.aspx' },
-    { name: 'Китай (Чжан Цзипин)', link: 'http://www.01248.cn/English/index.asp' },
-    { name: 'Сент-Луис, США (Джастин Михан)', link: 'http://stltaiji.com/Resources/Videos.aspx' },
-    { name: 'Сент-Луис, США (Херб Парран)', link: 'https://traditionaltaiji.com/' },
-    { name: 'Сан-Франциско, США (Майкл Дорган)', link: 'http://www.taichisanjose.com/' },
-    { name: 'Сан Франциско, США (Малькольм Дин и Браэн Гуань)', link: 'https://www.silkreeler.com/home' },
-    { name: 'Эдисон, Нью-Джерси, США (Ван Фэнмин)', link: 'http://worldtaiji.com/' },
-    { name: 'Испания (Педро Валенсиа)', link: 'https://www.hunyuantaichi.com/' },
-    { name: 'Москва, Россия (Алина Харламова и Вадим Черноусов)', link: 'https://t.me/madargita' },
-    { name: 'Пермь, Россия (Дмитрий Шапарь и Мария Павлова)', link: 'https://vk.com/hunyuantaichi' },
+    { name: 'Китай', description: '(Академия Фэн Чжицяна)', link: 'http://www.hunyuantaiji.com.cn/en/Default.aspx' },
+    { name: 'Китай', description: '(Чжан Цзипин)', link: 'http://www.01248.cn/English/index.asp' },
+    { name: 'Сент-Луис, США', description: '(Джастин Михан)', link: 'http://stltaiji.com/Resources/Videos.aspx' },
+    { name: 'Сент-Луис, США', description: '(Херб Парран)', link: 'https://traditionaltaiji.com/' },
+    { name: 'Сан-Франциско, США', description: '(Майкл Дорган)', link: 'http://www.taichisanjose.com/' },
+    {
+      name: 'Сан Франциско, США',
+      description: '(Малькольм Дин и Браэн Гуань)',
+      link: 'https://www.silkreeler.com/home',
+    },
+    { name: 'Эдисон, Нью-Джерси, США', description: '(Ван Фэнмин)', link: 'http://worldtaiji.com/' },
+    { name: 'Испания', description: '(Педро Валенсиа)', link: 'https://www.hunyuantaichi.com/' },
+    { name: 'Москва, Россия', description: '(Алина Харламова и Вадим Черноусов)', link: 'https://t.me/madargita' },
+    { name: 'Пермь, Россия', description: '(Дмитрий Шапарь и Мария Павлова)', link: 'https://vk.com/hunyuantaichi' },
   ],
 };
 
@@ -65,17 +69,34 @@ const FRIENDS = {
   title: 'Друзья и коллеги',
   description: '',
   list: [
-    { name: 'Центр ушу и цигун «У Дэ» (Тольятти, Артем Марченко)', link: 'https://vk.com/wushu_tlt' },
-    { name: 'Остеопатический центр «Дыхание Жизни» (Санкт-Петербург)', link: 'https://www.osteocenter-spb.ru/' },
-    { name: 'Проект «Свобода Ума» (Игорь Берхин, практики внимательности)', link: 'http://svobodauma.org/' },
-    { name: 'Майндфулнес - медитация осознанности (Вадим Матюшин)', link: 'http://realmindfulness.ru/' },
+    { name: 'Центр ушу и цигун «У Дэ»', description: '(Тольятти, Артем Марченко)', link: 'https://vk.com/wushu_tlt' },
     {
-      name: 'ЯСНЫЙ УМ (youtube-канал про науку, культуру и практику осознанности)',
+      name: 'Остеопатический центр «Дыхание Жизни»',
+      description: '(Санкт-Петербург)',
+      link: 'https://www.osteocenter-spb.ru/',
+    },
+    {
+      name: 'Проект «Свобода Ума»',
+      description: '(Игорь Берхин, практики внимательности)',
+      link: 'http://svobodauma.org/',
+    },
+    {
+      name: 'Майндфулнес - медитация осознанности',
+      description: '(Вадим Матюшин)',
+      link: 'http://realmindfulness.ru/',
+    },
+    {
+      name: 'ЯСНЫЙ УМ',
+      description: '(youtube-канал про науку, культуру и практику осознанности)',
       link: 'http://www.youtube.com/channel/UC06tU3eXm4ZGPp55ahob-ug',
     },
-    { name: 'Ретритный центр «Северный Кунсангар» (Москва)', link: 'http://kunsangar.ru/' },
-    { name: 'Блог о Традиционной Китайской Медицине', link: 'https://kitamed.ru/' },
-    { name: 'Блог Егора Лобусова (переводы с китайского, багуа, цигун, медицина)', link: 'http://moonreflection.ru/' },
+    { name: 'Ретритный центр «Северный Кунсангар»', description: '(Москва)', link: 'http://kunsangar.ru/' },
+    { name: 'Блог о Традиционной Китайской Медицине', description: '', link: 'https://kitamed.ru/' },
+    {
+      name: 'Блог Егора Лобусова',
+      description: '(переводы с китайского, багуа, цигун, медицина)',
+      link: 'http://moonreflection.ru/',
+    },
   ],
 };
 

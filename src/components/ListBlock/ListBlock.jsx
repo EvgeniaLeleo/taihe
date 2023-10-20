@@ -16,7 +16,8 @@ export const ListBlock = ({ className, description, list, title, theme }) => {
           {list.map((item) => (
             <li className={cx('list-item')} key={item.name + item.link}>
               {theme === 'dash' && '- '}
-              <LinkWrapper isInline={true} isUnderline={true} linkText={item.name} linkUrl={item.link} />
+              <LinkWrapper isInline={true} isUnderline={true} linkText={item.name} linkUrl={item.link} />{' '}
+              {item.description}
             </li>
           ))}
         </ul>

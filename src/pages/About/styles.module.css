@@ -4,6 +4,8 @@
   aspect-ratio: 230 / 131;
 
   background-color: #16161615;
+
+  overflow: hidden;
 }
 
 .about__image {

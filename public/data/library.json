@@ -13,12 +13,12 @@
   },
   "pdf": {
     "title": "",
-    "description": "",
+    "description": "Некоторые статьи можно почитать прямо на сайте:",
     "list": [
       { "name": "Структура Хуньюань Тайцзи", "link": "./data/pdf/structure_of_hunuan_taichi.pdf" },
       { "name": "Легендарная история Фэн Чжицяна", "link": "./data/pdf/legenradnaya_istoriya_fen_chzhitsana.pdf" },
       {
-        "name": "Ярек Шиманский. Интервью с Фэн Чжицяном",
+        "name": "Интервью с Фэн Чжицяном (Ярек Шимански)",
         "link": "./data/pdf/yarek_shimansky_interview_s_fen_chzhitsanom.pdf"
       }
     ]
@@ -34,11 +34,14 @@
         "link": "https://disk.yandex.ru/d/TsiFyIZ8qgTgYg"
       },
       { "name": "Материалы по чайной культуре", "link": "https://disk.yandex.ru/d/aHUinVYm4chY4w" },
-      { "name": "Художественная литература для вдохновения", "link": "https://disk.yandex.ru/d/ejozlhOyqblcoQ" }
+      {
+        "name": "Художественная литература и тематические фильмы для вдохновения",
+        "link": "https://disk.yandex.ru/d/ejozlhOyqblcoQ"
+      }
     ]
   },
   "brothers": {
-    "title": "Собратья по Хуньюань Тайцзи",
+    "title": "Друзья и коллеги по Хуньюань Тайцзи",
     "description": "",
     "list": [
       {
@@ -60,7 +63,7 @@
         "link": "https://www.silkreeler.com/home"
       },
       { "name": "Ван Фэнмин", "description": "(Эдисон, Нью-Джерси, США)", "link": "http://worldtaiji.com/" },
-      { "name": "Педро Валенсиа", "description": "(Испания)", "link": "https://www.hunyuantaichi.com/" },
+      { "name": "Педро", "description": "(Валенсиа, Испания)", "link": "https://www.hunyuantaichi.com/" },
       { "name": "Владимир Сидоров", "description": "(Москва, Россия)", "link": "https://taijipro.com/" },
 
       {
@@ -78,7 +81,7 @@
     ]
   },
   "friends": {
-    "title": "Друзья и коллеги",
+    "title": "Друзья и коллеги по другим дисциплинам",
     "description": "",
     "list": [
       {

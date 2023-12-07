@@ -6,6 +6,11 @@ import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
+/**
+ * theme === 'dash' добавляет черточку перед пунктом списка
+ * @param {*} param0
+ * @returns
+ */
 export const ListBlock = ({ className, description, list, title, theme }) => {
   return (
     <div className={cx('list-block', className)}>

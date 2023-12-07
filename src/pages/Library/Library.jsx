@@ -33,29 +33,29 @@ export const Library = () => {
             title={data.materials.title}
             description={data.materials.description}
             list={data.materials.list}
-            theme="dash"
           />
-          <ListBlock className={cx('library-section', 'library-section_no-margin')} list={data.pdf.list} />
+          <ListBlock
+            className={cx('library-section', 'library-section_small-margin')}
+            description={data.pdf.description}
+            list={data.pdf.list}
+          />
           <ListBlock
             className={cx('library-section')}
             title={data.useful.title}
             description={data.useful.description}
             list={data.useful.list}
-            theme="dash"
           />
           <ListBlock
             className={cx('library-section')}
             title={data.brothers.title}
             description={data.brothers.description}
             list={data.brothers.list}
-            theme="dash"
           />
           <ListBlock
             className={cx('library-section')}
             title={data.friends.title}
             description={data.friends.description}
             list={data.friends.list}
-            theme="dash"
           />
         </>
       )}

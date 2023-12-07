@@ -9,3 +9,7 @@
 .library-section_no-margin {
   margin-top: 14px;
 }
+
+.library-section_small-margin {
+  margin-top: 28px;
+}

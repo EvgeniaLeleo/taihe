@@ -76,3 +76,9 @@
     width: 140px;
   }
 }
+
+@media (max-width: 475px) {
+  .sidebar-list {
+    display: none;
+  }
+}

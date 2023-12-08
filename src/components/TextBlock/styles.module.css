@@ -36,3 +36,13 @@
 .text-content_paragraph:last-child {
   margin-bottom: 0;
 }
+
+@media (max-width: 475px) {
+  .text-content {
+    display: block;
+  }
+
+  .title {
+    font-weight: 600;
+  }
+}

@@ -14,10 +14,36 @@
   border-radius: 50%;
 }
 
+.logo {
+  width: 100%;
+}
+
 .logo-wrapper:focus {
   outline: 0;
 }
 
 .logo-wrapper:focus-visible {
   outline: 1.5px solid #161616;
+}
+
+.button-menu {
+  display: none;
+}
+
+@media (max-width: 475px) {
+  .header {
+    padding: 2px 20px;
+  }
+
+  .logo-wrapper {
+    max-width: 96px;
+  }
+
+  .button-menu {
+    display: block;
+  }
+
+  .button-learn {
+    display: none;
+  }
 }

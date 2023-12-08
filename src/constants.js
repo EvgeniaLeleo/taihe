@@ -19,3 +19,5 @@ export const URL = {
 };
 
 export const VISIBLE_FEEDBACK = 5;
+
+export const BUTTON_TYPE = { link: 'link', button: 'button' };

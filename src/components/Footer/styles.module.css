@@ -154,3 +154,34 @@
     padding: 22px 60px;
   }
 }
+
+@media (max-width: 475px) {
+  .footer-top {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .footer-bottom__content {
+    flex-direction: column;
+  }
+
+  .contacts-wrapper {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-bottom {
+    padding: 30px 20px 24px;
+  }
+
+  .footer-bottom__content {
+    gap: 12px;
+
+    width: 100%;
+  }
+
+  .button-wrapper {
+    padding: 60px 0 90px;
+    margin-top: 80px;
+  }
+}

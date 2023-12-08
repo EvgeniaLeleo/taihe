@@ -80,3 +80,11 @@
 
   padding: 15px 63px;
 }
+
+@media (max-width: 475px) {
+  .link_size_l {
+    font-size: 12px;
+
+    padding: 12px 63px;
+  }
+}

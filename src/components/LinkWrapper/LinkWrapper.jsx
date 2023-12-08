@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import cn from 'classnames/bind';
 
 import styles from './styles.module.css';
+import { BUTTON_TYPE } from '../../constants';
 
 const cx = cn.bind(styles);
 
@@ -40,7 +41,7 @@ export const LinkWrapper = ({
           {linkText}
         </NavLink>
       )}
-      {type === 'button' && (
+      {type === BUTTON_TYPE.button && (
         <button className={cx('button')} onClick={onClick}>
           {linkText}
         </button>

@@ -4,6 +4,8 @@
   aspect-ratio: 230 / 131;
 
   background-color: #16161615;
+  background-image: url('../../images/about/about.jpg');
+  background-size: cover;
 
   overflow: hidden;
 }
@@ -37,5 +39,19 @@
 @media (max-width: 475px) {
   .description {
     font-size: 1rem;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    margin-left: -1.5px;
+    height: 440px;
+    aspect-ratio: unset;
+
+    background-color: #16161615;
+    background-image: url('../../images/about/about.jpg');
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
   }
 }

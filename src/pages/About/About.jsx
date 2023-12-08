@@ -7,8 +7,6 @@ import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
-import img from '../../images/about/about.jpg';
-
 import { ROUTES } from '../../constants';
 import styles from './styles.module.css';
 
@@ -71,9 +69,7 @@ export const About = () => {
 
   return (
     <div className={cx('about')}>
-      <div className={cx('image-wrapper')}>
-        <img className={cx('about__image')} src={img} alt="Групповое фото" />
-      </div>
+      <div className={cx('image-wrapper')}></div>
       <MainWrapper type="sub">
         <div className={cx('text-wrapper')}>
           <p className={cx('description')}>

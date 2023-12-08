@@ -184,4 +184,8 @@
     padding: 60px 0 90px;
     margin-top: 80px;
   }
+
+  .button-up {
+    top: -110px;
+  }
 }

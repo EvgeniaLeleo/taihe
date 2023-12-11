@@ -38,11 +38,25 @@
 }
 
 @media (max-width: 475px) {
+  /* .text-content-wrapper {
+    margin-top: 12px;
+  } */
+
   .text-content {
     display: block;
+    margin-top: 14px;
+  }
+
+  .text-content_second {
+    margin-top: 14px;
   }
 
   .title {
     font-weight: 600;
+  }
+
+  .isBorder {
+    padding-top: 46px;
+    margin-top: 78px;
   }
 }

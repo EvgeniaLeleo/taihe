@@ -35,7 +35,7 @@ const Footer = () => {
       <div className={cx('footer-top')}>
         {isShopPage && (
           <div className={cx('footer_shop')}>
-            <p className={cx('footer_shop__text')}>
+            <div className={cx('footer_shop__text')}>
               Заказы на чай, футболки и тайцзибан принимаются через почту{' '}
               <LinkWrapper
                 className={cx('button-read-more')}
@@ -54,7 +54,7 @@ const Footer = () => {
                 target="current"
               />{' '}
               (WhatsApp/Telegram). Книги доступны в розничных магазинах и под заказ.
-            </p>
+            </div>
           </div>
         )}
         <div className={cx('button-wrapper', { isShopPage: isShopPage })}>

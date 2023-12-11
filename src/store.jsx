@@ -3,6 +3,8 @@ import { makeAutoObservable } from 'mobx';
 export default class TaiheStore {
   isShopPage = false;
 
+  isMobileMenuVisible = false;
+
   constructor() {
     makeAutoObservable(this);
     this.isShopPage = false;
@@ -19,5 +21,9 @@ export default class TaiheStore {
     } catch (error) {
       throw new Error(error);
     }
+  };
+
+  setIsMobileMenuVisible = (value) => {
+    this.isMobileMenuVisible = value;
   };
 }

@@ -39,7 +39,7 @@ export const Teachers = () => {
               linkUrl={item.linkUrl}
               name={item.name}
               text={item.text}
-              key={item.name + item.url}
+              key={item.name + item.linkUrl}
             />
           ))}
         </div>

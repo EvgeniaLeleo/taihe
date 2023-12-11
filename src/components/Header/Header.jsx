@@ -12,11 +12,16 @@ import telegramHover from '../../images/icons/telegram-icon-hover.svg';
 
 import { BUTTON_TYPE, ROUTES, URL } from '../../constants';
 import styles from './styles.module.css';
+import { getStore } from '../../utils/getStore';
 
 const cx = cn.bind(styles);
 
 export const Header = () => {
-  const handleShowMenu = () => {};
+  const { setIsMobileMenuVisible } = getStore;
+
+  const handleShowMenu = () => {
+    setIsMobileMenuVisible(true);
+  };
 
   return (
     <header className={cx('header')}>

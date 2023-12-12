@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 580px) {
   .sidebar_desktop {
     display: none;
     border-right: none;
@@ -112,7 +112,7 @@
     left: 32px;
     z-index: 2;
 
-    color: #16161680;
+    color: #161616;
 
     padding: 0;
 
@@ -121,14 +121,6 @@
 
     cursor: pointer;
     transition: color 0.2s;
-  }
-
-  .sidebar_mobile__button-close:hover {
-    color: #161616bf;
-  }
-
-  .sidebar_mobile__button-close:active {
-    color: #161616;
   }
 
   .sidebar-list {

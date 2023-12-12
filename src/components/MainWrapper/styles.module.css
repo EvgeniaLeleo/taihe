@@ -28,7 +28,7 @@
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 580px) {
   .main-wrapper {
     /* width: calc(100% - 140px); */
     padding-left: 20px;

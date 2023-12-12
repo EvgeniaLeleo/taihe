@@ -6,6 +6,7 @@ import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
 import styles from './styles.module.css';
+import { useResize } from '../../hooks/useResize';
 
 const cx = cn.bind(styles);
 
@@ -13,6 +14,8 @@ export const Lineage = () => {
   const { getData, setIsShopPage } = getStore;
 
   const [data, setData] = useState(null);
+
+  const { isScreenMobile } = useResize();
 
   useEffect(() => {
     setIsShopPage(false);
@@ -29,10 +32,11 @@ export const Lineage = () => {
         <>
           {data.map((teacher) => (
             <TeacherBlock
-              imgUrl={teacher.imgUrl}
+              imgUrl={isScreenMobile ? teacher.imgUrlMobile : teacher.imgUrl}
               name={teacher.name}
               description={teacher.description}
               teacher={teacher}
+              key={teacher.name}
             />
           ))}
         </>

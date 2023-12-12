@@ -6,12 +6,16 @@
   margin-top: 0;
 }
 
-.image-wrapper {
+.image {
   width: calc(100% + 1.5px);
-  margin-left: -1.5px;
-  aspect-ratio: 905 / 447;
+  height: 447px;
+  margin-left: -1px;
+
+  /* aspect-ratio: 905 / 447; */
 
   background-color: #16161615;
+  background-position: center;
+  background-size: cover;
 
   overflow: hidden;
 }
@@ -37,4 +41,10 @@
 
   width: 50%;
   margin: 8px 0 0;
+}
+
+@media (max-width: 580px) {
+  .image {
+    height: 444px;
+  }
 }

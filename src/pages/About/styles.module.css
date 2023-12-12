@@ -36,7 +36,7 @@
   margin: 0;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 580px) {
   .description {
     font-size: 1rem;
   }

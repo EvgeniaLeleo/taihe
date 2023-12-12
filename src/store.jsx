@@ -5,6 +5,8 @@ export default class TaiheStore {
 
   isMobileMenuVisible = false;
 
+  windowWidth = window.innerWidth;
+
   constructor() {
     makeAutoObservable(this);
     this.isShopPage = false;
@@ -25,5 +27,9 @@ export default class TaiheStore {
 
   setIsMobileMenuVisible = (value) => {
     this.isMobileMenuVisible = value;
+  };
+
+  setWindowWidth = (value) => {
+    this.windowWidth = value;
   };
 }

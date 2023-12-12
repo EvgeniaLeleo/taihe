@@ -1,7 +1,6 @@
 import cn from 'classnames/bind';
 
 import { TextBlock } from '../TextBlock/TextBlock';
-import { useResize } from '../../hooks/useResize';
 
 import styles from './styles.module.css';
 

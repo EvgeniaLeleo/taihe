@@ -34,12 +34,14 @@ export const InfoBlock = ({
   text = '',
   fullWidthButton = false,
 }) => {
+  console.log(imgUrl);
   return (
     <div className={cx('info-block')}>
       <div>
-        <div className={cx('image-wrapper')}>
+        {/* <div className={cx('image-wrapper')}>
           <img className={cx('image')} src={imgUrl} alt={name} />
-        </div>
+        </div> */}
+        <div className={cx('image')} style={{ backgroundImage: `url(${imgUrl})` }}></div>
         {!!name && <h2 className={cx('name')}>{name}</h2>}
         {!!text &&
           text.split('\n').map((chunk) => (

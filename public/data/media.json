@@ -2,24 +2,28 @@
   {
     "name": "Семинары в Китае, мастера",
     "imgUrl": "./data/images/media/seminars-china.jpg",
+    "imgUrlMobile": "./data/images/media/seminars-china-mobile.jpg",
     "linkText": "смотреть",
     "linkUrl": "https://disk.yandex.ru/a/jvLFjCq8YUrmMg"
   },
   {
     "name": "Китайские парки и храмы",
     "imgUrl": "./data/images/media/parks.jpg",
+    "imgUrlMobile": "./data/images/media/parks-mobile.jpg",
     "linkText": "смотреть",
     "linkUrl": "https://disk.yandex.ru/a/BGVd1HjTF_km3Q"
   },
   {
     "name": "Семинары",
     "imgUrl": "./data/images/media/seminars.jpg",
+    "imgUrlMobile": "./data/images/media/seminars-mobile.jpg",
     "linkText": "смотреть",
     "linkUrl": " https://disk.yandex.ru/a/ktqeqIOurjpKtw"
   },
   {
     "name": "Регулярные занятия",
     "imgUrl": "./data/images/media/regular.jpg",
+    "imgUrlMobile": "./data/images/media/regular-mobile.jpg",
     "linkText": "смотреть",
     "linkUrl": "https://disk.yandex.ru/a/Ckj7ISHqIYBbSA"
   }

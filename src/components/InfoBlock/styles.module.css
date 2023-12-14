@@ -1,20 +1,17 @@
 .info-block {
   display: flex;
   flex-direction: column;
-
   justify-content: space-between;
 }
 
-.image-wrapper {
+.image {
   aspect-ratio: 260 / 309;
 
   background-color: #16161615;
+  background-position: center;
+  background-size: cover;
 
   overflow: hidden;
-}
-
-.image {
-  width: 100%;
 }
 
 .name {
@@ -46,5 +43,20 @@
 
   .link_full-width {
     width: 100%;
+  }
+
+  .image {
+    aspect-ratio: unset;
+    height: 190px;
+  }
+
+  .name {
+    font-size: 14px;
+
+    margin: 14px 0 0;
+  }
+
+  .link {
+    align-self: center;
   }
 }

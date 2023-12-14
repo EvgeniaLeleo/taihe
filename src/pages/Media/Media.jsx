@@ -5,6 +5,7 @@ import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { InfoBlock } from '../../components/InfoBlock/InfoBlock';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
+import { useResize } from '../../hooks/useResize';
 
 import styles from './styles.module.css';
 
@@ -12,6 +13,8 @@ const cx = cn.bind(styles);
 
 export const Media = () => {
   const { getData, setIsShopPage } = getStore;
+
+  const { isScreenMobile } = useResize();
 
   const [data, setData] = useState([]);
 
@@ -25,12 +28,12 @@ export const Media = () => {
   }, [data.length]);
 
   return (
-    <MainWrapper>
+    <MainWrapper className={cx('wrapper')}>
       <div className={cx('media')}>
         {data.map((item) => (
           <InfoBlock
             name={item.name}
-            imgUrl={item.imgUrl}
+            imgUrl={isScreenMobile ? item.imgUrlMobile : item.imgUrl}
             linkUrl={item.linkUrl}
             linkText={item.linkText}
             key={item.name + item.url}

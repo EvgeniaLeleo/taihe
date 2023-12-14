@@ -50,6 +50,12 @@
     height: 190px;
   }
 
+  .image_no-resize {
+    aspect-ratio: 260 / 309;
+    height: unset;
+    width: 100%;
+  }
+
   .name {
     font-size: 14px;
 

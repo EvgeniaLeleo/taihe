@@ -41,6 +41,7 @@ export const Teachers = () => {
               text={item.text}
               key={item.name + item.linkUrl}
               fullWidthButton
+              noResizeImage
             />
           ))}
         </div>

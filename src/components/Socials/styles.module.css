@@ -46,3 +46,9 @@
 .socials__link:focus .socials__image_hover {
   opacity: 1;
 }
+
+@media (max-width: 580px) {
+  .socials {
+    gap: 10px;
+  }
+}

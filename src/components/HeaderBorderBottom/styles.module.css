@@ -1,0 +1,8 @@
+@media (max-width: 580px) {
+  .border {
+    width: calc(100% - 40px);
+    height: 1.5px;
+
+    background-color: #17171780;
+  }
+}

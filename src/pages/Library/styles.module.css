@@ -13,3 +13,17 @@
 .library-section_small-margin {
   margin-top: 28px;
 }
+
+@media (max-width: 580px) {
+  .wrapper {
+    padding-top: 26px;
+  }
+
+  .library-section {
+    margin-top: 72px;
+  }
+
+  .library-section:nth-child(2) {
+    margin-top: 28px;
+  }
+}

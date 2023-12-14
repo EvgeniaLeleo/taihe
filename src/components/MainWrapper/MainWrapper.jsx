@@ -4,6 +4,6 @@ import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
-export const MainWrapper = ({ children, type }) => {
-  return <div className={cx('main-wrapper', { 'main-wrapper_sub': type === 'sub' })}>{children}</div>;
+export const MainWrapper = ({ children, type, className }) => {
+  return <div className={cx('main-wrapper', className, { 'main-wrapper_sub': type === 'sub' })}>{children}</div>;
 };

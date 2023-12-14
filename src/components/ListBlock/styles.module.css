@@ -24,3 +24,9 @@
 .list-item {
   margin-top: 7px;
 }
+
+@media (max-width: 580px) {
+  .list-item {
+    margin-top: 10px;
+  }
+}

@@ -73,6 +73,24 @@
   animation: animation-name 0.5s cubic-bezier(0.33, 0, 0.13, 1);
 }
 
+@media (max-width: 580px) {
+  .link-wrapper {
+    white-space: initial;
+  }
+
+  .link_double-underline {
+    text-decoration: underline;
+  }
+
+  .link_double-underline::before {
+    width: 0;
+  }
+
+  .link_double-underline:hover::before {
+    animation: unset;
+  }
+}
+
 @keyframes animation-name {
   50% {
     transform-origin: right;

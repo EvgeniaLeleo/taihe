@@ -12,3 +12,13 @@
 
   margin-top: 62px;
 }
+
+@media (max-width: 580px) {
+  .wrapper {
+    padding-top: 26px;
+  }
+
+  .button-read-more {
+    margin-top: 40px;
+  }
+}

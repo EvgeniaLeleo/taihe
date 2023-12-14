@@ -38,10 +38,6 @@
 }
 
 @media (max-width: 580px) {
-  /* .text-content-wrapper {
-    margin-top: 12px;
-  } */
-
   .text-content {
     display: block;
     margin-top: 14px;

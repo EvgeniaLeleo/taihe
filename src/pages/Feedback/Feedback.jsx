@@ -4,8 +4,10 @@ import cn from 'classnames/bind';
 import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { FeedbackBlock } from '../../components/FeedbackBlock/FeedbackBlock';
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
+import { HeaderBorderBottom } from '../../components/HeaderBorderBottom/HeaderBorderBottom';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
+import { useResize } from '../../hooks/useResize';
 
 import { VISIBLE_FEEDBACK } from '../../constants';
 import styles from './styles.module.css';
@@ -19,6 +21,8 @@ export const Feedback = () => {
   const [visibleData, setVisibleData] = useState(data);
   const [count, setCount] = useState(2);
   const [isRemainingFeedback, setIsRemainingFeedback] = useState();
+
+  const { isScreenMobile } = useResize();
 
   useEffect(() => {
     setIsShopPage(false);
@@ -40,25 +44,28 @@ export const Feedback = () => {
   };
 
   return (
-    <MainWrapper>
-      <div className={cx('feedback-wrapper')}>
-        <div className={cx('feedback')}>
-          {visibleData.map((item) => (
-            <FeedbackBlock name={item.name} course={item.course} text={item.text} key={item.name + item.text} />
-          ))}
-        </div>
+    <>
+      <HeaderBorderBottom />
+      <MainWrapper className={cx('wrapper')}>
+        <div className={cx('feedback-wrapper')}>
+          <div className={cx('feedback')}>
+            {visibleData.map((item) => (
+              <FeedbackBlock name={item.name} course={item.course} text={item.text} key={item.name + item.text} />
+            ))}
+          </div>
 
-        <footer className={cx('footer')}>
-          {isRemainingFeedback && (
-            <LinkWrapper
-              className={cx('button-read-more')}
-              linkText="Читать далее"
-              onClick={handleShowMore}
-              type="button"
-            />
-          )}
-        </footer>
-      </div>
-    </MainWrapper>
+          <footer className={cx('footer')}>
+            {isRemainingFeedback && (
+              <LinkWrapper
+                className={cx('button-read-more')}
+                linkText="Читать далее"
+                onClick={handleShowMore}
+                type="button"
+              />
+            )}
+          </footer>
+        </div>
+      </MainWrapper>
+    </>
   );
 };

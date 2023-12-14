@@ -32,6 +32,7 @@ export const InfoBlock = ({
   linkUrl = '',
   name = '',
   text = '',
+  fullWidthButton = false,
 }) => {
   return (
     <div className={cx('info-block')}>
@@ -47,7 +48,11 @@ export const InfoBlock = ({
             </p>
           ))}
         {!!buttonText && !!buttonUrl && (
-          <LinkButton theme="secondary" buttonUrl={buttonUrl} className={cx('link_secondary')}>
+          <LinkButton
+            theme="secondary"
+            buttonUrl={buttonUrl}
+            className={cx('link_secondary', { 'link_full-width': fullWidthButton })}
+          >
             {buttonText}
           </LinkButton>
         )}

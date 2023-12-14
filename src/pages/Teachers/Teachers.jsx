@@ -40,13 +40,14 @@ export const Teachers = () => {
               name={item.name}
               text={item.text}
               key={item.name + item.linkUrl}
+              fullWidthButton
             />
           ))}
         </div>
       )}
 
       <footer className={cx('info')}>
-        <h2 className={cx('header')}>Формат занятий Клуба «Тай Хэ»</h2>
+        <h2 className={cx('header')}>Формат занятий Клуба&nbsp;«Тай&nbsp;Хэ»</h2>
         <ol className={cx('format-list')}>
           <li>Общие групповые (очно и онлайн)</li>
           <li>Персональные занятия, составление индивидуальных программ (очно и онлайн)</li>
@@ -54,9 +55,9 @@ export const Teachers = () => {
         </ol>
 
         <h2 className={cx('header', 'resources')}>Доступные ресурсы</h2>
-        <ol className={cx('resources-list')}>
+        <ul className={cx('resources-list')}>
           <li className={cx('resources-item')}>
-            Наш основной информационный <LinkWrapper isInline={true} linkText="Телеграм канал" linkUrl={URL.telegram} />
+            1. Наш основной информационный <LinkWrapper isInline linkText="Телеграм канал" linkUrl={URL.telegram} is />
             <h3 className={cx('resources-item__title')}>Там публикуются:</h3>
             <ul className={cx('features-list')}>
               <li>- Методы и принципы Хуньюань Тайцзицюань</li>
@@ -68,7 +69,7 @@ export const Teachers = () => {
           </li>
 
           <li className={cx('resources-item')}>
-            <LinkWrapper linkText="YouTube Канал Борисовой Наташи" linkUrl={URL.youtube} />
+            2. <LinkWrapper linkText="YouTube Канал Борисовой Наташи" linkUrl={URL.youtube} isInline />
             <h3 className={cx('resources-item__title')}>Там публикуются:</h3>
             <ul className={cx('features-list')}>
               <li>- Записи отдельных упражнений, практик и методов</li>
@@ -79,9 +80,9 @@ export const Teachers = () => {
           </li>
 
           <li className={cx('resources-item')}>
-            <LinkWrapper linkText="Курсы нашей онлайн школы" linkUrl={URL.zenclass} />
+            3. <LinkWrapper linkText="Курсы нашей онлайн школы" linkUrl={URL.zenclass} isInline />
           </li>
-        </ol>
+        </ul>
       </footer>
     </MainWrapper>
   );

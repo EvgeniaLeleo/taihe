@@ -28,6 +28,8 @@
 }
 
 .resources-list {
+  list-style: none;
+
   margin: 0;
   padding: 0 0 0 16px;
 }
@@ -56,4 +58,21 @@
 
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 580px) {
+  .teachers-block {
+    grid-template-columns: 1fr;
+
+    padding: 0 0 80px;
+    margin: -48px 0 46px;
+  }
+
+  .resources {
+    margin-top: 46px;
+  }
+
+  .resources-list {
+    padding: 0;
+  }
 }

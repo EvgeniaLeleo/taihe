@@ -37,3 +37,14 @@
 .link_secondary {
   margin-top: 26px;
 }
+
+@media (max-width: 580px) {
+  .name,
+  .text {
+    text-align: center;
+  }
+
+  .link_full-width {
+    width: 100%;
+  }
+}

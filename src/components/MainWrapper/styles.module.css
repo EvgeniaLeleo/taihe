@@ -30,7 +30,7 @@
 
 @media (max-width: 580px) {
   .main-wrapper {
-    /* width: calc(100% - 140px); */
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 48px;

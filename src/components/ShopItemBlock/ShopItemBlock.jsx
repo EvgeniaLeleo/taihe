@@ -24,9 +24,7 @@ export const ShopItemBlock = ({
 }) => {
   return (
     <div className={cx(className, 'item')}>
-      <div className={cx('image-wrapper')}>
-        <img className={cx('image', { image_unavailable: !inStock })} src={imgUrl} alt={name} />
-      </div>
+      <div className={cx('image')} style={{ backgroundImage: `url(${imgUrl})` }}></div>
 
       <div>
         {!!name && (
@@ -72,7 +70,7 @@ export const ShopItemBlock = ({
         {!!price && <p className={cx('price', { unavailable: !inStock })}>Цена {price}</p>}
         {inStock && !!buttonText && !!buttonUrl && (
           <LinkButton
-            className={cx('link_secondary')}
+            className={cx('link_secondary', 'link_full-width')}
             theme="secondary"
             size="m"
             buttonUrl={buttonUrl}

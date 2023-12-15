@@ -5,15 +5,17 @@
     "linkText": "подробнее",
     "linkUrl": "inner",
     "inStock": true,
-    "imgUrl": "./data/images/shop/tea.jpg"
+    "imgUrl": "./data/images/shop/tea.jpg",
+    "imgUrlMobile": "./data/images/shop/tea-mobile.jpg"
   },
   {
     "name": "Футболка Клуба «Тай Хэ»",
-    "text": "Цена взрослой — 1000₽\nЦена детской — 900₽",
+    "text": "Взрослая — 1000₽\nДетская — 900₽",
     "linkText": "таблица размеров",
     "linkUrl": "",
     "inStock": true,
-    "imgUrl": "./data/images/shop/t-shirt.jpg"
+    "imgUrl": "./data/images/shop/t-shirt.jpg",
+    "imgUrlMobile": "./data/images/shop/t-shirt-mobile.jpg"
   },
   {
     "name": "Тайцзибан",
@@ -22,7 +24,8 @@
     "buttonText": "купить",
     "buttonUrl": "https://www.avito.ru/sankt-peterburg/sport_i_otdyh/taytsziban_palochka_dlya_zanyatiy_taytszi_2837228138",
     "inStock": true,
-    "imgUrl": "./data/images/shop/ban.jpg"
+    "imgUrl": "./data/images/shop/ban.jpg",
+    "imgUrlMobile": "./data/images/shop/ban-mobile.jpg"
   },
   {
     "name": "Книга «К осознанности через движение».\nМакен Исаков",
@@ -31,7 +34,8 @@
     "buttonText": "купить",
     "buttonUrl": "https://www.avito.ru/sankt-peterburg/knigi_i_zhurnaly/vnutrennyaya_narabotka_taytszitsyuan_maken_isakov_2805417345",
     "inStock": true,
-    "imgUrl": "./data/images/shop/book-maken.jpg"
+    "imgUrl": "./data/images/shop/book-maken.jpg",
+    "imgUrlMobile": "./data/images/shop/book-maken-mobile.jpg"
   },
   {
     "name": "Книга «Дыхательные гимнастики при COVID 19».\nБорисова Н.С., Шумейко А.С.",
@@ -43,6 +47,7 @@
     "buttonText": "купить",
     "buttonUrl": "https://www.ozon.ru/product/dyhatelnye-gimnastiki-pri-covid-19-rekomendatsii-dlya-patsientov-vosstanovlenie-legkih-do-vo-253328011/",
     "inStock": true,
-    "imgUrl": "./data/images/shop/book-gymnastics.jpg"
+    "imgUrl": "./data/images/shop/book-gymnastics.jpg",
+    "imgUrlMobile": "./data/images/shop/book-gymnastics-mobile.jpg"
   }
 ]

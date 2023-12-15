@@ -3,6 +3,7 @@ import cn from 'classnames/bind';
 
 import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
+import { HeaderBorderBottom } from '../../components/HeaderBorderBottom/HeaderBorderBottom';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 import copyTextToClipboard from '../../utils/copyTextToClipboard';
@@ -30,31 +31,34 @@ export const Contacts = () => {
   };
 
   return (
-    <MainWrapper>
-      <section className={cx('contacts')}>
-        <h2 className={cx('title')}>Борисова Наташа</h2>
-        <LinkWrapper linkText="+7 (965) 207-13-39" linkUrl="tel:+79652071339" isUnderline={false} target="current" />
-        <LinkWrapper className={cx('link')} linkText="taiheclub@yandex.ru" linkUrl={URL.mailto} target="current" />
-        <LinkWrapper className={cx('link')} linkText="курсы онлайн-школы" linkUrl={URL.zenclass} />
+    <>
+      <HeaderBorderBottom />
+      <MainWrapper className={cx('wrapper')}>
+        <section className={cx('contacts')}>
+          <h2 className={cx('title')}>Борисова Наташа</h2>
+          <LinkWrapper linkText="+7 (965) 207-13-39" linkUrl="tel:+79652071339" isUnderline={false} target="current" />
+          <LinkWrapper className={cx('link')} linkText="taiheclub@yandex.ru" linkUrl={URL.mailto} target="current" />
+          <LinkWrapper className={cx('link')} linkText="курсы онлайн-школы" linkUrl={URL.zenclass} />
 
-        <p className={cx('text')}>
-          В Санкт-Петербурге можно записаться на очные индивидуальные занятия. Для жителей других городов и&nbsp;стран
-          индивидуальные занятия проводятся онлайн.
-        </p>
-      </section>
+          <p className={cx('text')}>
+            В Санкт-Петербурге можно записаться на очные индивидуальные занятия. Для жителей других городов и&nbsp;стран
+            индивидуальные занятия проводятся онлайн.
+          </p>
+        </section>
 
-      <section>
-        <h2 className={cx('title')}>Поддержать проекты и автора</h2>
-        <div className={cx('text')}>
-          Сбер 2202 2035 1385 4861
-          <div className={cx('button-wrapper', { 'button-wrapper_underlined': !isCopied })}>
-            <button className={cx('button')} onClick={handleCopy}>
-              {buttonText}
-            </button>
+        <section>
+          <h2 className={cx('title')}>Поддержать проекты и&nbsp;автора</h2>
+          <div className={cx('text', 'card')}>
+            <span>Сбер 2202 2035 1385 4861</span>
+            <div className={cx('button-wrapper', { 'button-wrapper_underlined': !isCopied })}>
+              <button className={cx('button')} onClick={handleCopy}>
+                {buttonText}
+              </button>
+            </div>
           </div>
-        </div>
-        <p className={cx('text')}>Благодарю!</p>
-      </section>
-    </MainWrapper>
+          <p className={cx('text')}>Благодарю!</p>
+        </section>
+      </MainWrapper>
+    </>
   );
 };

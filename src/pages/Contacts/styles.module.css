@@ -1,3 +1,7 @@
+.wrapper {
+  padding-top: 26px;
+}
+
 .contacts {
   max-width: 430px;
   margin-bottom: 70px;
@@ -101,5 +105,25 @@
   100% {
     transform-origin: left;
     transform: scaleX(1);
+  }
+}
+
+@media (max-width: 580px) {
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .contacts {
+    margin-bottom: 70px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-wrapper {
+    margin-left: 0;
+    margin-top: 6px;
   }
 }

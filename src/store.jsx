@@ -3,6 +3,8 @@ import { makeAutoObservable } from 'mobx';
 export default class TaiheStore {
   isShopPage = false;
 
+  isCoursesPage = false;
+
   isMobileMenuVisible = false;
 
   windowWidth = window.innerWidth;
@@ -14,6 +16,10 @@ export default class TaiheStore {
 
   setIsShopPage = (value) => {
     this.isShopPage = value;
+  };
+
+  setIsCoursesPage = (value) => {
+    this.isCoursesPage = value;
   };
 
   getData = async ({ url, callback }) => {

@@ -12,7 +12,7 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 export const Courses = () => {
-  const { getData, setIsShopPage } = getStore;
+  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
 
   const [data, setData] = useState(null);
   const [beginnerIndex, setBeginnerIndex] = useState(0);
@@ -20,6 +20,7 @@ export const Courses = () => {
 
   useEffect(() => {
     setIsShopPage(false);
+    setIsCoursesPage(true);
     scrollToTop();
   }, []);
 
@@ -28,7 +29,7 @@ export const Courses = () => {
   }, []);
 
   return (
-    <MainWrapper>
+    <MainWrapper className={cx('wrapper')}>
       <section className={cx('section')}>
         <h2 className={cx('section__title')}>Темы для начального уровня или для знакомства с цигун и тайцзицюань</h2>
 

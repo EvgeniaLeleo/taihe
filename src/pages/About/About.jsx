@@ -60,10 +60,11 @@ const HUNUAN = {
 };
 
 export const About = () => {
-  const { setIsShopPage } = getStore;
+  const { setIsCoursesPage, setIsShopPage } = getStore;
 
   useEffect(() => {
     setIsShopPage(false);
+    setIsCoursesPage(false);
     scrollToTop();
   }, []);
 

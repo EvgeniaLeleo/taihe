@@ -3,6 +3,7 @@ import cn from 'classnames/bind';
 
 import { LinkButton } from '../LinkButton/LinkButton';
 import { Socials } from '../Socials/Socials';
+import { getStore } from '../../utils/getStore';
 
 import logo from '../../images/logo.svg';
 import youtube from '../../images/icons/youtube-icon.svg';
@@ -12,7 +13,6 @@ import telegramHover from '../../images/icons/telegram-icon-hover.svg';
 
 import { BUTTON_TYPE, ROUTES, URL } from '../../constants';
 import styles from './styles.module.css';
-import { getStore } from '../../utils/getStore';
 
 const cx = cn.bind(styles);
 

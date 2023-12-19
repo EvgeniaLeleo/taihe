@@ -13,12 +13,13 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 export const Library = () => {
-  const { getData, setIsShopPage } = getStore;
+  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
 
   const [data, setData] = useState(null);
 
   useEffect(() => {
     setIsShopPage(false);
+    setIsCoursesPage(false);
     scrollToTop();
   }, []);
 

@@ -20,7 +20,7 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 const Footer = () => {
-  const { isShopPage } = getStore;
+  const { isCoursesPage, isShopPage } = getStore;
 
   const [isArrowUpVisible, setIsArrowUpVisible] = useState(false);
 
@@ -36,7 +36,7 @@ const Footer = () => {
         {isShopPage && (
           <div className={cx('footer_shop')}>
             <div className={cx('footer_shop__text')}>
-              Заказы на чай, футболки и тайцзибан принимаются через почту{' '}
+              Заказы на чай, футболки и&nbsp;тайцзибан принимаются через почту{' '}
               <LinkWrapper
                 className={cx('button-read-more')}
                 isInline={true}
@@ -45,7 +45,7 @@ const Footer = () => {
                 linkUrl={URL.mailto}
                 target="current"
               />{' '}
-              и личные сообщения{' '}
+              и&nbsp;личные сообщения{' '}
               <LinkWrapper
                 isInline={true}
                 isUnderline={false}
@@ -53,15 +53,20 @@ const Footer = () => {
                 linkUrl="tel:+79652071339"
                 target="current"
               />{' '}
-              (WhatsApp/Telegram). Книги доступны в розничных магазинах и под заказ.
+              (WhatsApp/Telegram). Книги доступны в&nbsp;розничных магазинах и&nbsp;под&nbsp;заказ.
             </div>
           </div>
         )}
-        <div className={cx('button-wrapper', { isShopPage: isShopPage })}>
-          <LinkButton buttonUrl={URL.zenclass} theme="secondary" size="l">
-            Начать заниматься
-          </LinkButton>
-        </div>
+
+        {!isCoursesPage && (
+          <div className={cx('button-wrapper', { isShopPage: isShopPage })}>
+            <LinkButton buttonUrl={URL.zenclass} theme="secondary" size="l">
+              Начать заниматься
+            </LinkButton>
+          </div>
+        )}
+
+        {isCoursesPage && <div className={cx('space-wrapper')}></div>}
       </div>
 
       {/* Dark footer block */}

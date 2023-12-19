@@ -26,3 +26,27 @@
 .link_secondary {
   margin: 24px 0 0 70px;
 }
+
+@media (max-width: 580px) {
+  .wrapper {
+    padding-top: 26px;
+  }
+
+  .section {
+    padding: 46px 0 0;
+    margin-top: 82px;
+  }
+
+  .section__title {
+    font-size: 14px;
+
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 24px 0;
+  }
+
+  .link_secondary {
+    width: 100%;
+    margin: 24px 0 0 0px;
+  }
+}

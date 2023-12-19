@@ -12,7 +12,7 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 export const Shop = () => {
-  const { getData, setIsShopPage } = getStore;
+  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
 
   const [data, setData] = useState([]);
 
@@ -20,6 +20,7 @@ export const Shop = () => {
 
   useEffect(() => {
     setIsShopPage(true);
+    setIsCoursesPage(false);
     scrollToTop();
   }, []);
 

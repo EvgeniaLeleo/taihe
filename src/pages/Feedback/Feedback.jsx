@@ -15,7 +15,7 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 export const Feedback = () => {
-  const { getData, setIsShopPage } = getStore;
+  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
 
   const [data, setData] = useState([]);
   const [visibleData, setVisibleData] = useState(data);
@@ -26,6 +26,7 @@ export const Feedback = () => {
 
   useEffect(() => {
     setIsShopPage(false);
+    setIsCoursesPage(false);
     scrollToTop();
   }, []);
 

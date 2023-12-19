@@ -12,7 +12,7 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 export const Media = () => {
-  const { getData, setIsShopPage } = getStore;
+  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
 
   const { isScreenMobile } = useResize();
 
@@ -20,6 +20,7 @@ export const Media = () => {
 
   useEffect(() => {
     setIsShopPage(false);
+    setIsCoursesPage(false);
     scrollToTop();
   }, []);
 

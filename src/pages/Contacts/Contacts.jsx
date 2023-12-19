@@ -14,13 +14,14 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 export const Contacts = () => {
-  const { setIsShopPage } = getStore;
+  const { setIsCoursesPage, setIsShopPage } = getStore;
 
   const [buttonText, setButtonText] = useState('копировать номер карты');
   const [isCopied, setIsCopied] = useState(false);
 
   useEffect(() => {
     setIsShopPage(false);
+    setIsCoursesPage(false);
     scrollToTop();
   }, []);
 

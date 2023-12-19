@@ -15,12 +15,13 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 const TeaShop = () => {
-  const { getData, setIsShopPage } = getStore;
+  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
 
   const [data, setData] = useState(null);
 
   useEffect(() => {
     setIsShopPage(true);
+    setIsCoursesPage(false);
     scrollToTop();
   }, []);
 

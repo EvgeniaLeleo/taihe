@@ -4,6 +4,7 @@ import cn from 'classnames/bind';
 
 import { CourseBlock } from '../CourseBlock/CourseBlock';
 import { Arrow } from '../Arrow/Arrow';
+import { useResize } from '../../hooks/useResize';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -42,9 +43,12 @@ const ButtonNext = ({ setIndex, data, ...props }) => {
 };
 
 export const CoursesCarousel = ({ data, setIndex }) => {
+  const { isScreenMobile } = useResize();
+
   return (
     <Slider
       className={cx('carousel')}
+      dots={isScreenMobile}
       slidesToShow={1}
       slidesToScroll={1}
       infinite={false}

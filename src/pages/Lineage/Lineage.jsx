@@ -11,7 +11,7 @@ import { useResize } from '../../hooks/useResize';
 const cx = cn.bind(styles);
 
 export const Lineage = () => {
-  const { getData, setIsShopPage } = getStore;
+  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
 
   const [data, setData] = useState(null);
 
@@ -19,6 +19,7 @@ export const Lineage = () => {
 
   useEffect(() => {
     setIsShopPage(false);
+    setIsCoursesPage(false);
     scrollToTop();
   }, []);
 

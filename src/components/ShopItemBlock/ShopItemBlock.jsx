@@ -67,7 +67,7 @@ export const ShopItemBlock = ({
           />
         )}
         {!!additionalText && <p className={cx('additional-text', { unavailable: !inStock })}>{additionalText}</p>}
-        {!!price && <p className={cx('price', { unavailable: !inStock })}>Цена {price}</p>}
+        {inStock && !!price && <p className={cx('price', { unavailable: !inStock })}>Цена {price}</p>}
         {inStock && !!buttonText && !!buttonUrl && (
           <LinkButton
             className={cx('link_secondary', 'link_full-width')}
@@ -79,7 +79,7 @@ export const ShopItemBlock = ({
             {buttonText}
           </LinkButton>
         )}
-        {!inStock && <p className={cx('not_available')}>Нет в наличии</p>}
+        {!inStock && <p className={cx('not_available')}>Нет в&nbsp;наличии</p>}
       </div>
     </div>
   );

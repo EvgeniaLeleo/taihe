@@ -65,6 +65,8 @@
 }
 
 .not_available {
+  font-size: 14px;
+  font-weight: 600;
   text-transform: uppercase;
 
   margin: 20px 0 0;
@@ -112,9 +114,11 @@
     margin-right: 0;
 
     background-size: cover;
+    background-position: center;
   }
 
   .name {
+    font-size: 16px;
     text-align: center;
 
     margin-top: 25px;
@@ -125,6 +129,10 @@
     flex-direction: column;
     align-items: center;
 
+    text-align: center;
+  }
+
+  .text__paragraph {
     text-align: center;
   }
 
@@ -145,6 +153,10 @@
   }
 
   .additional-text {
+    text-align: center;
+  }
+
+  .not_available {
     text-align: center;
   }
 }

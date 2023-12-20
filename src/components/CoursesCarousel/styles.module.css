@@ -76,7 +76,7 @@
 
 @media (max-width: 580px) {
   .carousel {
-    max-width: 100%; /* 72px button + 72px button margin*/
+    max-width: 100%;
     margin-left: 0;
     margin-bottom: 26px;
   }

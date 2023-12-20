@@ -30,7 +30,7 @@ const TeaShop = () => {
   }, []);
 
   return (
-    <MainWrapper>
+    <MainWrapper className={cx('wrapper')}>
       <LinkWrapper
         className={cx('link-back')}
         isUnderline={false}

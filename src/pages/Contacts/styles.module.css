@@ -113,6 +113,10 @@
     margin-bottom: 10px;
   }
 
+  .text {
+    font-size: 14px;
+  }
+
   .contacts {
     margin-bottom: 70px;
   }
@@ -125,5 +129,9 @@
   .button-wrapper {
     margin-left: 0;
     margin-top: 6px;
+  }
+
+  .button {
+    font-size: 12px;
   }
 }

@@ -44,10 +44,11 @@
   }
 
   .text-content_second {
-    margin-top: 14px;
+    margin-top: 10px;
   }
 
   .title {
+    font-size: 16px;
     font-weight: 600;
   }
 

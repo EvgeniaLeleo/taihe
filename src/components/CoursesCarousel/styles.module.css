@@ -78,12 +78,16 @@
   .carousel {
     max-width: 100%; /* 72px button + 72px button margin*/
     margin-left: 0;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
 
   .button {
     width: 0;
     height: 0;
+  }
+
+  .carousel ul {
+    bottom: -32px;
   }
 
   .carousel ul li button:before {

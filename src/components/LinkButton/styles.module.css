@@ -85,6 +85,8 @@
   .link_size_l {
     font-size: 12px;
 
-    padding: 12px 63px;
+    padding: 12px 40px;
+
+    width: 100%;
   }
 }

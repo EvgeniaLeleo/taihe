@@ -63,6 +63,7 @@
 @media (max-width: 580px) {
   .teachers-block {
     grid-template-columns: 1fr;
+    gap: 48px;
 
     padding: 0 0 80px;
     margin: -48px 0 46px;

@@ -113,7 +113,7 @@
   outline: 1.5px solid #161616;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 680px) {
   .link-wrapper {
     white-space: initial;
   }

@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
+import { observer } from 'mobx-react-lite';
 import cn from 'classnames/bind';
 
 import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { ListBlock } from '../../components/ListBlock/ListBlock';
 import { HeaderBorderBottom } from '../../components/HeaderBorderBottom/HeaderBorderBottom';
+import { Preloader } from '../../components/Preloader/Preloader';
 
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
@@ -12,8 +14,8 @@ import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
-export const Library = () => {
-  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
+const Library = () => {
+  const { getData, isLoading, setIsCoursesPage, setIsShopPage } = getStore;
 
   const [data, setData] = useState(null);
 
@@ -26,6 +28,10 @@ export const Library = () => {
   useEffect(() => {
     getData({ url: './data/library.json', callback: setData });
   }, []);
+
+  if (isLoading) {
+    return <Preloader />;
+  }
 
   return (
     <>
@@ -68,3 +74,5 @@ export const Library = () => {
     </>
   );
 };
+
+export default observer(Library);

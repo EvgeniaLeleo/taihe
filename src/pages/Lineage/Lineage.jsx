@@ -1,17 +1,20 @@
 import { useEffect, useState } from 'react';
+import { observer } from 'mobx-react-lite';
 import cn from 'classnames/bind';
 
 import { TeacherBlock } from '../../components/TeacherBlock/TeacherBlock';
+import { Preloader } from '../../components/Preloader/Preloader';
+
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
+import { useResize } from '../../hooks/useResize';
 
 import styles from './styles.module.css';
-import { useResize } from '../../hooks/useResize';
 
 const cx = cn.bind(styles);
 
-export const Lineage = () => {
-  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
+const Lineage = () => {
+  const { getData, isLoading, setIsCoursesPage, setIsShopPage } = getStore;
 
   const [data, setData] = useState(null);
 
@@ -26,6 +29,10 @@ export const Lineage = () => {
   useEffect(() => {
     getData({ url: './data/lineage.json', callback: setData });
   }, []);
+
+  if (isLoading) {
+    return <Preloader />;
+  }
 
   return (
     <div className={cx('lineage')}>
@@ -45,3 +52,5 @@ export const Lineage = () => {
     </div>
   );
 };
+
+export default observer(Lineage);

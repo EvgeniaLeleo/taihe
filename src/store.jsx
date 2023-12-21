@@ -7,12 +7,18 @@ export default class TaiheStore {
 
   isMobileMenuVisible = false;
 
+  isLoading = false;
+
   windowWidth = window.innerWidth;
 
   constructor() {
     makeAutoObservable(this);
     this.isShopPage = false;
   }
+
+  setIsLoading = (value) => {
+    this.isLoading = value;
+  };
 
   setIsShopPage = (value) => {
     this.isShopPage = value;
@@ -23,11 +29,15 @@ export default class TaiheStore {
   };
 
   getData = async ({ url, callback }) => {
+    this.setIsLoading(true);
+
     try {
       const response = await fetch(url);
       callback(await response.json());
     } catch (error) {
       throw new Error(error);
+    } finally {
+      this.setIsLoading(false);
     }
   };
 

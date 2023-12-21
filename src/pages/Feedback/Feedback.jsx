@@ -1,28 +1,27 @@
 import { useEffect, useState } from 'react';
+import { observer } from 'mobx-react-lite';
 import cn from 'classnames/bind';
 
 import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { FeedbackBlock } from '../../components/FeedbackBlock/FeedbackBlock';
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { HeaderBorderBottom } from '../../components/HeaderBorderBottom/HeaderBorderBottom';
+import { Preloader } from '../../components/Preloader/Preloader';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
-import { useResize } from '../../hooks/useResize';
 
 import { VISIBLE_FEEDBACK } from '../../constants';
 import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
-export const Feedback = () => {
-  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
+const Feedback = () => {
+  const { getData, isLoading, setIsCoursesPage, setIsShopPage } = getStore;
 
   const [data, setData] = useState([]);
   const [visibleData, setVisibleData] = useState(data);
   const [count, setCount] = useState(2);
   const [isRemainingFeedback, setIsRemainingFeedback] = useState();
-
-  const { isScreenMobile } = useResize();
 
   useEffect(() => {
     setIsShopPage(false);
@@ -43,6 +42,10 @@ export const Feedback = () => {
       setCount((prev) => prev + 1);
     }
   };
+
+  if (isLoading) {
+    return <Preloader />;
+  }
 
   return (
     <>
@@ -70,3 +73,5 @@ export const Feedback = () => {
     </>
   );
 };
+
+export default observer(Feedback);

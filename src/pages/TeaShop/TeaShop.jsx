@@ -6,6 +6,8 @@ import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { ShopItemBlock } from '../../components/ShopItemBlock/ShopItemBlock';
 import { LinkWrapper } from '../../components/LinkWrapper/LinkWrapper';
 import { Arrow } from '../../components/Arrow/Arrow';
+import { Preloader } from '../../components/Preloader/Preloader';
+
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -15,7 +17,7 @@ import styles from './styles.module.css';
 const cx = cn.bind(styles);
 
 const TeaShop = () => {
-  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
+  const { getData, isLoading, setIsCoursesPage, setIsShopPage } = getStore;
 
   const [data, setData] = useState(null);
 
@@ -28,6 +30,10 @@ const TeaShop = () => {
   useEffect(() => {
     getData({ url: './data/tea-shop.json', callback: setData });
   }, []);
+
+  if (isLoading) {
+    return <Preloader />;
+  }
 
   return (
     <MainWrapper className={cx('wrapper')}>

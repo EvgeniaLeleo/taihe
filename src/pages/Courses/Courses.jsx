@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
+import { observer } from 'mobx-react-lite';
 import cn from 'classnames/bind';
 
 import { MainWrapper } from '../../components/MainWrapper/MainWrapper';
 import { LinkButton } from '../../components/LinkButton/LinkButton';
 import { CoursesCarousel } from '../../components/CoursesCarousel/CoursesCarousel';
+import { Preloader } from '../../components/Preloader/Preloader';
 import { getStore } from '../../utils/getStore';
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -11,8 +13,8 @@ import styles from './styles.module.css';
 
 const cx = cn.bind(styles);
 
-export const Courses = () => {
-  const { getData, setIsCoursesPage, setIsShopPage } = getStore;
+const Courses = () => {
+  const { getData, isLoading, setIsCoursesPage, setIsShopPage } = getStore;
 
   const [data, setData] = useState(null);
   const [beginnerIndex, setBeginnerIndex] = useState(0);
@@ -27,6 +29,10 @@ export const Courses = () => {
   useEffect(() => {
     getData({ url: './data/courses.json', callback: setData });
   }, []);
+
+  if (isLoading) {
+    return <Preloader />;
+  }
 
   return (
     <MainWrapper className={cx('wrapper')}>
@@ -65,3 +71,5 @@ export const Courses = () => {
     </MainWrapper>
   );
 };
+
+export default observer(Courses);

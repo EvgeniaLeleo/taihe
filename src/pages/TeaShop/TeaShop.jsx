@@ -72,25 +72,24 @@ const TeaShop = () => {
               любители уже знают, что заказать, а начинающим свое знакомство с&nbsp;чайной культурой напомню:
             </p>
             <p className={cx('description__paragraph')}>
-              <LinkWrapper linkText="Зелёный" onClick={() => scrollToElement('green')} type="button" isInline />
-              чай идеален для лета, освежает, бодрит, проясняет ум.
+              <LinkWrapper linkText="Зелёный" onClick={() => scrollToElement('green')} type="button" isInline /> чай
+              идеален для лета, освежает, бодрит, проясняет ум.
             </p>
             <p className={cx('description__paragraph')}>
-              <LinkWrapper linkText="Улуны" onClick={() => scrollToElement('oolong')} type="button" isInline />
-              обладают богатым и насыщенным вкусом, все они - хорошая помощь иммунитету. Разнообразие ароматов очень
-              велико.
+              <LinkWrapper linkText="Улуны" onClick={() => scrollToElement('oolong')} type="button" isInline /> обладают
+              богатым и насыщенным вкусом, все они - хорошая помощь иммунитету. Разнообразие ароматов очень велико.
             </p>
             <p className={cx('description__paragraph')}>
-              <LinkWrapper linkText="Красные" onClick={() => scrollToElement('red')} type="button" isInline />
+              <LinkWrapper linkText="Красные" onClick={() => scrollToElement('red')} type="button" isInline />{' '}
               согревают, бодрят и разгоняют кровь. Хороши в холодное и сырое время года.
             </p>
             <p className={cx('description__paragraph')}>
-              <LinkWrapper linkText="Шэн пуэры" onClick={() => scrollToElement('puer')} type="button" isInline />
+              <LinkWrapper linkText="Шэн пуэры" onClick={() => scrollToElement('puer')} type="button" isInline />{' '}
               прекрасно чистят организм, способствуют пищеварению и настраивают на спокойную, ясную активность ума.
             </p>
             <p className={cx('description__paragraph')}>
-              <LinkWrapper linkText="Шу пуэры" onClick={() => scrollToElement('puer')} type="button" isInline />
-              полезны для сердечно-сосудистой системы, пробуждают, могут стать хорошей альтернативой кофе.
+              <LinkWrapper linkText="Шу пуэры" onClick={() => scrollToElement('puer')} type="button" isInline /> полезны
+              для сердечно-сосудистой системы, пробуждают, могут стать хорошей альтернативой кофе.
             </p>
             <p className={cx('description__paragraph')}>
               Наше состояние меняется от этого удивительного напитка, в котором каждый может найти что-то своё. Статьи

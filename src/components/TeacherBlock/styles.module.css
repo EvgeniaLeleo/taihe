@@ -9,9 +9,7 @@
 .image {
   width: calc(100% + 1.5px);
   height: 447px;
-  margin-left: -1px;
-
-  /* aspect-ratio: 905 / 447; */
+  margin-left: -1.5px;
 
   background-color: #16161615;
   background-position: center;
